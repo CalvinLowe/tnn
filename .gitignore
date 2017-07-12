@@ -1,3 +1,4 @@
+# Exclude these files from the git repo
 *.log
 wp-config.php
 wp-content/advanced-cache.php
@@ -9,10 +10,24 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+wp-content/backup/*
+wp-content/cache/*
+wp-content/upgrade/*
+wp-content/uploads/*
+sitemap.*
+wp-config.php
+
+# Hidden system files
+*.DS_Store
+*[Tt]humbs.db
+*.Trashes
 
 /.htaccess
 /license.txt
 /readme.html
 /sitemap.xml
 /sitemap.xml.gz
+
+# Include these files in previously blocked directories
+!wp-content/uploads/.htaccess
 
