@@ -19,11 +19,15 @@
   </ul>
 </div><!-- #topbar-social-icons -->
 
-<div id="topbar-search" class="search">
-  <?php get_search_form() ?>
-</div><!-- #topbar-search -->
+<div id="topbar-right-container" class="flex-element">
 
-<div id="topbar-cta-buttons" class="cta">
-  <a href="#">Client Login/Appointment</a>
-  <a href="#">Join TNN's Team</a>
-</div><!-- #topbar-cta-buttons -->
+  <div id="topbar-search" class="search">
+    <?php get_search_form() ?>
+  </div><!-- #topbar-search -->
+
+  <div id="topbar-cta-buttons" class="cta">
+    <a href="#">Client Login/Appointment</a>
+    <a href="#">Join TNN's Team</a>
+  </div><!-- #topbar-cta-buttons -->
+
+</div><!-- #topbar-right-container -->

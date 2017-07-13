@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header">
 		<nav id="topbar-navigation" class="secondary-navigation">
-			<?php get_template_part('template-parts/nav', 'topbar'); ?>
+			<?php get_template_part('template-parts/header/nav', 'topbar'); ?>
 		</nav><!-- #topbar-navigation -->
 
 		<div class="site-branding">
