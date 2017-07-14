@@ -117,7 +117,8 @@ add_action( 'widgets_init', 'tnn_widgets_init' );
  * Enqueue scripts and styles.
  */
 function tnn_scripts() {
-	wp_enqueue_style( 'tnn-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'theme-info', get_stylesheet_uri() );
+	wp_enqueue_style( 'tnn-style', get_template_directory_uri() . '/css/tnn-styles-min.css',false,'1.1','all');
 
 	wp_enqueue_script( 'tnn-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
