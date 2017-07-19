@@ -1,0 +1,46 @@
+// header-nav-topbar.scss
+.secondary-navigation { /* Flex layout and background colour for topbar nav wrapper */
+  background-color: #e7e7e8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-icons ul, .flex-element { /* Flex layout of two groups of items in topbar */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: stretch;
+}
+.social-icons ul { /* Over rides underscores.scss ul margins */
+  margin: 1em 0;
+  list-style: none;
+}
+.social-icons li {
+  margin: 0 1em;
+}
+.social-icons a {
+  color: #6a8139;
+}
+
+.search {
+  align-self: center;
+  margin: 0 1em;
+}
+
+.front-cta { /* Styling for CTA buttons in top */
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+}
+.front-cta a { /* styling the topbar CTA */
+  display: flex; /* Used a series of display flexes to achieve proper alignment */
+  align-items: center;
+  background-color: #78bc42;
+  padding: 0 1em;
+  text-decoration: none;
+  color: white;
+}
+.front-cta a:first-child {
+  background-color: #93c968;
+}

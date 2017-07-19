@@ -1,0 +1,12 @@
+// fonts.scss
+@import url('https://fonts.googleapis.com/css?family=Oswald'); /* Use for headings, CTAs, menus font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Raleway'); /* Use for body text font-family: 'Raleway', sans-serif; */
+@import url('../fonts/font-awesome/css/font-awesome.min.css'); /* imports font awesome */
+
+p, a {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .menu a, .cta a {
+  font-family: 'Oswald', sans-serif;
+}

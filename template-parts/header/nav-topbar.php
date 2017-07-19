@@ -9,23 +9,25 @@
 
 ?>
 
-<div id="topbar-social-icons" class="social-icons">
+<div id="topbar-social-icons" class="topbar social-icons">
   <ul>
-    <li><a href="#">Facebook</a></li>
-    <li><a href="#">Instagram</a></li>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Contact</a></li>
-    <li><a href="#">Cart</a></li>
+    <li><a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+</a></li>
+    <li><a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+</a></li>
+    <li><a href="#"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a></li>
   </ul>
 </div><!-- #topbar-social-icons -->
 
-<div id="topbar-right-container" class="flex-element">
+<div id="topbar-right-container" class="topbar flex-element">
 
-  <div id="topbar-search" class="search">
+  <div id="topbar-search" class="topbar search">
     <?php get_search_form() ?>
   </div><!-- #topbar-search -->
 
-  <div id="topbar-cta-buttons" class="cta">
+  <div id="topbar-cta-buttons" class="topbar front-cta cta">
     <a href="#">Client Login/Appointment</a>
     <a href="#">Join TNN's Team</a>
   </div><!-- #topbar-cta-buttons -->
