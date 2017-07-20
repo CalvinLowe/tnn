@@ -21,9 +21,9 @@
   </ul>
 </div><!-- #topbar-social-icons -->
 
-<div id="topbar-right-container" class="topbar flex-element">
+<div id="topbar-right-container" class="flex-element">
 
-  <div id="topbar-search" class="topbar search">
+  <div id="topbar-search" class="search-topbar">
     <?php get_search_form() ?>
   </div><!-- #topbar-search -->
 
