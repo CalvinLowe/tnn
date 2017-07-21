@@ -9,4 +9,4 @@
 
 ?>
 <!-- will be converted to adding using ACF using flikkity -->
-<img class="slider-img" src="http://the-natural-nutritionist.dev/wp-content/themes/tnn/img/TNN-Real-Food-Living-and-Performance.jpg">
+<img class="slider-img" alt="slider image" src="http://the-natural-nutritionist.dev/wp-content/themes/tnn/img/TNN-Real-Food-Living-and-Performance.jpg">

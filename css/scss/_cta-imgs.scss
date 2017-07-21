@@ -1,0 +1,33 @@
+// _cta-imgs.scss
+
+.cta-images {
+  display: flex;
+  flex-direction: row;
+}
+.cta-figure {
+  margin: 0;
+  width: 33.33vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 4em;
+}
+
+.cta-figure-1 {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/cta-img-1.jpg");
+  background-size: cover;
+}
+.cta-figure-2 {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/cta-img-2.jpg");
+    background-size: cover;
+}
+.cta-figure-3 {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/cta-img-3.jpg");
+    background-size: cover;
+}
+.cta-caption {
+  color: $tnn-light;
+  text-align: center;
+  font-size: 0.5em;
+}

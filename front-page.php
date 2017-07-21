@@ -26,6 +26,10 @@ get_header(); ?>
 		<?php get_template_part( 'template-parts/front-page/mailchimp', 'opt-in'); ?>
 	</div><!-- #front-page-mailchimp-opt-in -->
 
+	<div id="front-page-cta-images" class="cta-images">
+		<?php get_template_part( 'template-parts/front-page/cta', 'images'); ?>
+	</div><!-- #front-page-cta-images -->
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
