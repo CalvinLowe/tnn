@@ -11,8 +11,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<!-- Display "Welcom to the natural nutritionist using ACF" -->
+		<h1 class="front-page-heading"><?php the_field('heading'); ?></h1> <!-- ACF -->
+		<h2 class="front-page-subheading"><?php the_field('subheading'); ?></h2> <!-- ACF -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

@@ -1,7 +1,7 @@
 // sale-notice.scss
 
 .sales-notice {
-  background-color: #6a8139;
+  background-color: $tnn-secondary;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,12 +19,11 @@
 
 .sales-notice-title {
   text-transform: uppercase; /* put in font.scss */
-  font-size: 3rem;
   margin: 1rem 0;
-  color: #79bc43; /* Put in variables.scss and colours.scss */
+  color: $tnn-primary-variation-1;
 }
 .sales-notice-paragraph {
-  color: #ffffff;
+  color: $tnn-light;
 }
 
 .sales-notice { /* Triangle thingy http://www.cssarrowplease.com/ */
@@ -41,7 +40,7 @@
 	position: absolute;
 	pointer-events: none;
 	border-color: rgba(106, 129, 57, 0);
-	border-top-color: #6A8139;
+	border-top-color: $tnn-secondary;
 	border-width: 30px;
 	margin-left: -30px;
 }

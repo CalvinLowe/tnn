@@ -2,16 +2,25 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald'); /* Use for headings, CTAs, menus font-family: 'Oswald', sans-serif; */
 @import url('https://fonts.googleapis.com/css?family=Raleway'); /* Use for body text font-family: 'Raleway', sans-serif; */
 @import url('../fonts/font-awesome/css/font-awesome.min.css'); /* imports font awesome */
+@font-face {
+  font-family: 'FaithAndGloryOne';
+  src: url('../fonts/FaithAndGloryOne.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/FaithAndGloryOne.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/FaithAndGloryOne.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/FaithAndGloryOne.otf')  format('opentype'), /* Safari, Android, iOS */
+       url('../fonts/FaithAndGloryOne.svg#svgFaithAndGloryOne') format('svg'); /* Legacy iOS */
+}
+
+
+h1, h2, h3, h4, h5, h6, .menu a, .cta a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
 
 p, a {
   font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, .menu a, .cta a {
-  font-family: 'Oswald', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
-  font-size: 36px;
+.front-page-heading {
+  font-family: 'FaithAndGloryOne', cursive, sans-serif;
 }

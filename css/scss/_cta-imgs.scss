@@ -15,19 +15,18 @@
 }
 
 .cta-figure-1 {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/cta-img-1.jpg");
+  background: $cta-dark-gradient, url("../img/cta-img-1.jpg");
   background-size: cover;
 }
 .cta-figure-2 {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/cta-img-2.jpg");
+    background: $cta-dark-gradient, url("../img/cta-img-2.jpg");
     background-size: cover;
 }
 .cta-figure-3 {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../img/cta-img-3.jpg");
+    background: $cta-dark-gradient, url("../img/cta-img-3.jpg");
     background-size: cover;
 }
 .cta-caption {
   color: $tnn-light;
   text-align: center;
-  font-size: 0.5em;
-}
+  }

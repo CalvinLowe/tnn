@@ -1,6 +1,6 @@
 // header-nav-topbar.scss
 .secondary-navigation { /* Flex layout and background colour for topbar nav wrapper */
-  background-color: #e7e7e8;
+  background-color: $background-grey;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -20,7 +20,7 @@
   margin: 0 1em;
 }
 .social-icons a {
-  color: #6a8139;
+  color: $tnn-secondary;
 }
 
 .search-topbar {
@@ -36,11 +36,11 @@
 .front-cta a { /* styling the topbar CTA */
   display: flex; /* Used a series of display flexes to achieve proper alignment */
   align-items: center;
-  background-color: #78bc42;
+  background-color: $tnn-cta-2;
   padding: 0 1em;
   text-decoration: none;
   color: white;
 }
 .front-cta a:first-child {
-  background-color: #93c968;
+  background-color: $tnn-cta-1;
 }

@@ -1,0 +1,15 @@
+// _book-your-consultation.scss
+
+.consultation {
+  background-image: url("../img/book-your-consultation.jpg");
+  background-size: cover;
+  padding: 4em;
+  display: flex;
+}
+
+.book-your-consultation-title {
+  text-align: center;
+  padding: 2em;
+  border: 2px solid $tnn-primary;
+  margin: 2em 4em;
+}

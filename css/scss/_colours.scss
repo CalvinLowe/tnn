@@ -1,25 +1,63 @@
 // colours.scss
 
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Text
+# Backgrounds
+# Borders
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Text
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  color: $tnn-secondary-variation-1;
+}
+.cta-caption-title, .book-your-consultation-title, .popular-recipes-title, .popular-recipes-slide-title {
+  color: $tnn-light;
+}
+
+.book-your-consultation-link {
+  color: $tnn-primary;
+}
+
+/*--------------------------------------------------------------
+# Background
+--------------------------------------------------------------*/
+.popular-recipes-title {
+  background-color: $tnn-primary;
+}
+
+.popular-recipes-slide-title {
+  background-color: $tnn-primary;
+  background-color: $tnn-primary-transparent;
+}
+
+
+/*--------------------------------------------------------------
+# Unsorted
+--------------------------------------------------------------*/
 .main-navigation a { /* main navigation link colour */
-  color: #6a8139;
-  border-bottom: solid #ffffff 5px;
+  color: $tnn-secondary;
+  border-bottom: solid $tnn-light 5px;
 }
 
 .main-navigation a:hover { /* main navigation link colour */
-  color: #78bc42;
-  border-bottom: solid #78bc42 5px;
+  color: $tnn-primary;
+  border-bottom: solid $tnn-primary 5px;
 }
 
 .sub-menu { /* Sub menu background colour */
-  background-color: #6a8139;
+  background-color: $tnn-secondary;
 }
 
 .sub-menu .menu-item a { /* Sub menu item text colour */
-  color: #ffffff;
+  color: $tnn-light;
   border-bottom: none;
   text-transform: capitalize;
 }
 
 .sub-menu .menu-item a:hover {
-  background-color: #78bc42;
+  background-color: $tnn-primary;
 }

@@ -27,22 +27,38 @@ get_header(); ?>
 	</div><!-- #front-page-mailchimp-opt-in -->
 
 	<div id="front-page-cta-images" class="cta-images">
-		<?php get_template_part( 'template-parts/front-page/cta', 'images'); ?>
+		<?php get_template_part( 'template-parts/front-page/cta-images'); ?>
 	</div><!-- #front-page-cta-images -->
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-				<?php
-				while ( have_posts() ) : the_post();
+			<?php
+			while ( have_posts() ) : the_post();
 
-					get_template_part( 'template-parts/content', 'front-page' );
+				get_template_part( 'template-parts/content', 'front-page' );
 
-				endwhile; // End of the loop.
-				?>
+			endwhile; // End of the loop.
+			?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<div id="front-page-book-consultation" class="consultation">
+		<?php get_template_part( 'template-parts/front-page/book-your-consultation'); ?>
+	</div><!-- #front-page-book-consultation -->
+
+	<div id="popular-recipes-slider" class="popular-recipes">
+		<?php get_template_part( 'template-parts/front-page/slider', 'popular-recipes'); ?>
+	</div><!-- #popular-recipes-slider -->
+
+	<div id="as-seen-in" class="as-seen-in">
+		<?php get_template_part( 'template-parts/front-page/as-seen-in'); ?>
+	</div><!-- #as-seen-in -->
+
+	<div id="latest-from-the-blog" class="latest-from-the-blog">
+		<?php get_template_part( 'template-parts/front-page/latest-from-the-blog'); ?>
+	</div><!-- #latest-from-the-blog -->
 
 <?php
 get_sidebar();
