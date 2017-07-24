@@ -57,8 +57,21 @@ get_header(); ?>
 	</div><!-- #as-seen-in -->
 
 	<div id="latest-from-the-blog" class="latest-from-the-blog">
-		<?php get_template_part( 'template-parts/front-page/latest-from-the-blog'); ?>
+		<?php get_template_part( 'template-parts/common/latest-from-the-blog'); ?>
 	</div><!-- #latest-from-the-blog -->
+
+	<div id="front-page-product-advertising" class="front-page-advertising">
+		<?php get_template_part( 'template-parts/front-page/advertising', 'products'); ?>
+	</div><!-- #front-page-product-advertising -->
+
+
+	<div id="front-page-recommended-reading-advertising" class="front-page-recommended-reading-advertising">
+		<?php get_template_part( 'template-parts/front-page/advertising', 'recommended-reading'); ?>
+	</div><!-- #front-page-recommended-reading-advertising -->
+
+	<div id="front-page-sponsors-advertising" class="front-page-sponsors-advertising">
+		<?php get_template_part( 'template-parts/front-page/advertising', 'sponsors'); ?>
+	</div><!-- #front-page-sponsors-advertising -->
 
 <?php
 get_sidebar();
