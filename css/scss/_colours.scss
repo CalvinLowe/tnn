@@ -22,6 +22,30 @@ h1, h2, h3, h4, h5, h6 {
   color: $tnn-primary;
 }
 
+.goto-top-angle {
+  color: $tnn-grey-2;
+}
+
+.footer-navigation a {
+    color: $tnn-light;
+}
+
+.topbar.social-icons a {
+  color: $tnn-secondary;
+}
+
+.footer.social-icons a {
+  color: $tnn-primary;
+}
+
+.copyright {
+  color: $tnn-light;
+}
+
+.site-info a {
+  color: $tnn-primary;
+}
+
 /*--------------------------------------------------------------
 # Background
 --------------------------------------------------------------*/
@@ -34,6 +58,13 @@ h1, h2, h3, h4, h5, h6 {
   background-color: $tnn-primary-transparent;
 }
 
+.goto-top {
+  background-color: $tnn-light-green;
+}
+
+.site-footer {
+  background-color: $tnn-secondary;
+}
 
 /*--------------------------------------------------------------
 # Unsorted

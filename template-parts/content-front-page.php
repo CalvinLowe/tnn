@@ -10,6 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<header class="entry-header">
 		<h1 class="front-page-heading"><?php the_field('heading'); ?></h1> <!-- ACF -->
 		<h2 class="front-page-subheading"><?php the_field('subheading'); ?></h2> <!-- ACF -->

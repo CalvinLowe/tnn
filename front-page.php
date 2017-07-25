@@ -60,10 +60,9 @@ get_header(); ?>
 		<?php get_template_part( 'template-parts/common/latest-from-the-blog'); ?>
 	</div><!-- #latest-from-the-blog -->
 
-	<div id="front-page-product-advertising" class="front-page-advertising">
+	<div id="front-page-product-advertising" class="front-page-product-advertising">
 		<?php get_template_part( 'template-parts/front-page/advertising', 'products'); ?>
 	</div><!-- #front-page-product-advertising -->
-
 
 	<div id="front-page-recommended-reading-advertising" class="front-page-recommended-reading-advertising">
 		<?php get_template_part( 'template-parts/front-page/advertising', 'recommended-reading'); ?>

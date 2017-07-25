@@ -8,10 +8,30 @@
  */
 
 ?>
-<figure>
-  <img alt="Advert" src="http://via.placeholder.com/350x150">
+
+
+<figure class="product-advert">
+  <a href="<?php the_field('product_1_link'); ?>">
+  <?php
+  $image1 = get_field('product_1_img');
+
+  if( !empty($image1) ): ?>
+
+  	<img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" />
+
+  <?php endif; ?>
+  </a>
 </figure>
 
-<figure>
-  <img alt="Advert" src="http://via.placeholder.com/350x150">
+<figure class="product-advert">
+  <a href="<?php the_field('product_2_link'); ?>">
+  <?php
+  $image2 = get_field('product_2_img');
+
+  if( !empty($image2) ): ?>
+
+  	<img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
+
+  <?php endif; ?>
+  </a>
 </figure>
