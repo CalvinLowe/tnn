@@ -9,5 +9,5 @@
 
 ?>
 <!-- will be converted to adding using ACF for src and alt text -->
-<h3 class="as-seen-in-title">As seen in</h3>
-<img class="slider-img" alt="As seen in" src="http://the-natural-nutritionist.dev/wp-content/themes/tnn/img/as-seen-in.png">
+<h2 class="section-title">As seen in:</h2>
+<img alt="As seen in" src="http://the-natural-nutritionist.dev/wp-content/themes/tnn/img/as-seen-in.png" width="50%">

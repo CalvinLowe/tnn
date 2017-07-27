@@ -10,3 +10,27 @@
   margin: 0 1em;
   align-self: center;
 }
+
+.rr-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rr-advert {
+  margin: 0 1em;
+}
+
+.sponsors-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sponsors-logos a {
+  /* vertical | horizontal */
+  margin: 0 1em;
+}

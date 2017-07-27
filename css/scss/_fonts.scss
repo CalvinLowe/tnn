@@ -17,6 +17,11 @@ h1, h2, h3, h4, h5, h6, .menu a, .cta a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-transform: uppercase;
 }
 
+.section-title {
+  color: $tnn-secondary-variation-1;
+  text-align: center;
+}
+
 p, a {
   font-family: 'Raleway', sans-serif;
 }

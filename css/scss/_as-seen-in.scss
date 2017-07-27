@@ -2,9 +2,11 @@
 
 .as-seen-in {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.as-seen-in-title {
-  display: inline;
-  align-self: center;
+.as-seen-in img {
+  /* vertical | horizontal */
+  margin: 0 2em;
 }

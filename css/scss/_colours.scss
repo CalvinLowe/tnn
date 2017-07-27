@@ -49,11 +49,11 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Background
 --------------------------------------------------------------*/
-.popular-recipes-title {
+.popular-recipes-title-wrapper-1 {
   background-color: $tnn-primary;
 }
 
-.popular-recipes-slide-title {
+.popular-recipes-title-wrapper-2 {
   background-color: $tnn-primary;
   background-color: $tnn-primary-transparent;
 }
@@ -63,6 +63,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-footer {
+  background-color: $tnn-secondary;
+}
+
+.front-page-rr-sponsors-container {
+  background-color: $tnn-light-green-2;
+}
+
+
+/*--------------------------------------------------------------
+# Misc.
+--------------------------------------------------------------*/
+.section-divider {
   background-color: $tnn-secondary;
 }
 
