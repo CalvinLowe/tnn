@@ -8,7 +8,7 @@
  */
 
 ?>
-<h2 class="section-title"><?php the_field('sponsors_title'); ?></h2>
+<h2 class="section-title section-title-small"><?php the_field('sponsors_title'); ?></h2>
 <figure class="sponsors-logos">
 
   <a href="<?php the_field('sponsors_link_1'); ?>">

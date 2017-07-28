@@ -9,5 +9,5 @@
 
 ?>
 <!-- to be sanitised - will be connected to the woocommerce sale notice -->
-<h2 class="sales-notice-title">Sale On Now</h2>
+<h2 class="sales-notice-title section-title-large">Sale On Now</h2>
 <p class="sales-notice-paragraph"><span class="sales-notice-line-1">Buy a copy of The Real Food Athlete</span><span class="sales-notice-line-2">and receive a complementary copy for a friend</span></p>

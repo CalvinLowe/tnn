@@ -10,7 +10,7 @@
 ?>
 <!-- will be converted to adding using ACF using flikkity -->
 <div class="popular-recipes-title-wrapper-1">
-  <h2 class="section-title popular-recipes-title">Our most popular recipes</h2>
+  <h2 class="section-title section-title-large popular-recipes-title">Our most popular recipes</h2>
 </div>
 <div class="popular-recipes-title-wrapper-2">
   <h3 class="popular-recipes-slide-title">Zucchini, Mint &amp; Feta Fritters</h3>

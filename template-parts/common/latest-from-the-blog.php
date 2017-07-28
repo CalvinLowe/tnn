@@ -9,7 +9,7 @@
 
 ?>
 
-<h2 class="section-title">Latest from the blog</h2>
+<h2 class="section-title section-title-large latest-blog-title">Latest from the blog</h2>
 <ul class="latest-posts-ul">
 <?php
 	$args = array( 'numberposts' => '4' );

@@ -9,7 +9,7 @@
 
 ?>
 
-<h2 class="section-title"><?php the_field('rr_title'); ?></h2>
+<h2 class="section-title section-title-small"><?php the_field('rr_title'); ?></h2>
 <ul class="rr-list">
   <li><figure class="rr-advert">
     <a href="<?php the_field('rr_book_link_1'); ?>">

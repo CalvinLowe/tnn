@@ -15,11 +15,7 @@
 h1, h2, h3, h4, h5, h6, .menu a, .cta a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-}
-
-.section-title {
-  color: $tnn-secondary-variation-1;
-  text-align: center;
+  font-weight: 400;
 }
 
 p, a {
@@ -32,4 +28,32 @@ a {
 
 .front-page-heading {
   font-family: 'FaithAndGloryOne', cursive, sans-serif;
+  font-size: 120pt;
+  line-height: 1.4;
+  /* vertical | horizontal */
+  margin: 0 auto;
+  margin-bottom: -60pt; /* Adjust for huge line-height */
+}
+.front-page-subheading {
+  margin: 0;
+  font-size: 40pt;
+}
+
+.section-title {
+  text-align: center;
+  /* vertical | horizontal */
+  margin: 0.5em auto;
+}
+
+.section-title-large {
+  font-size: 3rem;
+}
+
+.section-title-small {
+  /* vertical | horizontal */
+  margin: 1em auto;
+}
+
+.latest-blog-title {
+  margin-top: 0;
 }
