@@ -1,0 +1,15 @@
+// _search.scss
+.search-form {
+  background-color: $tnn-light-variation-1;
+  padding: 0.2em;
+}
+.search-form input[type="search"] {
+  border: none;
+  background-color: $tnn-light-variation-1;
+  color: $tnn-secondary;
+}
+.search-submit {
+  border: none;
+  background-color: $tnn-light-variation-1;
+  color: $tnn-secondary;
+}

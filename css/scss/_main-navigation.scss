@@ -14,11 +14,16 @@
   padding-left: 0;
 }
 
+.sub-menu .menu-item {
+  margin: 0;
+}
+
 .sub-menu .menu-item a {
     padding: 0.5em 1em;
     margin-right: 0;
 }
 
-.sub-menu .menu-item {
-  margin: 0;
+.sub-menu .menu-item a {
+  border-bottom: none;
+  text-transform: capitalize;
 }

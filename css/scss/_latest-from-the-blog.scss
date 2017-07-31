@@ -4,6 +4,8 @@
 }
 .latest-from-the-blog a {
   margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .latest-posts-ul {
   display: flex;
@@ -27,7 +29,9 @@
   margin-bottom: 1em;
 }
 
+
 .latest-post-title { /* turn into a variable*/
   max-width: 250px;
   text-align: center;
+  margin: auto;
 }

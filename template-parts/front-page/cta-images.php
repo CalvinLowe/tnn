@@ -8,15 +8,47 @@
  */
 
 ?>
-<!-- will be converted to adding using ACF TO BE SANITISED-->
+<a class="cta-link" href="<?php the_field('cta_link_1') ?>">
 <figure class="cta-figure cta-figure-1">
-  <figcaption class="cta-caption"><h2 class="cta-caption-title"><span>Do you need support</span><span>with your real food</span><span>lifestyle</span></h2></figcaption>
-</figure>
+  <?php
 
+  $image1 = get_field('cta_img_1');
+
+  if( !empty($image1) ): ?>
+
+  	<img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" />
+
+  <?php endif; ?>
+  <figcaption class="cta-caption"><h2 class="cta-caption-title"><?php the_field('cta_heading_1'); ?></h2></figcaption>
+</figure>
+</a>
+
+<a class="cta-link" href="<?php the_field('cta_link_2') ?>">
 <figure class="cta-figure cta-figure-2">
-  <figcaption class="cta-caption"><h2 class="cta-caption-title"><span>Looking for recipe</span><span>inspiration?</span></h2></figcaption>
-</figure>
+  <?php
 
-<figure class="cta-figure cta-figure-3">
-  <figcaption class="cta-caption"><h2 class="cta-caption-title"><span>How to become a fat</span><span>adapted athlete</span><span>(and smash your pbs)</span></h2></figcaption>
+  $image2 = get_field('cta_img_2');
+
+  if( !empty($image2) ): ?>
+
+  	<img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
+
+  <?php endif; ?>
+  <figcaption class="cta-caption"><h2 class="cta-caption-title"><?php the_field('cta_heading_2'); ?></h2></figcaption>
 </figure>
+</a>
+
+<a class="cta-link" href="<?php the_field('cta_link_3') ?>">
+<figure class="cta-figure cta-figure-3">
+  <?php
+
+  $image3 = get_field('cta_img_3');
+
+  if( !empty($image3) ): ?>
+
+  	<img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>" />
+
+  <?php endif; ?>
+  <figcaption class="cta-caption"><h2 class="cta-caption-title"><?php the_field('cta_heading_3'); ?><span><?php the_field('cta_subheading_3'); ?></span></h2></figcaption>
+</figure>
+</a>

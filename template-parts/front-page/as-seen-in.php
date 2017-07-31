@@ -8,6 +8,15 @@
  */
 
 ?>
-<!-- will be converted to adding using ACF for src and alt text -->
-<h2 class="section-title">As seen in:</h2>
-<img alt="As seen in" src="http://the-natural-nutritionist.dev/wp-content/themes/tnn/img/as-seen-in.png" width="50%">
+
+<h2 class="section-title"><?php esc_html_e( 'As seen in:', 'tnn' ); ?></h2>
+
+<?php
+
+$image = get_field('as_seen_in');
+
+if( !empty($image) ): ?>
+
+	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+<?php endif; ?>

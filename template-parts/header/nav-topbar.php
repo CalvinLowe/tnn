@@ -28,8 +28,8 @@
   </div><!-- #topbar-search -->
 
   <div id="topbar-cta-buttons" class="topbar front-cta cta">
-    <a href="#">Client Login/Appointment</a>
-    <a href="#">Join TNN's Team</a>
+    <a href="#"><?php esc_html_e( 'Client Login/Appointment', 'tnn' ); ?></a>
+    <a href="#"><?php esc_html_e( 'Join TNN&rsquo;s Team', 'tnn' ); ?></a>
   </div><!-- #topbar-cta-buttons -->
 
 </div><!-- #topbar-right-container -->
