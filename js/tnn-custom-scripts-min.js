@@ -1,1 +1,1 @@
-var elem=document.querySelector(".banner-slider"),flkty=new Flickity(elem,{cellAlign:"left",contain:!0,cellSelector:".banner-slider-cell",wrapAround:!0});
+var bannerSlider=document.querySelector(".banner-slider"),flkty=new Flickity(bannerSlider,{cellAlign:"left",contain:!0,cellSelector:".banner-slider-cell",wrapAround:!0,lazyLoad:!0}),recipesSlider=document.querySelector(".popular-recipes-slider"),flkty=new Flickity(recipesSlider,{cellAlign:"left",contain:!0,cellSelector:".popular-recipes-slider-cell",wrapAround:!0,lazyLoad:!0});

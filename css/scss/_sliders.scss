@@ -1,11 +1,15 @@
 // _sliders.scss
 
-.slider img {
+.slider a {
+  text-decoration: none;
+}
+
+.slider-img {
   max-width: none;
   width: 100%;
 }
 
-.carousel-cell {
+.banner-slider-cell, .popular-recipes-slider-cell {
   width: 100%;
 }
 
@@ -13,6 +17,9 @@
   overflow: auto;
 }
 
+.popular-recipes-title-wrapper-2 {
+  padding-right: 3em;
+}
 .popular-recipes-slide-title {
   text-align: right;
 }
