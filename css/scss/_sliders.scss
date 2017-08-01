@@ -1,9 +1,35 @@
 // _sliders.scss
 
+.slider img {
+  max-width: none;
+  width: 100%;
+}
+
+.carousel-cell {
+  width: 100%;
+}
+
 .popular-recipes-title-wrapper-1, .popular-recipes-title-wrapper-2 {
   overflow: auto;
 }
 
 .popular-recipes-slide-title {
   text-align: right;
+}
+
+/* position dots in carousel */
+.slider .flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.slider .flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.slider .flickity-page-dots .dot.is-selected {
+  background: white;
 }

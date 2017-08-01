@@ -1,0 +1,1 @@
+var elem=document.querySelector(".banner-slider"),flkty=new Flickity(elem,{cellAlign:"left",contain:!0,cellSelector:".banner-slider-cell",wrapAround:!0});
