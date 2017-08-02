@@ -3,12 +3,3 @@
 .home article  {
   text-align: center;
 }
-
-.entry-content {
-  display: grid;
-  grid-template-columns: 15% 70% 15%;
-}
-
-.entry-content p {
-  grid-column-start: 2;
-}

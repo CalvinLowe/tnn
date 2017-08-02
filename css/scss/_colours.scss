@@ -137,6 +137,10 @@ a:hover, a:focus {
   background-color: rgba(0, 0, 0, .3);
 }
 
+.book-your-consultation-link:hover, .book-your-consultation-link:focus {
+  color: $tnn-primary-variation-3;
+}
+
 .site-footer a:hover, .site-footer a:focus {
   color: $tnn-light;
 }
@@ -145,10 +149,13 @@ a:hover, a:focus {
   color: $tnn-primary;
 }
 
-
 /*--------------------------------------------------------------
 # Misc
 --------------------------------------------------------------*/
 .section-divider {
   background-color: $tnn-secondary;
+}
+
+.current_page_item a {
+  border-bottom: solid $tnn-primary 5px;
 }

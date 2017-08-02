@@ -1,0 +1,33 @@
+// _buttons.scss
+button, input[type="button"], input[type="reset"], input[type="submit"], {
+  font-family: 'Oswald', sans-serif;
+  background-color: $tnn-primary;
+  color: $tnn-light;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1em;
+  border: none;
+  border-radius: 0;
+}
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
+  background-color: $tnn-secondary;
+}
+
+.search-submit {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+      background-color: rgb(230, 230, 230);
+  color: rgba(0,0,0,0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: .6em 1em .4em;
+}
+
+.search-submit:hover, .search-submit:focus {
+  background-color: #e6e6e6;
+}

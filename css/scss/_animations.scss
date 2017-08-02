@@ -6,3 +6,7 @@ a {
 .cta-caption {
   transition: background-color .3s ease;
 }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  transition: background-color .3s ease
+}

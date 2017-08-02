@@ -55,11 +55,18 @@
   grid-row-start: 1;
 }
 
-
-
 .as-seen-in {
   display: grid;
   grid-template-columns: 20% auto 20%;
   align-items: center;
   justify-items: end;
+}
+
+.entry-content {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+}
+
+.entry-content * {
+  grid-column-start: 2;
 }
