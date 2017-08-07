@@ -28,6 +28,10 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
   padding: .6em 1em .4em;
 }
 
-.search-submit:hover, .search-submit:focus {
-  background-color: #e6e6e6;
+.search-submit:hover, .search-submit:active, .search-submit:focus {
+  background-color: #F1F1F2;
+}
+
+.front-cta a:hover, .front-cta a:focus, .front-cta a:first-child:hover, .front-cta a:first-child:focus {
+  background-color: $tnn-secondary;
 }

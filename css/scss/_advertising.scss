@@ -3,6 +3,7 @@
 .front-page-product-advertising {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -14,6 +15,7 @@
 .rr-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   margin: 0;
@@ -27,6 +29,7 @@
 .sponsors-logos {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }

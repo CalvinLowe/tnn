@@ -4,6 +4,7 @@
   background-color: $tnn-secondary;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 1em;
 }
@@ -11,6 +12,7 @@
   align-self: center;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .sales-notice-line-1, .sales-notice-line-2{

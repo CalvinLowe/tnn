@@ -3,12 +3,14 @@
   background-color: $background-grey;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .social-icons ul, .flex-element { /* Flex layout of two groups of items in topbar */
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   align-items: stretch;
 }
@@ -29,6 +31,7 @@
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .front-cta a { /* styling the topbar CTA */
   display: flex; /* Used a series of display flexes to achieve proper alignment */

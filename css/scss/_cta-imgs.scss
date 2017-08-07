@@ -5,6 +5,7 @@
 .cta-images {
   display: flex;
   flex-direction: row;
+  flex-wrap: no-wrap;
 }
 .cta-images a {
   text-decoration: none;
@@ -16,6 +17,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 .cta-caption .cta-caption-title{

@@ -127,6 +127,8 @@ function tnn_scripts() {
 
 	wp_enqueue_script( 'flickity', get_template_directory_uri() . '/js/flickity.pkgd.min.js', array(), '2.0.9', true );
 
+	wp_enqueue_script( 'mailchimp', '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', array(), '3.51.0-2014.06.20', true );
+
 	wp_enqueue_script( 'tnn-custom-scripts', get_template_directory_uri() . '/js/tnn-custom-scripts.js', array(), '1.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -167,3 +169,16 @@ add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() {
     add_image_size( 'latest-thumb', 300, 300, true ); // 300 pixels wide, 300 pixels heigh, cropped
 }
+
+/**
+ * Declase theme support for woocommerce
+ */
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+/**
+ * Remove WooCommerce stylesheets
+ */
+//add_filter( 'woocommerce_enqueue_styles', '__return_false' );

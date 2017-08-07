@@ -16,6 +16,7 @@
 .form-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: baseline;
 }
@@ -29,9 +30,14 @@
 .mc-field-group {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 input.mailchimp-input { // Use underscores inputs to override
   padding: 1em 0.5em;
   background-color: transparent;
   color: $tnn-secondary;
+}
+
+.response { // Error/success response
+  margin: 1em;
 }

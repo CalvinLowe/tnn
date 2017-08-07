@@ -4,6 +4,7 @@
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Text
+# Links
 # Backgrounds
 # Borders
 # Hover
@@ -13,62 +14,78 @@
 /*--------------------------------------------------------------
 # Text
 --------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .section-title {
   color: $tnn-secondary-variation-1;
 }
 
-a {
-  color: $tnn-primary;
-  text-decoration: underline;
-}
-
-.main-navigation a { /* main navigation link colour */
-  color: $tnn-secondary;
-}
-
-.sub-menu .menu-item a { /* Sub menu item text colour */
+.cta-caption-title, .book-your-consultation-title, .popular-recipes-title, .popular-recipes-slide-title, .copyright {
   color: $tnn-light;
-}
-
-.section-title {
-  color: $tnn-secondary-variation-1;
-}
-.cta-caption-title, .book-your-consultation-title, .popular-recipes-title, .popular-recipes-slide-title {
-  color: $tnn-light;
-}
-
-.book-your-consultation-link {
-  color: $tnn-primary;
 }
 
 .goto-top-angle {
   color: $tnn-grey-2;
 }
 
-.footer-navigation a {
-    color: $tnn-light;
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
+.entry-content a {
+  text-decoration: underline;
 }
 
-.topbar.social-icons a {
+a, a:link, a:visited  {
+  color: $tnn-primary;
+}
+a:hover, a:active, a:focus  {
   color: $tnn-secondary;
 }
 
-.footer.social-icons a {
+.main-navigation a, .topbar.social-icons a, .main-navigation a:link, .topbar.social-icons a:link, .main-navigation a:visited, .topbar.social-icons a:visited {
+  color: $tnn-secondary;
+}
+.main-navigation a:hover, .topbar.social-icons a:hover, .main-navigation a:active, .topbar.social-icons a:active, .main-navigation a:focus, .topbar.social-icons a:focus {
   color: $tnn-primary;
 }
 
-.copyright {
+.sub-menu .menu-item a, .footer-navigation a, .sub-menu .menu-item a:link, .footer-navigation a:link, .sub-menu .menu-item a:visited, .footer-navigation a:visited {
+  color: $tnn-light;
+}
+.sub-menu a:hover, .sub-menu a:active .sub-menu a:focus {
+  color: $tnn-light;
+}
+.footer-navigation a:hover, .footer-navigation a:active, .footer-navigation a:focus {
+  color: $tnn-primary;
+}
+
+.footer.social-icons a:hover, .site-info a:hover, .footer.social-icons a:active, .site-info a:active, .footer.social-icons a:focus, .site-info a:focus {
   color: $tnn-light;
 }
 
-.site-info a {
+.book-your-consultation-link:hover, .book-your-consultation-link:active, .book-your-consultation-link:focus  {
+  color: $tnn-primary-variation-3;
+}
+
+.main-navigation a {
+  border-bottom: solid $tnn-light 5px;
+}
+.main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
+  border-bottom: solid $tnn-primary 5px;
+}
+.main-navigation .current_page_item a {
+  border-bottom: solid $tnn-primary 5px;
+}
+.site-footer .current_page_item a {
   color: $tnn-primary;
+}
+
+.sub-menu .menu-item a:hover, .sub-menu .menu-item a:focus{
+  background-color: $tnn-primary;
 }
 
 /*--------------------------------------------------------------
 # Background
 --------------------------------------------------------------*/
-.sub-menu { /* Sub menu background colour */
+.sub-menu, .site-footer {
   background-color: $tnn-secondary;
 }
 
@@ -85,10 +102,6 @@ a {
   background-color: $tnn-light-green;
 }
 
-.site-footer {
-  background-color: $tnn-secondary;
-}
-
 .front-page-rr-sponsors-container {
   background-color: $tnn-light-green-2;
 }
@@ -96,11 +109,6 @@ a {
 /*--------------------------------------------------------------
 # Borders
 --------------------------------------------------------------*/
-
-.main-navigation a {
-  border-bottom: solid $tnn-light 5px;
-}
-
 .book-your-consultation-title {
   border: 2px solid $tnn-primary;
 }
@@ -108,45 +116,8 @@ a {
 /*--------------------------------------------------------------
 # Hover
 --------------------------------------------------------------*/
-a:hover, a:focus {
-  color: $tnn-secondary;
-}
-
-.topbar.social-icons a:hover, .topbar.social-icons a:focus {
-  color: $tnn-primary;
-}
-
-.front-cta a:hover, .front-cta a:focus, .front-cta a:first-child:hover, .front-cta a:first-child:focus {
-  background-color: $tnn-secondary;
-}
-
-.main-navigation a:hover, .main-navigation a:focus { /* main navigation link colour */
-  color: $tnn-primary;
-  border-bottom: solid $tnn-primary 5px;
-}
-
-.sub-menu .menu-item a:hover, .sub-menu .menu-item a:focus{
-  background-color: $tnn-primary;
-}
-
-.sub-menu a:hover, .sub-menu a:focus {
-  color: $tnn-light;
-}
-
 .cta-link:hover .cta-caption, .cta-link:focus .cta-caption {
   background-color: rgba(0, 0, 0, .3);
-}
-
-.book-your-consultation-link:hover, .book-your-consultation-link:focus {
-  color: $tnn-primary-variation-3;
-}
-
-.site-footer a:hover, .site-footer a:focus {
-  color: $tnn-light;
-}
-
-.footer-navigation a:hover, .footer-navigation a:focus {
-  color: $tnn-primary;
 }
 
 /*--------------------------------------------------------------
@@ -154,8 +125,4 @@ a:hover, a:focus {
 --------------------------------------------------------------*/
 .section-divider {
   background-color: $tnn-secondary;
-}
-
-.current_page_item a {
-  border-bottom: solid $tnn-primary 5px;
 }
