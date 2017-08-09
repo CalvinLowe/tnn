@@ -9,7 +9,7 @@
 
 ?>
 <h2 class="section-title section-title-small"><?php the_field('sponsors_title'); ?></h2>
-<figure class="sponsors-logos">
+<div class="sponsors-logos">
 
   <a href="<?php the_field('sponsors_link_1'); ?>">
   <?php
@@ -77,4 +77,4 @@
   <?php endif; ?>
   </a><!-- Sponsor 6 -->
 
-</figure>
+</div>

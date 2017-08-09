@@ -3,7 +3,7 @@
 ----------------------------------------------------------------
 # Underscores
 # Variables
-# Fonts
+# Typography
 # Colours
 # Images
 # Buttons
@@ -16,7 +16,6 @@
 # Sales Notice
 # Mailchimp
 # CTA Images
-# Front Page Content
 # Book Your Consultation
 # As Seen In
 # Latest From The Blog
@@ -37,9 +36,9 @@
 @import "_variables.scss";
 
 /*--------------------------------------------------------------
-# Fonts
+# Typography
 --------------------------------------------------------------*/
-@import "_fonts.scss";
+@import "_typography.scss";
 
 /*--------------------------------------------------------------
 # Colours
@@ -105,11 +104,6 @@
 # CTA Images
 --------------------------------------------------------------*/
 @import "_cta-imgs.scss";
-
-/*--------------------------------------------------------------
-# Front Page Content
---------------------------------------------------------------*/
-@import "_front-page-content.scss";
 
 /*--------------------------------------------------------------
 # Book Your Consultation
