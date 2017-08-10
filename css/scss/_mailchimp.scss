@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 0 0.6em;
 }
 input.mailchimp-input { // Use underscores inputs to override
   padding: 0.6em 1em 0.6em;
@@ -33,4 +34,8 @@ input.mailchimp-input { // Use underscores inputs to override
 
 .response { // Error/success response
   margin: 1em;
+}
+
+div.mce_inline_error {
+  position: absolute;
 }

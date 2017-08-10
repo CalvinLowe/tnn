@@ -1,3 +1,32 @@
+// _header.scss
+
+.topbar.social-icons {
+  display: none;
+}
+
+// Logo
+.site-branding {
+  max-width: 300px;
+  align-self: center;
+  margin: 3rem auto;
+}
+
+// Search
+.search-form {
+  background-color: $tnn-light-variation-1;
+  padding: 0.2em;
+}
+.search-form input[type="search"] {
+  border: none;
+  background-color: $tnn-light-variation-1;
+  color: $tnn-secondary;
+}
+.search-submit {
+  border: none;
+  background-color: $tnn-light-variation-1;
+  color: $tnn-secondary;
+}
+
 // header-nav-topbar.scss
 .secondary-navigation { /* Flex layout and background colour for topbar nav wrapper */
   background-color: $background-grey;
@@ -44,4 +73,10 @@
 }
 .front-cta a:first-child {
   background-color: $tnn-cta-1;
+}
+
+@media screen and (min-width: 37.5em) {
+  .topbar.social-icons {
+    display: block;
+  }
 }
