@@ -1,0 +1,104 @@
+// navigatin.scss
+
+.menu-nav-main-container {
+  background-color: $tnn-secondary;
+}
+.main-navigation.toggled .nav-menu {
+  display: flex; // From display: none to display: flex
+  flex-direction: column;
+  padding: 0.6em 0;
+}
+.main-navigation.toggled .sub-menu {
+  display: none;
+}
+.nav-menu .menu-item a {
+  padding: 0.6em ;
+}
+.main-navigation a, .main-navigation a:link, .main-navigation a:visited {
+  color: $tnn-light;
+}
+.main-navigation a:hover, .main-navigation a:active, .main-navigation a:focus, .main-navigation .current_page_item a:hover, .main-navigation .current-menu-item a:hover, .main-navigation .current_page_item a:active, .main-navigation .current-menu-item a:active, .main-navigation .current_page_item a:focus, .main-navigation .current-menu-item a:focus {
+  background-color: $tnn-primary;
+}
+.main-navigation .current_page_item a, .main-navigation .current-menu-item a {
+  background-color: $tnn-primary-variation-3;
+}
+.footer-navigation a, .footer-navigation a:link, .footer-navigation a:visited {
+  color: $tnn-light;
+}
+.footer-navigation a:hover, .footer-navigation a:active, .footer-navigation a:focus {
+  color: $tnn-primary;
+}
+
+.footer.social-icons a:hover, .site-info a:hover, .footer.social-icons a:active, .site-info a:active, .footer.social-icons a:focus, .site-info a:focus {
+  color: $tnn-light;
+}
+.site-footer .current_page_item, .site-footer .current-menu-item a {
+  color: $tnn-primary;
+}
+
+
+
+@media screen and (min-width: 37.5em) {
+  .menu-nav-main-container {
+    background-color: $tnn-light;
+  }
+  .main-navigation .nav-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  .nav-menu .menu-item a {
+    padding: 1em ;
+  }
+  .sub-menu .menu-item {
+    margin: 0;
+  }
+  .sub-menu .menu-item a {
+      padding: 0.5em 1em;
+  }
+  .main-navigation a:hover, .main-navigation a:active, .main-navigation a:focus, .main-navigation .current_page_item a:hover, .main-navigation .current-menu-item a:hover, .main-navigation .current_page_item a:active, .main-navigation .current-menu-item a:active, .main-navigation .current_page_item a:focus, .main-navigation .current-menu-item a:focus {
+    background-color: $tnn-light;
+  }
+  .main-navigation .current_page_item a, .main-navigation .current-menu-item a {
+    background-color: $tnn-light;
+  }
+  .main-navigation a, .topbar.social-icons a, .main-navigation a:link, .topbar.social-icons a:link, .main-navigation a:visited, .topbar.social-icons a:visited {
+    color: $tnn-secondary;
+  }
+  .main-navigation a:hover, .topbar.social-icons a:hover, .main-navigation a:active, .topbar.social-icons a:active, .main-navigation a:focus, .topbar.social-icons a:focus {
+    color: $tnn-primary;
+  }
+
+  .sub-menu .menu-item a, .sub-menu .menu-item a:link, .sub-menu .menu-item a:visited {
+    color: $tnn-light;
+  }
+  .sub-menu a:hover, .sub-menu a:active .sub-menu a:focus {
+    color: $tnn-light;
+  }
+  .main-navigation a {
+    border-bottom: solid $tnn-light 5px;
+  }
+  .sub-menu .menu-item a, .sub-menu .menu-item a:hover, .sub-menu .menu-item a:focus, .sub-menu .menu-item a:active {
+    border-bottom: none;
+  }
+  .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
+    border-bottom: solid $tnn-primary 5px;
+  }
+  .main-navigation .current_page_item a, .main-navigation .current-menu-item a {
+    border-bottom: solid $tnn-primary 5px;
+  }
+  .sub-menu .current_page_item a,  .sub-menu .current-menu-item a{
+    background-color: $tnn-primary-variation-3;
+  }
+  .sub-menu .menu-item a:hover, .sub-menu .menu-item a:focus{
+    background-color: $tnn-primary;
+  }
+
+  .sub-menu {
+    background-color: $tnn-secondary;
+  }
+
+}

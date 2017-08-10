@@ -19,13 +19,16 @@ optgroup,
 textarea {
   font-family: 'Raleway', sans-serif;
 }
-h1, h2, h3, h4, h5, h6, .menu, .cta/*, .latest-from-the-blog a*/ {
+h1, h2, h3, h4, h5, h6, .menu, .cta, .main-navigation .nav-menu {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-weight: 400;
 }
 .front-page-heading {
   font-family: 'FaithAndGloryOne', cursive, sans-serif;
+}
+.sub-menu .menu-item a {
+  text-transform: capitalize;
 }
 a {
   text-decoration: none;
