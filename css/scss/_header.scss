@@ -27,56 +27,56 @@
   color: $tnn-secondary;
 }
 
-// header-nav-topbar.scss
-.secondary-navigation { /* Flex layout and background colour for topbar nav wrapper */
-  background-color: $background-grey;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-}
 
-.social-icons ul, .flex-element { /* Flex layout of two groups of items in topbar */
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  align-items: stretch;
-}
-.social-icons ul { /* Over rides underscores.scss ul margins */
-  margin: 1em 0;
-  list-style: none;
-}
-.social-icons li {
-  margin: 0 1em;
-}
-
-.search-topbar {
-  align-self: center;
-  margin: 0 1em;
-}
-
-.front-cta { /* Styling for CTA buttons in top */
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.front-cta a { /* styling the topbar CTA */
-  display: flex; /* Used a series of display flexes to achieve proper alignment */
-  align-items: center;
-  background-color: $tnn-cta-2;
-  padding: 0 1em;
-  text-decoration: none;
-  color: white;
-}
-.front-cta a:first-child {
-  background-color: $tnn-cta-1;
-}
 
 @media screen and (min-width: 37.5em) {
   .topbar.social-icons {
     display: block;
+  }
+  // header-nav-topbar.scss
+  .secondary-navigation { /* Flex layout and background colour for topbar nav wrapper */
+    background-color: $background-grey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  }
+  .social-icons ul, .flex-element { /* Flex layout of two groups of items in topbar */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: stretch;
+  }
+  .social-icons ul { /* Over rides underscores.scss ul margins */
+    margin: 1em 0;
+    list-style: none;
+  }
+  .social-icons li {
+    margin: 0 1em;
+  }
+
+  .search-topbar {
+    align-self: center;
+    margin: 0 1em;
+  }
+
+  .front-cta { /* Styling for CTA buttons in top */
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .front-cta a { /* styling the topbar CTA */
+    display: flex; /* Used a series of display flexes to achieve proper alignment */
+    align-items: center;
+    background-color: $tnn-cta-2;
+    padding: 0 1em;
+    text-decoration: none;
+    color: white;
+  }
+  .front-cta a:first-child {
+    background-color: $tnn-cta-1;
   }
 }
