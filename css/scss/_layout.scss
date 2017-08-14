@@ -104,8 +104,11 @@
 }
 
 .entry-content {
-  display: grid;
-  grid-template-columns: 15% 70% 15%;
+  padding: 5vw;
+  @media screen and (min-width: 37.5em) {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+  }
 }
 
 .entry-content * {
