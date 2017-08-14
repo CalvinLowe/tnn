@@ -5,6 +5,9 @@
 .menu-toggle {
   width: 100%;
 }
+.main-navigation {
+  border-bottom: 3px solid $tnn-secondary;
+}
 .site-branding {
   margin: 0.5em;
 }
@@ -50,6 +53,9 @@
     max-height: inherit;
     align-self: center;
     margin: 3rem auto;
+  }
+  .main-navigation {
+    border-bottom: none;
   }
   .site-branding img {
     max-height: inherit;
