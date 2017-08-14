@@ -1,15 +1,14 @@
 // _header.scss
-
-.topbar.social-icons {
+.topbar {
   display: none;
 }
-
-// Logo
-.site-branding {
-  max-width: 300px;
-  align-self: center;
-  margin: 3rem auto;
+.menu-toggle {
+  width: 100%;
 }
+.site-branding {
+  margin: 0.5em;
+}
+
 
 // Search
 .search-form {
@@ -23,6 +22,7 @@
 }
 .search-submit {
   border: none;
+  float: right;
   background-color: $tnn-light-variation-1;
   color: $tnn-secondary;
 }
@@ -30,7 +30,10 @@
 
 
 @media screen and (min-width: 37.5em) {
-  .topbar.social-icons {
+  .site-header {
+    display: block;
+  }
+  .topbar {
     display: block;
   }
   // header-nav-topbar.scss
@@ -41,6 +44,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
     box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  }
+  .site-branding {
+    max-width: 300px;
+    max-height: inherit;
+    align-self: center;
+    margin: 3rem auto;
+  }
+  .site-branding img {
+    max-height: inherit;
   }
   .social-icons ul, .flex-element { /* Flex layout of two groups of items in topbar */
     display: flex;
