@@ -2,15 +2,6 @@
 .cta-figure {
   margin: 0;
 }
-.cta-images {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-}
-.cta-images a {
-  text-decoration: none;
-}
-
 .cta-caption {
   color: $tnn-light;
   text-align: center;
@@ -21,9 +12,19 @@
   align-items: center;
 }
 .cta-caption .cta-caption-title{
-  width: 60%;
+  padding: 0 10vw;
 }
-
-.cta-caption-title span {
-  display: block;
+@media screen and (min-width: 37.5em) {
+  .cta-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .cta-images a {
+    text-decoration: none;
+    flex-basis: 33.33%;
+  }
+  .cta-caption .cta-caption-title{
+    padding: 0 .5em;
+  }
 }
