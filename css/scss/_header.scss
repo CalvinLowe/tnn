@@ -9,14 +9,14 @@
   border-bottom: 3px solid $tnn-secondary;
 }
 .site-branding {
-  margin: 0.5em;
+  margin: 10vw;
 }
 
 
 // Search
 .search-form {
   background-color: $tnn-light-variation-1;
-  padding: 0.2em;
+  padding: 2vw;
 }
 .search-form input[type="search"] {
   border: none;
@@ -78,6 +78,9 @@
   .search-topbar {
     align-self: center;
     margin: 0 1em;
+  }
+  .search-form {
+    padding: 0.2em;
   }
 
   .front-cta { /* Styling for CTA buttons in top */
