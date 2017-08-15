@@ -45,7 +45,10 @@
 }
 
 .mailchimp-opt-in, .front-page-product-advertising, .front-page-rr-sponsors-container {
-  padding: 3em;
+  padding: 10vw;
+  @media screen and (min-width: 37.5em) {
+    padding: 3em;
+  }
 }
 .section-divider {
   // vertical | horizontal
