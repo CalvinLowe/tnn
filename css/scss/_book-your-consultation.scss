@@ -1,7 +1,34 @@
 // _book-your-consultation.scss
-
 .consultation {
-  background-image: url("../img/book-your-consultation-bg.jpg");
-  background-size: cover;
-  padding: 0;
+    background: $tnn-secondary;
+}
+.consultation img {
+  display: none;
+}
+.book-your-consultation-title {
+    padding: 10vw;
+}
+
+@media screen and (min-width: 37.5em) {
+  .consultation {
+    background-image: url("../img/book-your-consultation-bg.jpg");
+    background-size: cover;
+    padding: 0;
+  }
+  .book-your-consultation-title {
+    margin: 1.5em 0;
+    padding: 0;
+    padding-right: 3.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .book-your-consultation-title span {
+    display: block;
+  }
+  .consultation img {
+    display: block;
+  }
 }

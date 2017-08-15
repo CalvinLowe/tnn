@@ -72,32 +72,6 @@
   background-color: rgba(0, 0, 0, .4)
 }
 
-.consultation {
-  display: grid;
-  grid-template-columns: 10% 50% 15% 15% 10%;
-  grid-template-rows: repeat(3, [row] auto  );
-}
-
-.book-your-consultation-title {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  margin: 2em 0;
-  padding-right: 3.5em;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.book-your-consultation-title span {
-  display: block;
-}
-.consultation img {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-}
 
 .as-seen-in {
   display: grid;
@@ -116,4 +90,23 @@
 
 .entry-content * {
   grid-column-start: 2;
+}
+
+@media screen and (min-width: 37.5em) {
+  .consultation {
+    display: grid;
+    grid-template-columns: 10% 50% 15% 15% 10%;
+    grid-template-rows: repeat(3, [row] auto  );
+  }
+
+  .book-your-consultation-title {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+  }
+  .consultation img {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+  }
 }
