@@ -35,6 +35,16 @@
    lazyLoad: true
  });
 
+ var recipesSliderMB = document.querySelector('.popular-recipes-slider-mb');
+ var flkty = new Flickity( recipesSliderMB, {
+   // options
+   cellAlign: 'left',
+   contain: true,
+   cellSelector: '.popular-recipes-slider-cell-mb',
+   wrapAround: true,
+   lazyLoad: true
+ });
+
 
  (function($) {
    window.fnames = new Array();

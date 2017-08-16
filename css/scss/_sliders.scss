@@ -1,5 +1,5 @@
 // _sliders.scss
-.banner-slider {
+.banner-slider, .popular-recipes-slider {
   display: none;
 }
 .slider a {
@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.banner-slider-cell, .banner-slider-cell-mb, .popular-recipes-slider-cell {
+.banner-slider-cell, .banner-slider-cell-mb, .popular-recipes-slider-cell, .popular-recipes-slider-cell-mb {
   width: 100%;
 }
 
@@ -46,10 +46,10 @@
 
 
 @media screen and (min-width: 37.5em) {
-  .banner-slider {
+  .banner-slider, .popular-recipes-slider {
     display: block;
   }
-  .banner-slider-mb {
+  .banner-slider-mb, .popular-recipes-slider-mb {
     display: none;
   }
 }

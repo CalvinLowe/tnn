@@ -14,7 +14,6 @@
 </div>
 
 <div class="popular-recipes-slider">
-
   <div class="popular-recipes-slider-cell">
     <a href="<?php get_field('recipes_slider_img_link_1') ?>">
       <div class="popular-recipes-title-wrapper-2">
@@ -27,7 +26,6 @@
         <?php endif; ?>
     </a>
   </div>
-
   <div class="popular-recipes-slider-cell">
     <a href="<?php get_field('recipes_slider_img_link_2') ?>">
       <div class="popular-recipes-title-wrapper-2">
@@ -40,7 +38,6 @@
       <?php endif; ?>
     </a>
   </div>
-
   <div class="popular-recipes-slider-cell">
     <a href="<?php get_field('recipes_slider_img_link_3') ?>">
       <div class="popular-recipes-title-wrapper-2">
@@ -53,7 +50,6 @@
       <?php endif; ?>
     </a>
   </div>
-
   <div class="popular-recipes-slider-cell">
     <a href="<?php get_field('recipes_slider_img_link_4') ?>">
       <div class="popular-recipes-title-wrapper-2">
@@ -66,7 +62,6 @@
       <?php endif; ?>
     </a>
   </div>
-
   <div class="popular-recipes-slider-cell">
     <a href="<?php get_field('recipes_slider_img_link_5') ?>">
       <div class="popular-recipes-title-wrapper-2">
@@ -79,5 +74,47 @@
       <?php endif; ?>
     </a>
   </div>
+</div> <!-- .banner-slider -->
 
+<div class="popular-recipes-slider-mb">
+  <div class="popular-recipes-slider-cell-mb">
+    <a href="#">
+      <div class="popular-recipes-title-wrapper-2">
+        <h3 class="popular-recipes-slide-title">Slie 1</h3>
+      </div>
+      <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_1.jpg" />
+    </a>
+  </div>
+  <div class="popular-recipes-slider-cell-mb">
+    <a href="#">
+      <div class="popular-recipes-title-wrapper-2">
+        <h3 class="popular-recipes-slide-title">Slie 2</h3>
+      </div>
+      <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_2.jpg" />
+    </a>
+  </div>
+  <div class="popular-recipes-slider-cell-mb">
+    <a href="#">
+      <div class="popular-recipes-title-wrapper-2">
+        <h3 class="popular-recipes-slide-title">Slie 3</h3>
+      </div>
+      <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_3.jpg" />
+    </a>
+  </div>
+  <div class="popular-recipes-slider-cell-mb">
+    <a href="#">
+      <div class="popular-recipes-title-wrapper-2">
+        <h3 class="popular-recipes-slide-title">Slie 4</h3>
+      </div>
+      <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_4.jpg" />
+    </a>
+  </div>
+  <div class="popular-recipes-slider-cell-mb">
+    <a href="#">
+      <div class="popular-recipes-title-wrapper-2">
+        <h3 class="popular-recipes-slide-title">Slie 5</h3>
+      </div>
+      <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_5.jpg" />
+    </a>
+  </div>
 </div> <!-- .banner-slider -->
