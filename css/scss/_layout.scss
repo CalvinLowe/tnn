@@ -72,14 +72,6 @@
   background-color: rgba(0, 0, 0, .4)
 }
 
-
-.as-seen-in {
-  display: grid;
-  grid-template-columns: 20% auto 20%;
-  align-items: center;
-  justify-items: end;
-}
-
 .entry-content {
   padding: 5vw;
   @media screen and (min-width: 37.5em) {
