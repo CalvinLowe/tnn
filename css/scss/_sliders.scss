@@ -1,5 +1,7 @@
 // _sliders.scss
-
+.banner-slider {
+  display: none;
+}
 .slider a {
   text-decoration: none;
 }
@@ -9,7 +11,7 @@
   width: 100%;
 }
 
-.banner-slider-cell, .popular-recipes-slider-cell {
+.banner-slider-cell, .banner-slider-cell-mb, .popular-recipes-slider-cell {
   width: 100%;
 }
 
@@ -40,4 +42,14 @@
 /* fill-in selected dot */
 .slider .flickity-page-dots .dot.is-selected {
   background: white;
+}
+
+
+@media screen and (min-width: 37.5em) {
+  .banner-slider {
+    display: block;
+  }
+  .banner-slider-mb {
+    display: none;
+  }
 }

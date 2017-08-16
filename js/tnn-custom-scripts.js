@@ -15,6 +15,16 @@
    lazyLoad: true
  });
 
+ var bannerSliderMB = document.querySelector('.banner-slider-mb');
+ var flkty = new Flickity( bannerSliderMB, {
+   // options
+   cellAlign: 'left',
+   contain: true,
+   cellSelector: '.banner-slider-cell-mb',
+   wrapAround: true,
+   lazyLoad: true
+ });
+
  var recipesSlider = document.querySelector('.popular-recipes-slider');
  var flkty = new Flickity( recipesSlider, {
    // options
