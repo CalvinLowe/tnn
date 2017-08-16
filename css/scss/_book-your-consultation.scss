@@ -7,6 +7,8 @@
 }
 .book-your-consultation-title {
     padding: 10vw;
+    margin: 0;
+    text-align: center;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -24,6 +26,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border: 2px solid $tnn-primary;
   }
   .book-your-consultation-title span {
     display: block;
