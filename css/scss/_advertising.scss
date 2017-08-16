@@ -4,11 +4,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .product-advert {
-  margin: 0 1em;
   align-self: center;
 }
 
@@ -20,6 +19,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.rr-list li {
+  margin: 1em 0;
 }
 
 .rr-advert {
@@ -34,6 +36,12 @@
   align-items: center;
 }
 .sponsors-logos a {
-  /* vertical | horizontal */
-  margin: 0 1em;
+  // vertical | horizontal
+  margin: 1em;
+}
+
+@media screen and (min-width: 37.5em) {
+  .product-advert {
+  /*  margin: 0 1em;*/
+  }
 }
