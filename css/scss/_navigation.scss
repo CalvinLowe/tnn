@@ -45,17 +45,15 @@
   }
   .main-navigation .nav-menu {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-around;
     padding: 0;
   }
-  .nav-menu .menu-item:first-child { // Hide the first item of the main navigation "Home"
-    overflow: hidden;
+  .nav-menu .menu-item {
+    flex-shrink: 1;
   }
-  .nav-menu > .menu-item a {
-    padding: 1.5vw;
-    white-space: nowrap;
+  .nav-menu .menu-item a {
+    padding: 0;
   }
   .sub-menu .menu-item {
     margin: 0;
@@ -106,4 +104,13 @@
     background-color: $tnn-secondary;
   }
 
+}
+
+@media screen and (min-width: 56.25em) {
+  .main-navigation .nav-menu {
+    justify-content: center;
+  }
+  .nav-menu .menu-item a {
+    padding: 0.6em ;
+  }
 }
