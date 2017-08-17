@@ -1,21 +1,17 @@
 // _book-your-consultation.scss
 .consultation {
-    background: $tnn-secondary;
-}
-.consultation img {
-  display: none;
-}
-.book-your-consultation-title {
-    padding: 10vw;
-    margin: 0;
-    text-align: center;
+    display: none;
 }
 
 @media screen and (min-width: 37.5em) {
   .consultation {
+    display: grid;
     background-image: url("../img/book-your-consultation-bg.jpg");
     background-size: cover;
     padding: 0;
+  }
+  .book-your-consultation-button {
+    display: none;
   }
   .book-your-consultation-title {
     margin: 1.5em 0;
