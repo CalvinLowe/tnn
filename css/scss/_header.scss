@@ -12,7 +12,6 @@
   margin: 10vw;
 }
 
-
 // Search
 .search-form {
   background-color: $tnn-light-variation-1;
@@ -35,8 +34,6 @@
   color: $tnn-secondary;
 }
 
-
-
 @media screen and (min-width: 37.5em) {
   .site-header {
     display: block;
@@ -45,13 +42,16 @@
     display: block;
   }
   // header-nav-topbar.scss
-  .secondary-navigation { /* Flex layout and background colour for topbar nav wrapper */
+  .topbar-navigation { /* Flex layout and background colour for topbar nav wrapper */
     background-color: $background-grey;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  }
+  .topbar.social-icons {
+    flex-grow: 1;
   }
   .site-branding {
     max-width: 300px;
@@ -79,7 +79,6 @@
   .social-icons li {
     margin: 0 1em;
   }
-
   .search-topbar {
     align-self: center;
     margin: 0 1em;
@@ -87,7 +86,6 @@
   .search-form {
     padding: 0.2em;
   }
-
   .front-cta { /* Styling for CTA buttons in top */
     text-transform: uppercase;
     display: flex;

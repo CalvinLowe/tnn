@@ -1,5 +1,4 @@
 // navigatin.scss
-
 .menu-nav-main-container {
   background-color: $tnn-secondary;
 }
@@ -29,15 +28,12 @@
 .footer-navigation a:hover, .footer-navigation a:active, .footer-navigation a:focus {
   color: $tnn-primary;
 }
-
 .footer.social-icons a:hover, .site-info a:hover, .footer.social-icons a:active, .site-info a:active, .footer.social-icons a:focus, .site-info a:focus {
   color: $tnn-light;
 }
 .site-footer .current_page_item, .site-footer .current-menu-item a {
   color: $tnn-primary;
 }
-
-
 
 @media screen and (min-width: 37.5em) {
   .menu-nav-main-container {
@@ -74,7 +70,6 @@
   .main-navigation a:hover, .topbar.social-icons a:hover, .main-navigation a:active, .topbar.social-icons a:active, .main-navigation a:focus, .topbar.social-icons a:focus {
     color: $tnn-primary;
   }
-
   .sub-menu .menu-item a, .sub-menu .menu-item a:link, .sub-menu .menu-item a:visited {
     color: $tnn-light;
   }
@@ -99,11 +94,9 @@
   .sub-menu .menu-item a:hover, .sub-menu .menu-item a:focus{
     background-color: $tnn-primary;
   }
-
   .sub-menu {
     background-color: $tnn-secondary;
   }
-
 }
 
 @media screen and (min-width: 56.25em) {

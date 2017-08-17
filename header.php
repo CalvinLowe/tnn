@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tnn' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<nav id="topbar-navigation" class="secondary-navigation">
+		<nav id="topbar-navigation" class="topbar-navigation">
 			<?php get_template_part('template-parts/header/nav', 'topbar'); ?>
 		</nav><!-- #topbar-navigation -->
 
