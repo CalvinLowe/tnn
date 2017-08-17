@@ -17,11 +17,16 @@
 .search-form {
   background-color: $tnn-light-variation-1;
   padding: 2vw;
+  display: flex;
 }
 .search-form input[type="search"] {
   border: none;
   background-color: $tnn-light-variation-1;
   color: $tnn-secondary;
+  flex-grow: 1;
+}
+.search-form input[type="search"]:focus {
+  background-color: $tnn-light;
 }
 .search-submit {
   border: none;
