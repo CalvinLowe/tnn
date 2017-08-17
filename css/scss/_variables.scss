@@ -28,3 +28,6 @@ $tnn-cta-2: #78bc42; // Same as $tnn-primary
 // Gradients & Transparencies
 $cta-dark-gradient: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
 $tnn-primary-transparent: rgba(120, 188, 66, 0.8);
+
+// Shadows
+$tnn-shadow: 0 3px 3px rgba(0,0,0,0.2); // use with box-shadow;

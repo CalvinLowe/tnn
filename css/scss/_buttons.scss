@@ -9,10 +9,12 @@ button, input[type="button"], input[type="reset"], input[type="submit"], {
   padding: 0.6em 1em;
   border: none;
   border-radius: 0;
+  box-shadow: $tnn-shadow;
 }
 
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
   background-color: $tnn-secondary;
+  box-shadow: none;
 }
 
 .search-submit {
@@ -26,6 +28,7 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
   font-size: 0.75rem;
   line-height: 1;
   padding: .6em 1em .4em;
+  box-shadow: none;
 }
 
 .search-submit:hover, .search-submit:active, .search-submit:focus {
