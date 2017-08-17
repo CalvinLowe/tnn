@@ -80,7 +80,7 @@
   <div class="popular-recipes-slider-cell-mb">
     <a href="#">
       <div class="popular-recipes-title-wrapper-2">
-        <h3 class="popular-recipes-slide-title">Slie 1</h3>
+        <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_1') ?></h3>
       </div>
       <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_1.jpg" />
     </a>
@@ -88,7 +88,7 @@
   <div class="popular-recipes-slider-cell-mb">
     <a href="#">
       <div class="popular-recipes-title-wrapper-2">
-        <h3 class="popular-recipes-slide-title">Slie 2</h3>
+        <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_2') ?></h3>
       </div>
       <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_2.jpg" />
     </a>
@@ -96,7 +96,7 @@
   <div class="popular-recipes-slider-cell-mb">
     <a href="#">
       <div class="popular-recipes-title-wrapper-2">
-        <h3 class="popular-recipes-slide-title">Slie 3</h3>
+        <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_3') ?></h3>
       </div>
       <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_3.jpg" />
     </a>
@@ -104,7 +104,7 @@
   <div class="popular-recipes-slider-cell-mb">
     <a href="#">
       <div class="popular-recipes-title-wrapper-2">
-        <h3 class="popular-recipes-slide-title">Slie 4</h3>
+        <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_4') ?></h3>
       </div>
       <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_4.jpg" />
     </a>
@@ -112,7 +112,7 @@
   <div class="popular-recipes-slider-cell-mb">
     <a href="#">
       <div class="popular-recipes-title-wrapper-2">
-        <h3 class="popular-recipes-slide-title">Slie 5</h3>
+        <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_5') ?></h3>
       </div>
       <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_5.jpg" />
     </a>

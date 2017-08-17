@@ -24,7 +24,7 @@
 }
 
 .popular-recipes-title-wrapper-2 {
-  padding-right: 3em;
+  padding-right: 10vw;
 }
 .popular-recipes-slide-title {
   text-align: right;
@@ -54,5 +54,8 @@
   }
   .banner-slider-mb, .popular-recipes-slider-mb {
     display: none;
+  }
+  .popular-recipes-title-wrapper-2 {
+    padding-right: 3em;
   }
 }
