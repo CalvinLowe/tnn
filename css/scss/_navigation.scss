@@ -36,6 +36,9 @@
 }
 
 @media screen and (min-width: 37.5em) {
+  .menu-item-12421 { // Hide client/login menu item on larger screens
+    display: none;
+  }
   .menu-nav-main-container {
     background-color: $tnn-light;
   }
