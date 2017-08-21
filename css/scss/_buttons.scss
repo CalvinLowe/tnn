@@ -1,3 +1,4 @@
+
 // _buttons.scss
 button, input[type="button"], input[type="reset"], input[type="submit"], {
   font-family: 'Oswald', sans-serif;
@@ -12,7 +13,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"], {
   box-shadow: $tnn-shadow;
 }
 
-button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active  {
   background-color: $tnn-secondary;
   box-shadow: none;
 }
@@ -31,10 +32,10 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
   box-shadow: none;
 }
 
-.search-submit:hover, .search-submit:active, .search-submit:focus {
+.search-submit:hover, .search-submit:active {
   background-color: #F1F1F2;
 }
 
-.front-cta a:hover, .front-cta a:focus, .front-cta a:first-child:hover, .front-cta a:first-child:focus {
+.front-cta a:hover, .front-cta a:first-child:hover, .front-cta a:active, .front-cta a:first-child:active {
   background-color: $tnn-secondary;
 }
