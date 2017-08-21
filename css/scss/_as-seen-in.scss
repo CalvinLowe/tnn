@@ -1,5 +1,9 @@
 // _as-seen-in.scss
 
+.as-seen-in img {
+  padding: 1em;
+}
+
 @media screen and (min-width: 37.5em) {
   .as-seen-in {
     display: flex;
