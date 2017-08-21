@@ -7,8 +7,9 @@
   padding: 1.5em 0;
 }
 .footer-main-container {
-  padding: 10vw 0;
+  padding: 5vw 0;
 }
+
 .footer-navigation ul, .footer.social-icons ul {
   list-style: none;
   padding: 0;
@@ -18,7 +19,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  padding: 10vw 0 0 0;
+  padding: 5vw 0 0 0;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -29,31 +30,35 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 3em;
+  }
+  .footer.social-icons {
+    flex-flow: row nowrap;
+    flex: .25 1 25%;
   }
   .footer-navigation {
-    flex-basis: 40%;
+    flex-basis: 37.5em;
+    padding-bottom: 5vw;
   }
-
-  .footer-navigation ul {
+  .menu-footer-menu-1-container ul {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
   }
-
   .footer-navigation li::after {
     content: "|";
     padding: 0 1em;
     color: $tnn-primary;
   }
-
   .footer-navigation a {
     text-decoration: none;
   }
-
   .footer.social-icons ul {
     margin: 0;
     padding: 0;
+    justify-content: flex-end;
+  }
+  .footer.social-icons ul li {
+    flex-grow: 1;
   }
 }

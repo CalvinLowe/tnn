@@ -32,13 +32,13 @@
 
 			<div id="footer-social-icons" class="footer social-icons">
 			  <ul>
-			    <li><a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+			    <li><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
 			</a></li>
-			    <li><a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
-			    <li><a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+			    <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+			    <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
 			</a></li>
-			    <li><a href="#"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
-			    <li><a href="#"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a></li>
+			    <li><a href="#"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></li>
+			    <li><a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a></li>
 			  </ul>
 			</div><!-- #footer-social-icons -->
 
