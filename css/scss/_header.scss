@@ -42,16 +42,13 @@
     display: block;
   }
   // header-nav-topbar.scss
-  .topbar-navigation { /* Flex layout and background colour for topbar nav wrapper */
+  .topbar-navigation {
     background-color: $background-grey;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     box-shadow: 0 1px 1px rgba(0,0,0,0.2);
-  }
-  .topbar.social-icons {
-    flex-grow: 1;
   }
   .site-branding {
     max-width: 300px;
@@ -65,40 +62,43 @@
   .site-branding img {
     max-height: inherit;
   }
-  .social-icons ul, .flex-element { /* Flex layout of two groups of items in topbar */
+  .topbar.social-icons ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-items: stretch;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding-left: 2vw;
   }
-  .social-icons ul { /* Over rides underscores.scss ul margins */
+  .topbar.social-icons ul {
     margin: 1em 0;
     list-style: none;
   }
-  .social-icons li {
-    margin: 0 1em;
+  .topbar.social-icons li {
+    margin: 0 1vw;
   }
   .search-topbar {
     align-self: center;
     margin: 0 1em;
+    padding: 0;
+    flex-grow: 1;
   }
   .search-form {
     padding: 0.2em;
   }
-  .front-cta { /* Styling for CTA buttons in top */
+  .front-cta {
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-shrink: 0.5;
   }
-  .front-cta a { /* styling the topbar CTA */
-    display: flex; /* Used a series of display flexes to achieve proper alignment */
+  .front-cta a {
+    display: flex;
     align-items: center;
     background-color: $tnn-cta-2;
-    padding: 0 1em;
+    padding: 1vw;
     text-decoration: none;
     color: white;
+    text-align: center;
   }
   .front-cta a:first-child {
     background-color: $tnn-cta-1;
