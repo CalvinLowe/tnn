@@ -6,6 +6,7 @@
 @media screen and (min-width: 37.5em) {
   .consultation {
     display: grid;
+    background-color: $tnn-secondary;
     background-image: url("../img/book-your-consultation-bg.jpg");
     background-size: cover;
     padding: 0;

@@ -17,7 +17,7 @@
 
   if( !empty($image1) ): ?>
 
-  	<img src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>" />
+  	<img src="<?php echo esc_html_e($image1['url']); ?>" alt="<?php echo esc_html_e($image1['alt']); ?>" />
 
   <?php endif; ?>
   </a>
@@ -30,7 +30,7 @@
 
   if( !empty($image2) ): ?>
 
-  	<img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>" />
+  	<img src="<?php echo esc_html_e($image2['url']); ?>" alt="<?php echo esc_html_e($image2['alt']); ?>" />
 
   <?php endif; ?>
   </a>

@@ -32,11 +32,9 @@
 
 			<div id="footer-social-icons" class="footer social-icons">
 			  <ul>
-			    <li><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-			</a></li>
+			    <li><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
 			    <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-			    <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-			</a></li>
+			    <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
 			    <li><a href="#"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></li>
 			    <li><a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a></li>
 			  </ul>
@@ -47,7 +45,7 @@
 		<div class="site-info">
 			<hr>
 			<div id="tnn-copyright" class="copyright">
-				<p>Copyright &copy; 2017 - <?php echo date('Y'); ?> The Natural Nutritionist <a href="/terms-and-conditions">Terms and Conditions</a></p>
+				<p><?php esc_html_e('Copyright &copy; 2017 - '); ?><?php echo date('Y'); ?><?php esc_html_e('The Natural Nutritionist. '); ?><a href="<?php esc_html_e('/terms-and-conditions'); ?>"><?php esc_html_e('Terms and Conditions') ?></a></p>
 			</div>
 		</div><!-- .site-info -->
 

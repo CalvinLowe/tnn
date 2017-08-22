@@ -19,9 +19,9 @@
     <div class="popular-recipes-slider-cell">
       <a href="<?php get_field('recipes_slider_img_link_1') ?>">
         <div class="popular-recipes-title-wrapper-2">
-          <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_1') ?></h3>
+          <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_1')); ?></h3>
         </div>
-        <img class="slider-img" src="<?php echo $sliderImage1['url']; ?>" alt="<?php echo $sliderImage1['alt']; ?>" />
+        <img class="slider-img" src="<?php echo esc_html_e($sliderImage1['url']); ?>" alt="<?php echo esc_html_e($sliderImage1['alt']); ?>" />
       </a>
     </div>
   <?php endif; ?>
@@ -31,9 +31,9 @@
     <div class="popular-recipes-slider-cell">
       <a href="<?php get_field('recipes_slider_img_link_2') ?>">
         <div class="popular-recipes-title-wrapper-2">
-          <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_2') ?></h3>
+          <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_2')); ?></h3>
         </div>
-        <img class="slider-img" src="<?php echo $sliderImage2['url']; ?>" alt="<?php echo $sliderImage2['alt']; ?>" />
+        <img class="slider-img" src="<?php echo esc_html_e($sliderImage2['url']); ?>" alt="<?php echo esc_html_e($sliderImage2['alt']); ?>" />
       </a>
     </div>
   <?php endif; ?>
@@ -43,9 +43,9 @@
     <div class="popular-recipes-slider-cell">
       <a href="<?php get_field('recipes_slider_img_link_3') ?>">
         <div class="popular-recipes-title-wrapper-2">
-          <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_3') ?></h3>
+          <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_3')); ?></h3>
         </div>
-        <img class="slider-img" src="<?php echo $sliderImage3['url']; ?>" alt="<?php echo $sliderImage3['alt']; ?>" />
+        <img class="slider-img" src="<?php echo esc_html_e($sliderImage3['url']); ?>" alt="<?php echo esc_html_e($sliderImage3['alt']); ?>" />
       </a>
     </div>
   <?php endif; ?>
@@ -55,9 +55,9 @@
     <div class="popular-recipes-slider-cell">
       <a href="<?php get_field('recipes_slider_img_link_4') ?>">
         <div class="popular-recipes-title-wrapper-2">
-          <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_4') ?></h3>
+          <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_4')); ?></h3>
         </div>
-        <img class="slider-img" src="<?php echo $sliderImage4['url']; ?>" alt="<?php echo $sliderImage4['alt']; ?>" />
+        <img class="slider-img" src="<?php echo esc_html_e($sliderImage4['url']); ?>" alt="<?php echo esc_html_e($sliderImage4['alt']); ?>" />
       </a>
     </div>
   <?php endif; ?>
@@ -67,54 +67,55 @@
     <div class="popular-recipes-slider-cell">
       <a href="<?php get_field('recipes_slider_img_link_5') ?>">
         <div class="popular-recipes-title-wrapper-2">
-          <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_5') ?></h3>
+          <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_5')); ?></h3>
         </div>
-        <img class="slider-img" src="<?php echo $sliderImage5['url']; ?>" alt="<?php echo $sliderImage5['alt']; ?>" />
+        <img class="slider-img" src="<?php echo esc_html_e($sliderImage5['url']); ?>" alt="<?php echo esc_html_e($sliderImage5['alt']); ?>" />
 
       </a>
     </div>
   <?php endif; ?>
 </div> <!-- .banner-slider -->
 
+<!-- TODO Set up ACF for mobile slider images -->
 <div class="popular-recipes-slider-mb">
   <div class="popular-recipes-slider-cell-mb">
     <a href="#">
       <div class="popular-recipes-title-wrapper-2">
-        <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_1') ?></h3>
+        <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_1')); ?></h3>
       </div>
-      <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_1.jpg" />
+      <img class="slider-img" alt="<?php echo esc_html_e($sliderImage1['alt']); ?>" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_1.jpg" />
     </a>
   </div>
   <div class="popular-recipes-slider-cell-mb">
     <a href="#">
       <div class="popular-recipes-title-wrapper-2">
-        <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_2') ?></h3>
+        <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_2')); ?></h3>
       </div>
-      <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_2.jpg" />
+      <img class="slider-img" alt="<?php echo esc_html_e($sliderImage2['alt']); ?>" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_2.jpg" />
     </a>
   </div>
   <div class="popular-recipes-slider-cell-mb">
     <a href="#">
       <div class="popular-recipes-title-wrapper-2">
-        <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_3') ?></h3>
+        <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_3')); ?></h3>
       </div>
-      <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_3.jpg" />
+      <img class="slider-img" alt="<?php echo esc_html_e($sliderImage3['alt']); ?>" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_3.jpg" />
     </a>
   </div>
   <div class="popular-recipes-slider-cell-mb">
     <a href="#">
       <div class="popular-recipes-title-wrapper-2">
-        <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_4') ?></h3>
+        <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_4')); ?></h3>
       </div>
-      <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_4.jpg" />
+      <img class="slider-img" alt="<?php echo esc_html_e($sliderImage4['alt']); ?>" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_4.jpg" />
     </a>
   </div>
   <div class="popular-recipes-slider-cell-mb">
     <a href="#">
       <div class="popular-recipes-title-wrapper-2">
-        <h3 class="popular-recipes-slide-title"><?php the_field('recipes_slider_title_5') ?></h3>
+        <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_5')); ?></h3>
       </div>
-      <img class="slider-img" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_5.jpg" />
+      <img class="slider-img" alt="<?php echo esc_html_e($sliderImage5['alt']); ?>" src="/wp-content/themes/tnn/img/sliders/TNN_PopularRecipesImages_600x600_5.jpg" />
     </a>
   </div>
 </div> <!-- .banner-slider -->

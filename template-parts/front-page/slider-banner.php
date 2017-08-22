@@ -14,7 +14,7 @@
       <?php
       $sliderImage1 = get_field('banner_slider_img_1');
       if( !empty($sliderImage1) ): ?>
-            <img class="slider-img" src="<?php echo $sliderImage1['url']; ?>" alt="<?php echo $sliderImage1['alt']; ?>" />
+            <img class="slider-img" src="<?php echo esc_html_e($sliderImage1['url']); ?>" alt="<?php echo esc_html_e($sliderImage1['alt']); ?>" />
       <?php endif; ?>
     </a>
   </div> <!-- Slide 1 -->
@@ -23,7 +23,7 @@
     <?php
     $sliderImage2 = get_field('banner_slider_img_2');
     if( !empty($sliderImage2) ): ?>
-          <img class="slider-img" src="<?php echo $sliderImage2['url']; ?>" alt="<?php echo $sliderImage2['alt']; ?>" />
+          <img class="slider-img" src="<?php echo esc_html_e($sliderImage2['url']); ?>" alt="<?php echo esc_html_e($sliderImage2['alt']); ?>" />
     <?php endif; ?>
     </a>
   </div> <!-- Slide 2 -->
@@ -32,12 +32,13 @@
       <?php
         $sliderImage3 = get_field('banner_slider_img_3');
         if( !empty($sliderImage3) ): ?>
-          <img class="slider-img" src="<?php echo $sliderImage3['url']; ?>" alt="<?php echo $sliderImage3['alt']; ?>" />
+          <img class="slider-img" src="<?php echo esc_html_e($sliderImage3['url']); ?>" alt="<?php echo esc_html_e($sliderImage3['alt']); ?>" />
         <?php endif; ?>
     </a>
   </div> <!-- Slide 3 -->
 </div> <!-- .banner-slider -->
 
+<!-- TODO Make mobile sliders into ACF -->
 <div class="banner-slider-mb">
   <div class="banner-slider-cell-mb">
     <a href="#">
