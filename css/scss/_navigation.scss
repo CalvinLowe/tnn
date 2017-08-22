@@ -10,6 +10,18 @@
 .main-navigation.toggled .sub-menu {
   display: none;
 }
+.main-navigation .menu-toggle .fa-times {
+  display: none;
+}
+.main-navigation .menu-toggle .fa-bars {
+  display: inline;
+}
+.main-navigation.toggled .menu-toggle .fa-times {
+  display: inline;
+}
+.main-navigation.toggled .menu-toggle .fa-bars {
+  display: none;
+}
 .nav-menu .menu-item a {
   padding: 0.6em ;
 }

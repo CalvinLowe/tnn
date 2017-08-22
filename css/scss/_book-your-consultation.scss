@@ -19,8 +19,7 @@
     padding: 0;
     padding-right: 3.5em;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     border: 2px solid $tnn-primary;

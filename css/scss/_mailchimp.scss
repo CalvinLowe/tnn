@@ -25,15 +25,13 @@
   }
   .form-wrapper {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-end;
   }
   .mc-field-group {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     margin: 0 0.6em;
   }
   #mc-embedded-subscribe {

@@ -3,16 +3,14 @@
 .sales-notice {
   background-color: $tnn-secondary;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   justify-content: center;
   padding: 1em;
 }
 .sales-notice-title, .sales-notice-paragraph{
   align-self: center;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   justify-content: center;
 }
 

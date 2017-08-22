@@ -47,7 +47,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu ', 'tnn' ); ?><i class="fa fa-bars" aria-hidden="true"></i>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu ', 'tnn' ); ?><i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-times" aria-hidden="true"></i>
 			</button>
 			<?php
 				wp_nav_menu( array(

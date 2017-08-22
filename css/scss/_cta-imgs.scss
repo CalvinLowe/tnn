@@ -6,9 +6,8 @@
   color: $tnn-light;
   text-align: center;
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
 }
 .cta-caption .cta-caption-title{
@@ -17,8 +16,7 @@
 @media screen and (min-width: 37.5em) {
   .cta-images {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
   }
   .cta-images a {
     text-decoration: none;

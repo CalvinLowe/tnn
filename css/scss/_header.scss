@@ -45,8 +45,7 @@
   .topbar-navigation {
     background-color: $background-grey;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     box-shadow: 0 1px 1px rgba(0,0,0,0.2);
   }
@@ -87,8 +86,7 @@
   .front-cta {
     text-transform: uppercase;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     flex-shrink: 0.5;
   }
   .front-cta a {
