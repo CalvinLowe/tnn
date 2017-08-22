@@ -7,20 +7,11 @@
   flex-direction: column;
   padding: 0.6em 0;
 }
-.main-navigation.toggled .sub-menu {
+.main-navigation.toggled .sub-menu, .main-navigation .menu-toggle .fa-times, .main-navigation.toggled .menu-toggle .fa-bars {
   display: none;
 }
-.main-navigation .menu-toggle .fa-times {
-  display: none;
-}
-.main-navigation .menu-toggle .fa-bars {
+.main-navigation .menu-toggle .fa-bars, .main-navigation.toggled .menu-toggle .fa-times {
   display: inline;
-}
-.main-navigation.toggled .menu-toggle .fa-times {
-  display: inline;
-}
-.main-navigation.toggled .menu-toggle .fa-bars {
-  display: none;
 }
 .nav-menu .menu-item a {
   padding: 0.6em ;
@@ -51,6 +42,12 @@
   .menu-item-12421 { // Hide client/login menu item on larger screens
     display: none;
   }
+  .topbar.social-icons a, .topbar.social-icons a:link, .topbar.social-icons a:visited {
+    color: $tnn-secondary;
+  }
+  .topbar.social-icons a:hover, .topbar.social-icons a:active, .topbar.social-icons a:focus {
+    color: $tnn-primary;
+  }
   .menu-nav-main-container {
     background-color: $tnn-light;
   }
@@ -73,45 +70,35 @@
       padding: 0.5em 1em;
       white-space: normal;
   }
-  /*.main-navigation a:hover, .main-navigation a:active, .main-navigation a:focus {
-    background-color: $tnn-light;
-  }
-  .current_page_item.menu-item-has-children a, .main-navigation .current-menu-item.menu-item-has-children a {
-    background-color: $tnn-light;
-  }
-  .main-navigation a, .topbar.social-icons a, .main-navigation a:link, .topbar.social-icons a:link, .main-navigation a:visited, .topbar.social-icons a:visited {
+  .main-navigation a, .main-navigation a:link, .main-navigation a:visited, .main-navigation .current-menu-item a {
     color: $tnn-secondary;
-  }
-  .main-navigation a:hover, .topbar.social-icons a:hover, .main-navigation a:active, .topbar.social-icons a:active, .main-navigation a:focus, .topbar.social-icons a:focus {
-    color: $tnn-primary;
-  }
-  .sub-menu .menu-item a, .sub-menu .menu-item a:link, .sub-menu .menu-item a:visited {
-    color: $tnn-light;
-  }
-  .sub-menu a:hover, .sub-menu a:active .sub-menu a:focus {
-    color: $tnn-light;
-  }
-  .main-navigation a {
+    background-color: $tnn-light;
     border-bottom: solid $tnn-light 5px;
   }
-  .sub-menu .menu-item a, .sub-menu .menu-item a:hover, .sub-menu .menu-item a:focus, .sub-menu .menu-item a:active {
+  .main-navigation a:hover, .main-navigation a:active, .main-navigation a:focus {
+    background-color: $tnn-light;
+    border-bottom: solid $tnn-primary 5px;
+  }
+  .main-navigation .sub-menu a, .main-navigation .sub-menu a:link, .main-navigation .sub-menu a:visited {
     border-bottom: none;
+    color: $tnn-light;
+    background-color: $tnn-secondary;
   }
-  .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
+  .main-navigation .sub-menu a:hover, .main-navigation .sub-menu a:active, .main-navigation .sub-menu a:focus {
+    background-color: $tnn-primary;
+  }
+  .main-navigation .current_page_item a, .main-navigation .current-menu-ancestor a {
     border-bottom: solid $tnn-primary 5px;
   }
-  .main-navigation .current_page_item a, .main-navigation .current-menu-item a {
-    border-bottom: solid $tnn-primary 5px;
+  .main-navigation .current_page_item a:hover, .main-navigation .current_page_item a:active, .main-navigation .current_page_item a:focus {
+    background-color: $tnn-light;
   }
-  .sub-menu .current_page_item a,  .sub-menu .current-menu-item a{
+  .main-navigation .sub-menu .current-menu-item a{
     background-color: $tnn-primary-variation-3;
   }
   .sub-menu .menu-item a:hover, .sub-menu .menu-item a:focus{
     background-color: $tnn-primary;
   }
-  .sub-menu,  {
-    background-color: $tnn-secondary;
-  }*/
 }
 
 @media screen and (min-width: 56.25em) {
