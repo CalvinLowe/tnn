@@ -5,29 +5,37 @@
 
 @media screen and (min-width: 37.5em) {
   .consultation {
-    display: grid;
-    background-color: $tnn-secondary;
-    background-image: url("../img/book-your-consultation-bg.jpg");
-    background-size: cover;
-    padding: 0;
-  }
-  .book-your-consultation-button {
-    display: none;
-  }
-  .book-your-consultation-title {
-    margin: 1.5em 0;
-    padding: 0;
-    padding-right: 3.5em;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid $tnn-primary;
-  }
-  .book-your-consultation-title span {
     display: block;
+    background-color: $tnn-secondary;
+    padding: 3em;
+    text-align: center;
   }
   .consultation img {
-    display: block;
+    display: none;
+  }
+
+  @supports (display: grid) {
+    .consultation {
+      display: grid;
+      background-image: url("../img/book-your-consultation-bg.jpg");
+      background-size: cover;
+      padding: 0;
+    }
+    .book-your-consultation-title {
+      margin: 1.5em 0;
+      padding: 0;
+      padding-right: 3.5em;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid $tnn-primary;
+    }
+    .book-your-consultation-title span {
+      display: block;
+    }
+    .consultation img {
+      display: block;
+    }
   }
 }
