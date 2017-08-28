@@ -6,10 +6,17 @@
   color: $tnn-light;
   text-align: center;
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
+.cta-figure .cta-caption {
+  background-color: rgba(0, 0, 0, .4)
+}
+.cta-link:hover .cta-caption, .cta-link:focus .cta-caption {
+  background-color: rgba(0, 0, 0, .3);
+}
+//@suuports
+
 .cta-caption .cta-caption-title{
   padding: 0 10vw;
 }
