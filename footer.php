@@ -45,7 +45,7 @@
 		<div class="site-info">
 			<hr>
 			<div id="tnn-copyright" class="copyright">
-				<p><?php esc_html_e('Copyright &copy; 2017 - '); ?><?php echo date('Y'); ?><?php esc_html_e('The Natural Nutritionist. '); ?><a href="<?php esc_html_e('/terms-and-conditions'); ?>"><?php esc_html_e('Terms and Conditions') ?></a></p>
+				<p><?php esc_html_e('Copyright &copy; 2017 -  '); ?><?php echo date('Y'); ?><?php esc_html_e(' The Natural Nutritionist. '); ?><a href="<?php esc_html_e('/terms-and-conditions'); ?>"><?php esc_html_e('Terms and Conditions') ?></a></p>
 			</div>
 		</div><!-- .site-info -->
 

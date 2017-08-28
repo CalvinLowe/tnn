@@ -8,6 +8,7 @@
   .as-seen-in {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;  
     justify-content: space-evenly;
   }
   .as-seen-in .section-title {
