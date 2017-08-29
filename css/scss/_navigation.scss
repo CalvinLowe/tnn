@@ -2,6 +2,10 @@
 .menu-nav-main-container {
   background-color: $tnn-secondary;
 }
+.main-navigation li { // Overwrites underscores.scss to work with IOS 7 & 8
+  float: none;
+  position: static;
+}
 .main-navigation.toggled .nav-menu {
   display: flex; // From display: none to display: flex
   flex-direction: column;

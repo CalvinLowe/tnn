@@ -4,9 +4,13 @@
   flex-direction: column;
   // vertical | horizontal
   margin: 1em 0;
+  justify-content: space-between;
 }
 #mc-embedded-subscribe {
   width: 100%;
+}
+input.mailchimp-input {
+  display: block;
 }
 
 

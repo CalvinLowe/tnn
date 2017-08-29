@@ -1,37 +1,51 @@
 // _advertising.scss
 
-.front-page-product-advertising {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  justify-content: space-evenly;
-}
-
-.product-advert {
-  align-self: center;
-}
-
 .rr-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   list-style: none;
-  margin: 0;
+}
+.front-page-product-advertising {
+  margin: 0 auto;
+}
+.rr-list {
   padding: 0;
+  margin: 0;
 }
-.rr-list li {
-  margin: 1em 0;
+.front-page-product-advertising img, .rr-list img {
+  margin: 0 auto;
 }
-
-.rr-advert {
-  margin: 0 1em;
+.sponsors-logos img {
+  display: inline-block;
+  max-width: none;
 }
-
+@supports (display: flex) {
+  .front-page-product-advertising {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    justify-content: space-evenly;
+  }
+  .product-advert {
+    align-self: center;
+  }
+  .rr-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+}
 .sponsors-logos {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+}
+.rr-list li {
+  margin: 1em 0;
+}
+.rr-advert {
+  margin: 0 1em;
 }
 .sponsors-logos a {
   // vertical | horizontal

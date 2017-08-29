@@ -2,16 +2,20 @@
 
 .as-seen-in img {
   padding: 1em;
+  flex: 0 1 100%;
 }
 
 @media screen and (min-width: 37.5em) {
   .as-seen-in {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;  
+    justify-content: space-around;
     justify-content: space-evenly;
   }
   .as-seen-in .section-title {
     align-self: center;
+  }
+  .as-seen-in img {
+    flex: 0 1 50%;
   }
 }

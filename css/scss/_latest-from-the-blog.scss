@@ -8,15 +8,20 @@
   text-transform: uppercase;
 }
 .latest-posts-ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
-
-
+.latest-posts-ul img {
+  margin: 0 auto;
+}
+@supports (display: flex) { // Allow to fallback to underscores.scss for IOS
+  .latest-posts-ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
 
 .latest-post-figure {
   margin: 0;
