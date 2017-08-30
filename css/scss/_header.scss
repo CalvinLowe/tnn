@@ -17,14 +17,22 @@
 .search-form {
   background-color: $tnn-light-variation-1;
   padding: 2vw;
-  display: flex;
-  justify-content: space-between;
 }
 .search-form input[type="search"] {
   border: none;
   background-color: $tnn-light-variation-1;
   color: $tnn-secondary;
-  flex-grow: 1;
+  width: 85%;
+}
+@supports (display: flex) {
+  .search-form {
+    display: flex;
+    justify-content: space-around;
+  }
+  .search-form input[type="search"] {
+    -webkit-flex-grow: 1;
+    flex: 1 1 auto;
+  }
 }
 .search-form input[type="search"]:focus {
   background-color: $tnn-light;
@@ -102,5 +110,12 @@
   }
   .front-cta a:first-child {
     background-color: $tnn-cta-1;
+  }
+}
+
+// Fix for landscape orientation on large phones
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .topbar {
+    display: none;
   }
 }

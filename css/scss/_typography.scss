@@ -120,3 +120,12 @@ blockquote, .main-navigation {
     line-height: 1.25;
   }
 }
+
+// Fix for landscape orientation on large phones
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  @supports not (display: grid) {
+    .cta-caption-title {
+      font-size: 1.25em;
+    }
+  }
+}
