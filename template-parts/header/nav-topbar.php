@@ -24,6 +24,6 @@
 </div><!-- #topbar-search -->
 
 <div id="topbar-cta-buttons" class="topbar front-cta cta">
-  <a href="#"><?php esc_html_e( 'Client Login/Appointment', 'tnn' ); ?></a>
-  <a href="#"><?php esc_html_e( 'Join TNN&rsquo;s Team', 'tnn' ); ?></a>
+  <a href="<?php esc_html_e( 'https://bit.ly/tnnonline', 'tnn' ); ?>"><?php esc_html_e( 'Client Login/Appointment', 'tnn' ); ?></a>
+  <a href="<?php esc_html_e( '#front-page-mailchimp-opt-in', 'tnn' ); ?>"><?php esc_html_e( 'Join TNN&rsquo;s Team', 'tnn' ); ?></a>
 </div><!-- #topbar-cta-buttons -->

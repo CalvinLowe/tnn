@@ -34,22 +34,27 @@
   align-self: stretch;
 }
 
-.entry-content {
+/////// GRID
+
+.content-area {
   padding: 5vw;
   margin-top: 0;
   @media screen and (min-width: 37.5em) {
+    padding: 0;
     margin-top: 1.5em;
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 1fr 6fr 1fr;
   }
 }
+.site-main {
+  grid-column: 2 / 3;
+}
 .entry-header {
-  padding: 5vw;
+  @media screen and (min-width: 37.5em) {
+    padding: 0;
+  }
 }
 
-.entry-content * {
-  grid-column-start: 2;
-}
 
 @media screen and (min-width: 37.5em) {
   .consultation {
@@ -57,7 +62,6 @@
     grid-template-columns: 10% 50% 15% 15% 10%;
     grid-template-rows: repeat(3, [row] auto  );
   }
-
   .book-your-consultation-title {
     grid-column-start: 2;
     grid-column-end: 4;
