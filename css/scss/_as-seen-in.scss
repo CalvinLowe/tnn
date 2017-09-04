@@ -19,3 +19,10 @@
     flex: 0 1 50%;
   }
 }
+
+// Fix for landscape orientation on large phones
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .as-seen-in {
+    display: block;
+  }
+}

@@ -39,7 +39,10 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  text-align: center;
+}
+.sponsors-logos a {
+  align-self: center;
 }
 .rr-list li {
   margin: 1em 0;
@@ -53,6 +56,24 @@
 }
 
 @media screen and (min-width: 37.5em) {
+  .front-page-product-advertising {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .product-advert img {
+    margin: 0 1em;
+  }
+  .product-advert {
+    align-self: center;
+  }
+  .rr-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
   .product-advert {
   /*  margin: 0 1em;*/
   }

@@ -52,7 +52,11 @@ h1 {
   line-height: 1.25; //45px / 36px */
 }
 .front-page-heading {
+  margin: 0;
   font-size: 3em;
+}
+.front-page-subheading {
+  margin: 0;
 }
 h2 {
   font-size: 1.625em; // 1.625x body copy size = 26px
@@ -88,6 +92,9 @@ blockquote, .main-navigation {
     // vertical | horizontal
     margin: 0 auto;
     margin-bottom: -60pt; // Adjust for huge line-height
+  }
+  .front-page-subheading {
+    margin: .83em;
   }
   h2 {
     font-size: 2em; //2x body copy size = 32px

@@ -43,6 +43,11 @@
 }
 
 @media screen and (min-width: 37.5em) {
+  .latest-posts-ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
   .latest-post {
     margin: 0 1em;
   }
