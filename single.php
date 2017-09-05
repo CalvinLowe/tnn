@@ -15,13 +15,18 @@ get_header(); ?>
 		<?php
 		while ( have_posts() ) : the_post();
 
-			the_post_thumbnail( 'full' );
+			the_category( '&#47;', 'single' ); // TODO Put inside DIV
+
+			the_title( '<h1 class="page-title">', '</h1>' ); // TODO put inside header
+
+			if ( has_post_thumbnail() )
+				the_post_thumbnail( 'large' );
 
 			get_template_part( 'template-parts/blog/sidebar', 'author' );
 
 			get_template_part( 'template-parts/blog/sidebar', 'social' );
 
-			get_template_part( 'template-parts/content', get_post_format() );
+			get_template_part( 'template-parts/content', 'post' );
 
 			the_post_navigation();
 
