@@ -1,12 +1,22 @@
 // _layout.scss
-
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Padding & Margins
+# CTA Grid
+# Consultation Grid
+# Page Layout & Front Page Layout
+# Post Layout
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Padding & Margins
+--------------------------------------------------------------*/
 .entry-header {
   margin-top: 10vw;
   @media screen and (min-width: 37.5em) {
     margin-top: 3em;
   }
 }
-
 .mailchimp-opt-in, .front-page-product-advertising, .front-page-rr-sponsors-container {
   padding: 10vw;
   @media screen and (min-width: 37.5em) {
@@ -18,7 +28,9 @@
   margin: 0 3em;
 }
 
-
+/*--------------------------------------------------------------
+# CTA Grid
+--------------------------------------------------------------*/
 .cta-figure {
   display: grid;
   grid-template-columns: 100%;
@@ -33,29 +45,9 @@
   grid-row-start: 1;
   align-self: stretch;
 }
-
-/////// GRID
-
-.content-area {
-  padding: 5vw;
-  margin-top: 0;
-  @media screen and (min-width: 37.5em) {
-    padding: 0;
-    margin-top: 1.5em;
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
-  }
-}
-.site-main {
-  grid-column: 2 / 3;
-}
-.entry-header {
-  @media screen and (min-width: 37.5em) {
-    padding: 0;
-  }
-}
-
-
+/*--------------------------------------------------------------
+# Consultation Grid
+--------------------------------------------------------------*/
 @media screen and (min-width: 37.5em) {
   .consultation {
     display: grid;
@@ -73,3 +65,74 @@
     grid-row-start: 1;
   }
 }
+
+/*--------------------------------------------------------------
+# Page layout & Front Page Layout
+--------------------------------------------------------------*/
+.page .content-area {
+  padding: 5vw;
+  margin-top: 0;
+  @media screen and (min-width: 37.5em) {
+    padding: 0;
+    margin-top: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+  }
+}
+.page .site-main {
+  grid-column: 2 / 3;
+}
+.page .entry-header {
+  @media screen and (min-width: 37.5em) {
+    padding: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Post
+--------------------------------------------------------------*/
+.single .blog-sidebar {
+  display: none;
+  @media screen and (min-width: 37.5em) {
+    display: block;
+  }
+}
+.single .blog-footer {
+  display: block;
+  @media screen and (min-width: 37.5em) {
+    display: none;
+  }
+}
+.single .site-main {
+  padding: 5vw;
+  margin-top: 0;
+  @media screen and (min-width: 37.5em) {
+    padding: 0 5vw;
+    margin-top: 1.5em;
+    display: grid;
+    grid-template: auto auto / 2fr 6fr 2fr;
+    grid-gap: 1em 5vw;
+  }
+}
+.single .blog-author-sidebar {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.single .wp-post-image {
+  grid-area: 1 / 2 / 2 / 2;
+}
+
+.single .post {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.single .blog-social-sidebar {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.single .comments-area {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+/*.single .entry-header {
+  @media screen and (min-width: 37.5em) {
+    padding: 0;
+  }
+}*/
