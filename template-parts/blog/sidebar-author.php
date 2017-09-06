@@ -10,13 +10,12 @@
 ?>
 
 <aside id="sidebar-author-info" class="blog-sidebar blog-author-sidebar">
-	<img src="http://via.placeholder.com/100x100">
-	<h3>Author Name</h3>
-	<p>Author Description</p>
-	<p>Post date</p>
+
+	<?php echo get_avatar( get_the_author_meta( 'ID' ) , 100 ); ?>
+	<h3><?php the_author(); ?></h3>
+	<p><?php the_author_meta('description'); ?></p>
+	<p><?php the_time('F j, Y'); ?></p>
 	<div class="tag-wrap">
-		<a>Tag1</a>
-		<a>Tag2</a>
-		<a>Tag2</a>
+		<?php the_tags(); ?>
 	</div>
 </aside><!-- #author-info -->

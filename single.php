@@ -12,16 +12,25 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php
-		while ( have_posts() ) : the_post();
+		<?php while ( have_posts() ) : the_post(); ?>
 
-			the_category( '&#47;', 'single' ); // TODO Put inside DIV
+			<div class="post-categories">
+				<?php the_category( '&#47;', '' ); ?>
+			</div>
 
-			the_title( '<h1 class="page-title">', '</h1>' ); // TODO put inside header
+			<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
 
-			if ( has_post_thumbnail() )
-				the_post_thumbnail( 'large' );
+			<div class="post-excerpt">
+				<?php the_excerpt(); ?>
+			</div>
 
+			<?php if ( has_post_thumbnail() ) ?>
+				<figure class="post-image">
+					<?php the_post_thumbnail( 'large' ); ?>
+					<figcaption><?php the_post_thumbnail_caption(); ?></figcaption>
+				</figure>
+
+			<?php
 			get_template_part( 'template-parts/blog/sidebar', 'author' );
 
 			get_template_part( 'template-parts/blog/sidebar', 'social' );

@@ -2,15 +2,16 @@
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Padding & Margins
+# Front Page
 # CTA Grid
 # Consultation Grid
 # Page Layout & Front Page Layout
 # Post Layout
   # Post Grid
+  # Post Flex
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# Padding & Margins
+# Front Page
 --------------------------------------------------------------*/
 .entry-header {
   margin-top: 10vw;
@@ -109,6 +110,7 @@
   margin-top: 0;
   @media screen and (min-width: 37.5em) {
     padding: 5vw;
+    padding-top: 0;
     margin-top: 1.5em;
   }
 }
@@ -116,6 +118,27 @@
   @media screen and (min-width: 37.5em) {
     display: none;
   }
+}
+.single .post-title {
+  margin: 0.25em 0 .5em 0;
+}
+.single .post-excerpt p {
+  margin-top: 0;
+}
+.single .entry-content {
+  margin-top: 0;
+}
+.single .entry-content p:first-child {
+  margin-top: 0;
+}
+.single .blog-author-sidebar h3 {
+  margin: 0.25em 0 0.5em 0;
+}
+.single .blog-author-sidebar p {
+  margin: 0.25em 0 0.5em 0;
+}
+.single .blog-social-sidebar h3:first-child {
+  margin-top: 0;
 }
 
 /*--------------------------------------------------------------
@@ -131,10 +154,13 @@
 .single .post-categories {
   grid-area: 1 / 2 / 2 / 2;
 }
-.single .page-title {
+.single .post-title {
   grid-area: 2 / 2 / 3 / 2;
 }
-.single .wp-post-image {
+.single .post-excerpt {
+  grid-area: 3 / 2 / 4 / 2;
+}
+.single .post-image {
   grid-area: 4 / 2 / 5 / 3;
 }
 .single .blog-author-sidebar {
@@ -151,4 +177,13 @@
 }
 .single .comments-area {
   grid-area: 7 / 2 / 8 / 3;
+}
+
+/*--------------------------------------------------------------
+# Post Flex
+--------------------------------------------------------------*/
+.single .blog-author-sidebar {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
