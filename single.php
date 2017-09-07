@@ -35,6 +35,8 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/blog/sidebar', 'social' );
 
+			get_template_part( 'template-parts/blog/sidebar', 'subscribe' );
+
 			get_template_part( 'template-parts/content', 'post' );
 
 			the_post_navigation();

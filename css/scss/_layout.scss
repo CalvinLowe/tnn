@@ -147,7 +147,7 @@
 .single .site-main {
   @media screen and (min-width: 37.5em) {
     display: grid;
-    grid-template: repeat(7, auto) / 2fr 6fr 2fr;
+    grid-template: repeat(8, auto) / 2fr 7fr 2fr;
     grid-gap: 1em 5vw;
   }
 }
@@ -169,14 +169,17 @@
 .single .blog-social-sidebar {
   grid-area: 5 / 3 / 6 / 4;
 }
+.single .blog-subscribe-sidebar {
+  grid-area: 6 / 3 / 6 / 4;
+}
 .single .post {
-  grid-area: 5 / 2 / 6 / 3;
+  grid-area: 5 / 2 / 7 / 3;
 }
 .single .post-navigation {
-  grid-area: 6 / 2 / 7 / 3;
+  grid-area: 7 / 2 / 9 / 3;
 }
 .single .comments-area {
-  grid-area: 7 / 2 / 8 / 3;
+  grid-area: 7 / 2 / 9 / 3;
 }
 
 /*--------------------------------------------------------------
