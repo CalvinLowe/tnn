@@ -163,22 +163,6 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
- * Add new image size after theme setup.
+ * Load custom functions
  */
-add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
-function wpdocs_theme_setup() {
-    add_image_size( 'latest-thumb', 300, 300, true ); // 300 pixels wide, 300 pixels heigh, cropped
-}
-
-/**
- * Declase theme support for woocommerce
- */
-add_action( 'after_setup_theme', 'woocommerce_support' );
-function woocommerce_support() {
-    add_theme_support( 'woocommerce' );
-}
-
-/**
- * Remove WooCommerce stylesheets
- */
-//add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+require get_template_directory() . '/inc/custom-functions.php';
