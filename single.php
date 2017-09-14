@@ -23,12 +23,15 @@ get_header(); ?>
 			<div class="post-excerpt">
 				<?php the_excerpt(); ?>
 			</div>
-
-			<?php if ( has_post_thumbnail() ) ?>
-				<figure class="post-image">
-					<?php the_post_thumbnail( 'large' ); ?>
-					<figcaption><?php the_post_thumbnail_caption(); ?></figcaption>
-				</figure>
+			
+			<?php
+  				$hero = get_field('post_hero_image');
+				if( !empty($hero) ): ?>
+					<figure class="post-hero-image">
+						<img src="<?php echo esc_html_e($hero['url']); ?>" alt="<?php echo esc_html_e($hero['alt']); ?>" />
+						<figcaption><?php the_post_thumbnail_caption(); ?></figcaption>
+					</figure>  
+			<?php endif; ?>
 
 			<?php
 			get_template_part( 'template-parts/blog/sidebar', 'author' );
