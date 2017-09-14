@@ -125,11 +125,15 @@ function tnn_scripts() {
 
 	wp_enqueue_script( 'tnn-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'flickity', get_template_directory_uri() . '/js/flickity.pkgd.min.js', array(), '2.0.9', true );
+	if( is_front_page() ) {
+		wp_enqueue_script( 'flickity', get_template_directory_uri() . '/js/flickity.pkgd.min.js', array(), '2.0.9', true );
+		wp_enqueue_script( 'tnn-flickity-init', get_template_directory_uri() . '/js/tnn-flickity-init-min.js', array(), '1.0', true );
+	}
 
-	wp_enqueue_script( 'mailchimp', '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', array(), '3.51.0-2014.06.20', true );
-
-	wp_enqueue_script( 'tnn-custom-scripts', get_template_directory_uri() . '/js/tnn-custom-scripts.js', array(), '1.0', true );
+	if ( is_front_page() || is_single() ) {
+		wp_enqueue_script( 'mailchimp', get_template_directory_uri() . '/js/mc-validate-min.js', array(), '3.51.0-2014.06.20', true );
+		wp_enqueue_script( 'tnn-mailchimp-init', get_template_directory_uri() . '/js/tnn-mailchimp-init-min.js', array(), '1.0', true );
+	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
