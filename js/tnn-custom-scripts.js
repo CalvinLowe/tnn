@@ -47,8 +47,8 @@
 
 
  (function($) {
-   window.fnames = new Array();
-   window.ftypes = new Array();
+   window.fnames = [];
+   window.ftypes = [];
    fnames[0]='EMAIL';
    ftypes[0]='email';
    fnames[1]='FNAME';
