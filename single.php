@@ -36,9 +36,7 @@ get_header(); ?>
 			<?php
 			get_template_part( 'template-parts/blog/sidebar', 'author' );
 
-			get_template_part( 'template-parts/blog/sidebar', 'social' );
-
-			get_template_part( 'template-parts/blog/sidebar', 'subscribe' );
+			get_template_part( 'template-parts/blog/sidebar', 'social-subscribe' );
 
 			get_template_part( 'template-parts/content', 'post' );
 
