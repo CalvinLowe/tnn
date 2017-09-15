@@ -44,10 +44,9 @@ get_header(); ?>
 			?>
 
 			<footer class="post-footer">
-				<?php
-				get_template_part( 'template-parts/blog/footer', 'author' );
-				get_template_part( 'template-parts/blog/footer', 'social' );
-				?>
+				<?php get_template_part( 'template-parts/blog/footer', 'author' ); ?>
+				<hr>
+				<?php get_template_part( 'template-parts/blog/footer', 'social' ); ?>
 			</footer>
 
 			<?php
@@ -61,6 +60,8 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	
+	<?php get_template_part( 'template-parts/common/mailchimp', 'opt-in'); ?>
 
 <?php
 get_sidebar();
