@@ -8,30 +8,30 @@
  */
 
 ?>
+<div class="front-page-product-advertising">
+  <figure class="product-advert">
+    <a href="<?php the_field('product_1_link'); ?>">
+    <?php
+    $image1 = get_field('product_1_img');
 
+    if( !empty($image1) ): ?>
 
-<figure class="product-advert">
-  <a href="<?php the_field('product_1_link'); ?>">
-  <?php
-  $image1 = get_field('product_1_img');
+      <img src="<?php echo esc_html_e($image1['url']); ?>" alt="<?php echo esc_html_e($image1['alt']); ?>" />
 
-  if( !empty($image1) ): ?>
+    <?php endif; ?>
+    </a>
+  </figure>
 
-  	<img src="<?php echo esc_html_e($image1['url']); ?>" alt="<?php echo esc_html_e($image1['alt']); ?>" />
+  <figure class="product-advert">
+    <a href="<?php the_field('product_2_link'); ?>">
+    <?php
+    $image2 = get_field('product_2_img');
 
-  <?php endif; ?>
-  </a>
-</figure>
+    if( !empty($image2) ): ?>
 
-<figure class="product-advert">
-  <a href="<?php the_field('product_2_link'); ?>">
-  <?php
-  $image2 = get_field('product_2_img');
+      <img src="<?php echo esc_html_e($image2['url']); ?>" alt="<?php echo esc_html_e($image2['alt']); ?>" />
 
-  if( !empty($image2) ): ?>
-
-  	<img src="<?php echo esc_html_e($image2['url']); ?>" alt="<?php echo esc_html_e($image2['alt']); ?>" />
-
-  <?php endif; ?>
-  </a>
-</figure>
+    <?php endif; ?>
+    </a>
+  </figure>
+</div>
