@@ -9,7 +9,7 @@
 
 ?>
 
-<aside id="footer-author-info" class="blog-footer">
+<div id="footer-author-info" class="blog-footer">
 	<?php echo get_avatar( get_the_author_meta( 'ID' ) , 100 ); ?>
 	<h3><?php the_author(); ?></h3>
 	<p><?php the_author_meta('description'); ?></p>
@@ -17,4 +17,4 @@
 	<div class="tag-wrap">
 		<?php the_tags(); ?>
 	</div>
-</aside><!-- #author-info -->
+</div><!-- #author-info -->

@@ -229,3 +229,21 @@
     }
   }
 }
+.single .post-footer .blog-footer h3:first-child {
+  margin-top: 0;
+}
+.single .post-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media screen and (min-width: 37.5em) {
+    justify-content: center;
+  }
+}
+.single .post-footer .blog-footer {
+  flex: 1 1 50%;
+  @media screen and (min-width: 37.5em) {
+    margin: 0 1em;
+  }
+}
