@@ -8,7 +8,6 @@
  */
 
 ?>
-
 <div id="footer-social-share" class="blog-footer">
     <h3><?php echo esc_html_e('Share this article'); ?></h3>
 	<div id="footer-social-icons" class="blog-footer social-icons">
@@ -20,7 +19,8 @@
         <li><a href="<?php esc_html_e('mailto:?subject=' . get_the_title() . '&body=' . get_the_excerpt() . '%0A%0A' . $link); ?>"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></li>
     </ul>
     </div><!-- #sidebar-social-icons -->
-    <hr>
-    <h3><?php echo esc_html_e('Subscribe to the newsletter'); ?></h3>
-    <a class="button" href="#subscribe"><?php echo esc_html_e('Subscribe'); ?></a>
-</div><!-- #author-info -->
+    <div class="footer-subscribe">
+        <h3><?php echo esc_html_e('Subscribe to the newsletter'); ?></h3>
+        <a class="button" href="#subscribe"><?php echo esc_html_e('Subscribe'); ?></a>
+    </div>
+</div>

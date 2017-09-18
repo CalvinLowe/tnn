@@ -13,10 +13,12 @@ input.mailchimp-input {
   display: block;
 }
 
-
+.mailchimp-opt-in { // Container on single posts page
+  background-color: $tnn-light-green-2;
+}
 @media screen and (min-width: 37.5em) {
   // must override mailchimp plugins
-  .mailchimp-opt-in { // Container
+  .home .mailchimp-opt-in { // Container on home page
     background-image: url("../img/mailchimp-opt-in-background.jpg");
     background-size: conver;
   }
