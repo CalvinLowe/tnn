@@ -69,13 +69,11 @@
   /*--------------------------------------------------------------
   # Post Grid
   --------------------------------------------------------------*/
-  @supports (display: grid) {
-    @media screen and (min-width: 37.5em) {
-      .single .site-main {
-        display: grid;
-        grid-template: repeat(8, auto) / 2fr 7fr 2fr;
-        grid-gap: 1em 5vw;
-      }
+  @media screen and (min-width: 37.5em) {
+    .single .site-main {
+      display: grid;
+      grid-template: repeat(8, auto) / 2fr 7fr 2fr;
+      grid-gap: 1em 5vw;
     }
   }
   .single .post-categories {
@@ -162,9 +160,9 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: flex-end;
-    /*@media screen and (min-width: 37.5em) {
+    @media screen and (min-width: 37.5em) {
       display: none;
-    }*/
+    }
   }
   .single .post-footer .author.blog-footer p {
     margin: 0;
@@ -193,7 +191,11 @@
     flex-flow: row wrap;
     justify-content: space-between;
   }
-  
+
+/*--------------------------------------------------------------
+# Fixes
+--------------------------------------------------------------*/
+// Large phones in landscape mode
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   .single .blog-sidebar {
       display: none;
@@ -204,6 +206,22 @@
   .single .post-footer .blog-footer h3, .single .post-footer .blog-footer h3:first-child {
     margin: 1em;
     margin-top: 1em;
+  }
+}
+
+// Hide elements for browser that do not support grid
+.single .blog-sidebar {
+  display: none;
+}
+.single .blog-footer, .single .post-footer .author.blog-footer {
+  display: block;
+}
+@supports (display: grid) {
+  .single .blog-sidebar {
+    display: block;
+  }
+  .single .blog-footer, .single .post-footer .author.blog-footer {
+    display: none;
   }
 }
     
