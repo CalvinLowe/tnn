@@ -12,10 +12,17 @@
 .cta-caption .cta-caption-title{
   padding: 0 10vw;
 }
+@supports (display: flex) {
+  .cta-images {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+
 @media screen and (min-width: 37.5em) {
   .cta-images {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
   }
   .cta-images a {
     text-decoration: none;
@@ -38,5 +45,15 @@
   }
   .cta-link:hover .cta-caption, .cta-link:focus .cta-caption {
     background-color: rgba(0, 0, 0, .3);
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .cta-images {
+    flex-flow: column wrap;
+  }
+  .cta-images a {
+    text-decoration: none;
+    flex-basis: 100%;
   }
 }

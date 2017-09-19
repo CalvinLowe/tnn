@@ -65,8 +65,18 @@
 
 // Fix for landscape orientation on large phones
 @media screen and (max-width: 1024px) and (orientation: landscape) {
+  .footer-main-container {
+    display: block;
+  }
   .footer.social-icons {
     flex-flow: row nowrap;
     flex: 0 1 50%;
+  }
+  .menu-footer-menu-1-container ul {
+    list-style: none;
+    display: block;
+  }
+  .footer-navigation li::after {
+    content: none;
   }
 }

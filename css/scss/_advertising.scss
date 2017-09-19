@@ -78,3 +78,9 @@
   /*  margin: 0 1em;*/
   }
 }
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .rr-list {
+    flex-flow: column wrap;
+  }
+}  
