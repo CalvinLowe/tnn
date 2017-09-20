@@ -86,8 +86,8 @@
             <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_1')); ?></h3>
           </div>
           <img class="slider-img" src="<?php echo esc_html_e($sliderImage1mb['url']); ?>" alt="<?php echo esc_html_e($sliderImage1mb['alt']); ?>" />
-        </a>
-      </div>
+        </div>
+      </a>
     <?php endif; ?><!-- Slide 1 -->
     <?php
     $sliderImage2mb = get_field('recipes_slide_2_mb');
@@ -98,8 +98,8 @@
             <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_2')); ?></h3>
           </div>
           <img class="slider-img" src="<?php echo esc_html_e($sliderImage2mb['url']); ?>" alt="<?php echo esc_html_e($sliderImage2mb['alt']); ?>" />
-        </a>
-      </div>
+        </div>
+      </a>
     <?php endif; ?><!-- Slide 2 -->
     <?php
     $sliderImage3mb = get_field('recipes_slide_3_mb');
@@ -110,8 +110,8 @@
             <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_3')); ?></h3>
           </div>
           <img class="slider-img" src="<?php echo esc_html_e($sliderImage3mb['url']); ?>" alt="<?php echo esc_html_e($sliderImage3mb['alt']); ?>" />
-        </a>
-      </div>
+        </div>
+      </a>
     <?php endif; ?><!-- Slide 3 -->
     <?php
     $sliderImage4mb = get_field('recipes_slide_4_mb');
@@ -122,8 +122,8 @@
             <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_4')); ?></h3>
           </div>
           <img class="slider-img" src="<?php echo esc_html_e($sliderImage4mb['url']); ?>" alt="<?php echo esc_html_e($sliderImage4mb['alt']); ?>" />
-        </a>
-      </div>
+        </div>
+      </a>
     <?php endif; ?><!-- Slide 4 -->
     <?php
     $sliderImage5mb = get_field('recipes_slide_5_mb');
@@ -134,8 +134,8 @@
             <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_5')); ?></h3>
           </div>
           <img class="slider-img" src="<?php echo esc_html_e($sliderImage5mb['url']); ?>" alt="<?php echo esc_html_e($sliderImage5mb['alt']); ?>" />
-        </a>
-      </div>
+        </div>
+      </a>
     <?php endif; ?><!-- Slide 5 -->
   </div> <!-- .banner-slider -->
 </div>
