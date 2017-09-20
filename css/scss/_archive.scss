@@ -1,0 +1,44 @@
+// _archive.css
+
+.archive article .entry-footer span {
+    display: block;
+}
+
+@supports (display: grid) {
+    @media screen and (min-width: 37.5em) {
+        // Setup the grid
+        .archive article{
+            display: grid;
+            grid-template: 1fr 1fr 1fr / 1fr 2fr;
+        }
+        .archive article .entry-header {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+        .archive article .entry-image {
+            grid-area: 1 / 1 / 4 / 2;
+        }
+        .archve article .entry-summary {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+        .archve article .entry-footer {
+            grid-area: 2 / 2 / 4 / 3;
+        }
+        
+        //Remove extra margins
+        .archive article .entry-header, .archive article .entry-summary {
+            margin-top: 0;
+        }
+            .archive article .entry-header .entry-title {
+                margin-top: 0;
+            }
+            .archive article .entry-image figure {
+                margin-top: 0;
+            }
+
+        // Add a border between posts
+        .archive article {
+            border-bottom: 1px solid #efefef;
+        }
+    }
+    
+}

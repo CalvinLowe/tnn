@@ -69,19 +69,22 @@
 }
 
 /*--------------------------------------------------------------
-# Page layout & Front Page Layout
+# Page layout & Front Page Layout & Archive & Search
 --------------------------------------------------------------*/
-.page .content-area {
+.page .content-area, .archive .content-area, .search .content-area {
+  padding: 3em; // for browsers that don't support vw uints
   padding: 5vw;
   margin-top: 0;
-  @media screen and (min-width: 37.5em) {
-    padding: 0;
-    margin-top: 1.5em;
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+  @supports (display: grid) {
+    @media screen and (min-width: 37.5em) {
+      padding: 0;
+      margin-top: 1.5em;
+      display: grid;
+      grid-template-columns: 1fr 6fr 1fr;
+    }
   }
 }
-.page .site-main {
+.page .site-main, .archive .site-main, .search .site-main {
   grid-column: 2 / 3;
 }
 .page .entry-header {

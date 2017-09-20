@@ -26,15 +26,16 @@ get_header(); ?>
 			
 			<?php
 				$hero = get_field('post_hero_image');
+				$caption = get_the_post_thumbnail_caption();				
 				if ( empty($hero) && has_post_thumbnail() ){ ?>
 					<figure class="post-image-alternative">
 						<?php the_post_thumbnail( 'large' ); ?>
-						<figcaption><?php the_post_thumbnail_caption(); ?></figcaption>
+						<figcaption><?php echo $caption ?></figcaption>
 					</figure>
 				<?php } else if( !empty($hero) ): { ?>
 					<figure class="post-hero-image">
 						<img src="<?php echo esc_html_e($hero['url']); ?>" alt="<?php echo esc_html_e($hero['alt']); ?>" />
-						<figcaption><?php the_post_thumbnail_caption(); ?></figcaption>
+						<figcaption><?php echo $caption ?></figcaption>
 					</figure>  
 			<?php } endif; ?>
 

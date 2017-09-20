@@ -213,15 +213,20 @@
 .single .blog-sidebar {
   display: none;
 }
-.single .blog-footer, .single .post-footer .author.blog-footer {
+.single .blog-footer {
   display: block;
 }
+.single .post-footer .author.blog-footer {
+  display: flex;
+}
 @supports (display: grid) {
-  .single .blog-sidebar {
-    display: block;
-  }
-  .single .blog-footer, .single .post-footer .author.blog-footer {
-    display: none;
+  @media screen and (min-width: 37.5em) {
+    .single .blog-sidebar {
+      display: block;
+    }
+    .single .blog-footer, .single .post-footer .author.blog-footer {
+      display: none;
+    }
   }
 }
     
