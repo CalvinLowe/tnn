@@ -94,3 +94,18 @@ function RSSImages($content) {
 }
 add_filter('the_excerpt_rss', 'RSSImages');
 add_filter('the_content_feed', 'RSSImages');
+
+/**
+ * WooCommerce 3 products per row
+ */
+ // Override theme default specification for product # per row
+/*function loop_columns() {
+  return 5; // 5 products per row
+  }
+  add_filter('loop_shop_columns', 'loop_columns', 999);
+add_filter('loop_shop_columns', 'loop_columns');
+if (!function_exists('loop_columns')) {
+	function loop_columns() {
+		return 3; // 3 products per row
+	}
+}*/
