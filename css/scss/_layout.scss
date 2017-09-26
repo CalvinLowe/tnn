@@ -69,9 +69,9 @@
 }
 
 /*--------------------------------------------------------------
-# Page layout & Front Page Layout & Archive & Search
+# Page layout & Front Page Layout & Archive & Search & Store
 --------------------------------------------------------------*/
-.page .content-area, .archive .content-area, .search .content-area {
+.page .content-area, .archive .content-area, .search .content-area, .woocommerce #container {
   padding: 3em; // for browsers that don't support vw uints
   padding: 5vw;
   margin-top: 0;
@@ -84,7 +84,7 @@
     }
   }
 }
-.page .site-main, .archive .site-main, .search .site-main {
+.page .site-main, .archive .site-main, .search .site-main, .woocommerce #content {
   grid-column: 2 / 3;
 }
 .page .entry-header {
