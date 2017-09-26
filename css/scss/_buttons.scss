@@ -1,6 +1,7 @@
 
 // _buttons.scss
-button, input[type="button"], input[type="reset"], input[type="submit"], .button, .button:link, .button:visited {
+button, input[type="button"], input[type="reset"], input[type="submit"],
+ .button, .button:link, .button:visited, .added_to_cart:link, .added_to_cart:visited {
   font-family: 'Oswald', sans-serif;
   background-color: $tnn-primary;
   color: $tnn-light;
@@ -15,7 +16,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
 
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover,
  button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active, 
- .button:hover, .button:active  {
+ .button:hover, .button:active, .added_to_cart:hover, .added_to_cart:active  {
   background-color: $tnn-secondary;
   box-shadow: none;
 }
@@ -40,4 +41,15 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 
 .front-cta a:hover, .front-cta a:first-child:hover, .front-cta a:active, .front-cta a:first-child:active {
   background-color: $tnn-secondary;
+}
+
+// WooCommerce button to match Add to cart button
+.added_to_cart:link {
+  font-size: 100%;
+  padding: .618em 1em;
+  line-height: 16px;
+  padding-top: .618em;
+  @media only screen and (max-width: 495px) {
+    margin-top: 1em;
+  }
 }
