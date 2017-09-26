@@ -1,0 +1,29 @@
+// _woocommerce-custom.scss
+
+.store-information {
+    //border: 2px orange solid;
+    border: 2px $tnn-primary solid;
+    padding: 1em;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+
+@media only screen and (max-width: 472px) {
+    .woocommerce div.product .woocommerce-tabs ul.tabs {
+        padding: 0 0 0 0.5em;
+    }
+        .woocommerce div.product .woocommerce-tabs ul.tabs li {
+            width: 100%;
+            //padding: 0;
+        }
+            .woocommerce div.product .woocommerce-tabs ul.tabs li a {
+                width: 100%;
+            }
+            .woocommerce div.product .woocommerce-tabs ul.tabs li::after,
+            .woocommerce div.product .woocommerce-tabs ul.tabs li::before {
+                    content: none;
+                }
+}
+
