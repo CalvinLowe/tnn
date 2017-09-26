@@ -5,7 +5,8 @@
     background-size: 235px 128px;
     background-repeat: no-repeat;
 }
-body.login div#login form#loginform p.submit input#wp-submit {
+body.login div#login form#loginform p.submit input#wp-submit, 
+body.login div#login form#loginform p.submit input#wp-submit:visited {
     font-family: 'Oswald', sans-serif;
     background-color: #78bc42;
     color: #fff;
@@ -16,4 +17,12 @@ body.login div#login form#loginform p.submit input#wp-submit {
     box-shadow: 0 3px 3px rgba(0,0,0,0.2);
     text-shadow: none;
     text-transform: uppercase;
+    font-size: 100%;
+    padding: .618em 1em;
+    line-height: 16px;
+}
+body.login div#login form#loginform p.submit input#wp-submit:hover, 
+body.login div#login form#loginform p.submit input#wp-submit:active {
+    background-color: #6a8139; /* $tnn-secondary */
+    box-shadow: none;
 }
