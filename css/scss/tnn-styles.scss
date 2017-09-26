@@ -26,6 +26,7 @@
 # Animations
 # Plugins
   # WooCommerce
+    # WooCommerce customisations
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -153,4 +154,10 @@
 /*--------------------------------------------------------------
 # WooCommerce
 --------------------------------------------------------------*/
+// Copied original woocommerce css files for enqueueing purposes only
 @import "_woocommerce.scss";
+
+/*--------------------------------------------------------------
+# WooCommerce Customisations
+--------------------------------------------------------------*/
+@import "_woocommerce-custom.scss";
