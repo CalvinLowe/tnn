@@ -2,22 +2,16 @@
 .popular-recipes .flickity-prev-next-button {
   top: 60%;
 }
-.banner-slider, .popular-recipes-slider {
-  display: none;
-}
 .slider a {
   text-decoration: none;
 }
-
 .slider-img {
   max-width: none;
   width: 100%;
 }
-
 .banner-slider-cell, .banner-slider-cell-mb, .popular-recipes-slider-cell, .popular-recipes-slider-cell-mb {
   width: 100%;
 }
-
 .popular-recipes-title-wrapper-1, .popular-recipes-title-wrapper-2 {
   overflow: auto;
   box-shadow: $tnn-shadow;
@@ -47,7 +41,9 @@
   background: white;
 }
 
-
+.banner-slider, .popular-recipes-slider {
+  display: none;
+}
 @media screen and (min-width: 37.5em) {
   .banner-slider, .popular-recipes-slider {
     display: block;
