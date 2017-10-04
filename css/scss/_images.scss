@@ -3,3 +3,11 @@
 img {
   display: block;
 }
+
+.tnn-post-img {
+  margin-bottom: 1.5em;
+  width: 100%;
+  @media only screen and (min-width: 800px) {
+    width: auto;
+  }
+}
