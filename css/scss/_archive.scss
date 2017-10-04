@@ -10,6 +10,7 @@
         .archive article{
             display: grid;
             grid-template: 1fr 1fr 1fr / 1fr 2fr;
+            grid-column-gap: 1em;
         }
         .archive article .entry-header {
             grid-area: 1 / 2 / 2 / 3;
