@@ -1,0 +1,24 @@
+// _components.scss
+
+/*--------------------------------------------------------------
+# Social links
+--------------------------------------------------------------*/
+.social-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .social-wrap .social-link i {
+        width: 1.5em;
+    }
+
+/*--------------------------------------------------------------
+# Recipes
+--------------------------------------------------------------*/
+.flex-recipes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+    .flex-recipes figure h2 {
+        margin: 0;
+    }
