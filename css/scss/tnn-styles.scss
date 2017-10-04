@@ -24,6 +24,7 @@
 # Advertising
 # Footer
 # Animations
+# Components
 # Plugins
   # WooCommerce
     # WooCommerce customisations
@@ -145,6 +146,11 @@
 # Animations
 --------------------------------------------------------------*/
 @import "_animations.scss";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "_components.scss";
 
 /*--------------------------------------------------------------
 # Plugins
