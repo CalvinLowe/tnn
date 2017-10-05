@@ -170,3 +170,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load custom functions
  */
 require get_template_directory() . '/inc/custom-functions.php';
+
+/**
+ * Load shortcodes
+ */
+ require get_template_directory() . '/inc/shortcodes.php';

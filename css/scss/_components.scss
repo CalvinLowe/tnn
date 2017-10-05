@@ -22,3 +22,33 @@
     .flex-recipes figure h2 {
         margin: 0;
     }
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonial {
+	padding: 5px 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 1px solid $tnn-grey-2;
+    background-color: $tnn-light-green;
+	border-radius: 5px;
+}
+    .testimonial .testimonial-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -75px;
+        border-radius: 50%;
+    }
+    .testimonial blockquote {
+    border-left: 5px solid #C0D231;
+    }
+    .testimonial footer {
+        text-align: right;
+        padding: 5px 0 5px 25px;
+        margin: 15px 0 15px 20px;
+    }
+        .testimonial footer cite {
+            font-style: italic;
+        }
