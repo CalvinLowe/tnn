@@ -110,6 +110,14 @@ if (!function_exists('loop_columns')) {
 }
 
 /**
+ * WooCommerce Shop - Number of products per page.
+ *
+ * Changes the number of products per page for the WooCommerce shop.
+ */
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 24;' ), 20 );
+
+
+/**
  * Remove Type Column from My Content Area
  * The “My Content” section of the Member Area will show the content type
  * (Post, Page, Project, Forum, etc) as this paginated section shows all accessible content
@@ -157,4 +165,19 @@ function sv_members_area_content_table_columns( $columns ) {
 add_filter('wc_memberships_members_area_my_membership_content_column_names',
  'sv_members_area_content_table_columns', 10, 1 );
 
- 
+ /**
+ * Custom registration field for Woocommerce
+ * Adds a custom 'First name' field to the user registration form on /my-account
+ */
+function wooc_extra_register_fields() {
+  ?>
+
+  <p class="form-row form-row-wide">
+  <label for="reg_billing_first_name"><?php _e( 'First name', 'woocommerce' ); ?> <span class="required">*</span></label>
+  <input type="text" class="input-text" name="billing_first_name" id="reg_billing_first_name" value="<?php if ( ! empty( $_POST['billing_first_name'] ) ) esc_attr_e( $_POST['billing_first_name'] ); ?>" />
+  </p>
+
+  <?php
+}
+add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
+
