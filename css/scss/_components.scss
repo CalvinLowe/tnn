@@ -73,3 +73,111 @@
         .testimonial footer cite {
             font-style: italic;
         }
+
+/*--------------------------------------------------------------
+# Accordions
+--------------------------------------------------------------*/
+.tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+  }
+  .tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .tab label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: #76BE43;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+  }
+  .tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #76BE43;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+  }
+  .tab-content p {
+    color: #fff !important;
+    margin: 1em;
+    padding: 0 2em;
+  }
+  /* :checked */
+  .tab input:checked ~ .tab-content {
+    max-height: 40em;
+  }
+  /* Icon */
+  .tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+  }
+  .tab input[type=checkbox] + label::after {
+    content: "+";
+  }
+  .tab input[type=radio] + label::after {
+    content: "\25BC";
+  }
+  .tab input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+  }
+  .tab input[type=radio]:checked + label::after {
+    transform: rotateX(180deg);
+  }
+  
+  /* FAQ Accordion Styles */
+  .faq-accordion .tab {
+    color: inherit;
+    border-top: 1px solid #ddd;
+  } 
+  .faq-accordion .tab label {
+      line-height: 1.8em;
+        padding: 0.5em 3em 0.5em 1em;
+      background-color: inherit;
+        color: #77BD43;
+  }
+  .faq-accordion .tab label:hover {
+      color: #C0D231;
+  }
+  .faq-accordion .tab-content {
+    background-color: inherit;
+  }
+  .faq-accordion .tab-content p {
+    color: inherit!important;
+  }
+  .tnn-program-link {
+      background-color: #6A813B;
+      color: #fff !important;
+      padding: 0.5em 1em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+        transition: all 0.3s
+  }
+  .tnn-program-link:hover {
+      color: #C0D231 !important;
+      background-color: #87a54c;
+  }
+  .tnn-testing-link {
+      color: #6A813B !important;
+        transition: all 0.3s
+  }
+  .tnn-testing-link:hover {
+      color: #C0D231 !important;
+  }
