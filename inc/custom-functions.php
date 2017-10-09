@@ -68,7 +68,8 @@ add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
   * Loads a custom stylesheet to wp-login.php
   */
   function my_login_stylesheet() {
-    wp_enqueue_style('custom-login', get_template_directory_uri() . '/css/login-min.css', array(), filemtime(get_template_directory() . '/css/login-min.css'), false);
+    wp_enqueue_style('custom-login', get_template_directory_uri() . '/css/login-min.css', array(),
+     filemtime(get_template_directory() . '/css/login-min.css'), false);
 }
 add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
 
@@ -84,7 +85,8 @@ function RSSImages($content) {
       $size = 'thumbnail';
       $width = '100%';
       $height = 'auto';
-      $content = '<div><img src="' . $image['url'] . '" alt="' . $image['alt'] . '" width="' . $width . '" height="' . $height . '"></div>' . $content;
+      $content = '<div><img src="' . $image['url'] . '" alt="' . $image['alt'] . '" width="' . $width . 
+      '" height="' . $height . '"></div>' . $content;
     } else if ( has_post_thumbnail( $post->ID ) ){
       $output = get_the_post_thumbnail( $post->ID, 'medium' );
       $content = $output . $content;
@@ -106,3 +108,53 @@ if (!function_exists('loop_columns')) {
 		return 4; // 3 products per row
 	}
 }
+
+/**
+ * Remove Type Column from My Content Area
+ * The “My Content” section of the Member Area will show the content type
+ * (Post, Page, Project, Forum, etc) as this paginated section shows all accessible content
+ * (posts, pages, custom post types) on the site. This snippet removes the “Type” column if its display isn’t needed.
+ */
+function sv_members_area_content_remove_column( $columns ) {	
+	// unset the "type" column, which shows post, page, project, etc
+	if ( isset( $columns['membership-content-type'] ) ) {
+		unset( $columns['membership-content-type'] );
+	}
+	return $columns;
+}
+add_filter( 'wc_memberships_members_area_my_membership_content_column_names',
+ 'sv_members_area_content_remove_column' );
+
+/**
+ * Remove Excerpt Column from My Products Area
+ * The paginated “My Products” section of the Member Area will show all accessible products for the member 
+ * (those the plan grants viewing / purchasing for). This snippet removes the “Description” / 
+ * Excerpt column if its display isn’t needed.
+ */
+// Removes the product short description / excerpt column from "My Products"
+function sv_members_area_products_table_columns( $columns ) {
+  if ( isset( $columns['membership-product-excerpt'] ) ) {
+      unset( $columns['membership-product-excerpt'] );
+  }
+  return $columns;
+}
+add_filter('wc_memberships_members_area_my_membership_products_column_names',
+ 'sv_members_area_products_table_columns', 10, 1 );
+
+/**
+* Remove Excerpt Column from My Content Area
+* The paginated “My Content” section of the Member Area will show all accessible content for the
+* member (those the plan grants viewing / purchasing for). This snippet removes the “Description” / Excerpt 
+* column if its display isn’t needed.
+*/
+// Removes the product short description / excerpt column from "My Products"
+function sv_members_area_content_table_columns( $columns ) {
+  if ( isset( $columns['membership-content-excerpt'] ) ) {
+      unset( $columns['membership-content-excerpt'] );
+  }
+  return $columns;
+}
+add_filter('wc_memberships_members_area_my_membership_content_column_names',
+ 'sv_members_area_content_table_columns', 10, 1 );
+
+ 
