@@ -56,3 +56,25 @@ function accordion_sc( $atts = [], $content = null, $tag = '' ) {
   return $h;
 }
 add_shortcode( 'accordion_sc', 'accordion_sc' );
+
+/**
+ * Accordion shortcode
+ * Adds a shortcode for accordions.
+ * Requires id, heading, and content.
+ */
+function accordion_no_link_sc( $atts = [], $content = null, $tag = '' ) {
+    // normalize attribute keys, lowercase
+  $atts = array_change_key_case((array)$atts, CASE_LOWER);
+    // override default attributes with user attributes
+  $accordion_atts = shortcode_atts([
+    'id' => '1',
+    'heading' => 'Default title',
+  ], $atts, $tag);
+    // set variable escape html
+    $id = esc_html($accordion_atts['id']);
+    $heading = esc_html($accordion_atts['heading']);
+    $h = '<div class="tab"><input id="' . $id . '" type="checkbox" name="tabs"><label for="' . $id . '">' . $heading . '</label><div class="tab-content"><p>' . $content . '</p></div></div>';
+   // Return the html
+  return $h;
+}
+add_shortcode( 'accordion_no_link_sc', 'accordion_no_link_sc' );
