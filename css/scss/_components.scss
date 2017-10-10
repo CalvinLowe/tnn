@@ -79,7 +79,7 @@
 --------------------------------------------------------------*/
 .tab {
     position: relative;
-    margin-bottom: 1px;
+    border-bottom: 1px solid white;
     width: 100%;
     color: #fff;
     overflow: hidden;
@@ -141,27 +141,6 @@
   .tab input[type=radio]:checked + label::after {
     transform: rotateX(180deg);
   }
-  
-  /* FAQ Accordion Styles */
-  .faq-accordion .tab {
-    color: inherit;
-    border-top: 1px solid #ddd;
-  } 
-  .faq-accordion .tab label {
-      line-height: 1.8em;
-        padding: 0.5em 3em 0.5em 1em;
-      background-color: inherit;
-        color: #77BD43;
-  }
-  .faq-accordion .tab label:hover {
-      color: #C0D231;
-  }
-  .faq-accordion .tab-content {
-    background-color: inherit;
-  }
-  .faq-accordion .tab-content p {
-    color: inherit!important;
-  }
   .tnn-program-link {
       background-color: #6A813B;
       color: #fff !important;
@@ -174,10 +153,20 @@
       color: #C0D231 !important;
       background-color: #87a54c;
   }
-  .tnn-testing-link {
+  .tnn-testing-link, .alternate-link {
       color: #6A813B !important;
         transition: all 0.3s
   }
-  .tnn-testing-link:hover {
+  .tnn-testing-link:hover, .alternate-link:hover {
       color: #C0D231 !important;
   }
+
+/*--------------------------------------------------------------
+# Recommended reading
+--------------------------------------------------------------*/
+.recommended-reading-figure img {
+    margin-bottom: 0.5em;
+    @media only screen and (min-width: 600px) {
+    margin-bottom: 2em;
+    }
+}
