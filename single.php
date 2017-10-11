@@ -72,8 +72,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	
-	<?php get_template_part( 'template-parts/common/mailchimp', 'opt-in'); ?>
-
 <?php
 get_sidebar();
 get_footer();

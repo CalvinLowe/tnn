@@ -12,6 +12,10 @@
 ?>
 
 	</div><!-- #content -->
+	
+	<?php if ( !is_front_page() ): ?>
+		<?php get_template_part( 'template-parts/common/mailchimp', 'opt-in'); ?>
+	<?php endif; ?>
 
 	<div class="goto-top">
 		<a href="#"><i class="goto-top-angle fa fa-angle-up fa-5x" aria-hidden="true"></i></a>
