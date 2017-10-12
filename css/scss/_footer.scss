@@ -74,9 +74,16 @@
   }
   .menu-footer-menu-1-container ul {
     list-style: none;
-    display: block;
+    justify-content: space-between;
   }
-  .footer-navigation li::after {
-    content: none;
+  .footer.social-icons ul {
+    justify-content: center;
   }
+    .footer.social-icons ul li {
+      flex-grow: 0.1;
+      text-align: center;
+    }
+    .footer-navigation li::after {
+      content: none;
+    }
 }

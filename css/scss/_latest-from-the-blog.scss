@@ -55,11 +55,6 @@
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   .latest-posts-ul {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-  }
-  .latest-post-li {
-    margin: 1em;
+    flex-flow: row wrap;
   }
 }  

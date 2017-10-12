@@ -50,10 +50,10 @@
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   .cta-images {
-    flex-flow: column wrap;
+    flex-flow: row wrap;
   }
-  .cta-images a {
+  /*.cta-images a {
     text-decoration: none;
     flex-basis: 100%;
-  }
+  }*/
 }
