@@ -17,9 +17,9 @@ function woocommerce_support() {
 * Optimize WooCommerce Scripts
 * Remove WooCommerce Generator tag, styles, and scripts from non WooCommerce pages.
 */
-add_action( 'wp_enqueue_scripts', 'manage_woocommerce_styles', 99 );
+//add_action( 'wp_enqueue_scripts', 'manage_woocommerce_styles', 99 );
 
-function manage_woocommerce_styles() {
+/*function manage_woocommerce_styles() {
   //remove generator meta tag
   remove_action( 'wp_head', array( $GLOBALS['woocommerce'], 'generator' ) );
 
@@ -46,7 +46,7 @@ function manage_woocommerce_styles() {
       wp_dequeue_script( 'jqueryui' );       
     }
   }
-}
+}*/
 
 /**
  * Remove WooCommerce stylesheets
@@ -128,18 +128,18 @@ add_filter('wc_memberships_members_area_my_membership_content_column_names',
  * Custom registration field for Woocommerce
  * Adds a custom 'First name' field to the user registration form on /my-account
  */
-function wooc_extra_register_fields() {
+/*function wooc_extra_register_fields() {
   ?>
 
   <p class="form-row form-row-wide">
   <label for="reg_billing_first_name"><?php _e( 'First name', 'woocommerce' ); ?> <span class="required">*</span></label>
-  <input type="text" class="input-text" name="billing_first_name" id="reg_billing_first_name" value="<?php if ( ! empty( $_POST['billing_first_name'] ) ) esc_attr_e( $_POST['billing_first_name'] ); ?>" />
+  <input type="text" class="input-text" name="billing_first_name" id="reg_billing_first_name" value="<?php if ( ! empty( $_POST['billing_first_name'] ) ) esc_attr_e( $_POST['billing_first_name'] , 'tnn'); ?>" />
   </p>
 
   <?php
 }
 add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
-
+*/
 /**
  * Validate Custom Field for Woocommerce user registration
  */
@@ -155,7 +155,7 @@ add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
  */
 function wooc_validate_extra_register_fields( $errors, $username, $email ) {
     if ( isset( $_POST['billing_first_name'] ) && empty( $_POST['billing_first_name'] ) ) {
-        $errors->add( 'billing_first_name_error', __( '<strong>Error</strong>: First name is required!', 'woocommerce' ) );
+        $errors->add( 'billing_first_name_error', __( '<strong>Error</strong>: First name is required!', 'tnn' ) );
     }
 
     return $errors;
