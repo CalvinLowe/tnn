@@ -29,7 +29,7 @@ function testimonial_shortcode( $atts, $content = null ) {
         </footer>
     </figure>';
 }
-add_shortcode( 'testimonial', 'testimonial_shortcode' );
+//add_shortcode( 'testimonial', 'testimonial_shortcode' );
 
 /**
  * Accordion shortcode
@@ -55,7 +55,7 @@ function accordion_sc( $atts = [], $content = null, $tag = '' ) {
    // Return the html
   return $h;
 }
-add_shortcode( 'accordion_sc', 'accordion_sc' );
+//add_shortcode( 'accordion_sc', 'accordion_sc' );
 
 /**
  * Accordion shortcode
@@ -77,4 +77,4 @@ function accordion_no_link_sc( $atts = [], $content = null, $tag = '' ) {
    // Return the html
   return $h;
 }
-add_shortcode( 'accordion_no_link_sc', 'accordion_no_link_sc' );
+//add_shortcode( 'accordion_no_link_sc', 'accordion_no_link_sc' );
