@@ -49,7 +49,7 @@
 		<div class="site-info">
 			<hr>
 			<div id="tnn-copyright" class="copyright">
-				<p><?php esc_html_e('Copyright &copy; 2017 -  '); ?><?php echo date('Y'); ?><?php esc_html_e(' The Natural Nutritionist. '); ?><a href="<?php esc_html_e('/terms-and-conditions'); ?>"><?php esc_html_e('Terms and Conditions') ?></a></p>
+				<p><?php esc_html_e('Copyright &copy; 2017 -  ', 'tnn'); ?><?php echo date('Y'); ?><?php esc_html_e(' The Natural Nutritionist. ', 'tnn'); ?><a href="<?php esc_html_e('/terms-and-conditions', 'tnn'); ?>"><?php esc_html_e('Terms and Conditions', 'tnn') ?></a></p>
 			</div>
 		</div><!-- .site-info -->
 

@@ -10,7 +10,7 @@
 ?>
 <div class="slider popular-recipes">
   <div class="popular-recipes-title-wrapper-1">
-    <h2 class="section-title section-title-large popular-recipes-title"><?php esc_html_e( 'Our most popular recipes', 'tnn' ); ?></h2>
+    <h2 class="section-title section-title-large popular-recipes-title"><?php esc_html_e( 'Our most popular recipes', 'tnn'); ?></h2>
   </div>
 
   <div class="popular-recipes-slider">
@@ -20,9 +20,9 @@
       <div class="popular-recipes-slider-cell">
         <a href="<?php the_field('recipes_slider_img_link_1') ?>">
           <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_1')); ?></h3>
+            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_1'), 'tnn'); ?></h3>
           </div>
-          <img class="slider-img" src="<?php echo esc_html_e($sliderImage1['url']); ?>" alt="<?php echo esc_html_e($sliderImage1['alt']); ?>" />
+          <img class="slider-img" src="<?php echo esc_url( $sliderImage1['url'] ); ?>" alt="<?php echo esc_attr($sliderImage1['alt'] ); ?>" />
         </a>
       </div>
     <?php endif; ?><!-- Slide 1 -->
@@ -32,9 +32,9 @@
       <div class="popular-recipes-slider-cell">
         <a href="<?php the_field('recipes_slider_img_link_2') ?>">
           <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_2')); ?></h3>
+            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_2'), 'tnn'); ?></h3>
           </div>
-          <img class="slider-img" src="<?php echo esc_html_e($sliderImage2['url']); ?>" alt="<?php echo esc_html_e($sliderImage2['alt']); ?>" />
+          <img class="slider-img" src="<?php echo esc_url( $sliderImage2['url'] ); ?>" alt="<?php echo esc_attr($sliderImage2['alt'] ); ?>" />
         </a>
       </div>
     <?php endif; ?><!-- Slide 2 -->
@@ -44,9 +44,9 @@
       <div class="popular-recipes-slider-cell">
         <a href="<?php the_field('recipes_slider_img_link_3') ?>">
           <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_3')); ?></h3>
+            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_3', 'tnn') ); ?></h3>
           </div>
-          <img class="slider-img" src="<?php echo esc_html_e($sliderImage3['url']); ?>" alt="<?php echo esc_html_e($sliderImage3['alt']); ?>" />
+          <img class="slider-img" src="<?php echo esc_url( $sliderImage3['url'] ); ?>" alt="<?php echo esc_attr($sliderImage3['alt'] ); ?>" />
         </a>
       </div>
     <?php endif; ?><!-- Slide 3 -->
@@ -56,9 +56,9 @@
       <div class="popular-recipes-slider-cell">
         <a href="<?php the_field('recipes_slider_img_link_4') ?>">
           <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_4')); ?></h3>
+            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_4', 'tnn') ); ?></h3>
           </div>
-          <img class="slider-img" src="<?php echo esc_html_e($sliderImage4['url']); ?>" alt="<?php echo esc_html_e($sliderImage4['alt']); ?>" />
+          <img class="slider-img" src="<?php echo esc_url( $sliderImage4['url'] ); ?>" alt="<?php echo esc_attr($sliderImage4['alt'] ); ?>" />
         </a>
       </div>
     <?php endif; ?><!-- Slide 4 -->
@@ -68,9 +68,9 @@
       <div class="popular-recipes-slider-cell">
         <a href="<?php the_field('recipes_slider_img_link_5') ?>">
           <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_5')); ?></h3>
+            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_5', 'tnn') ); ?></h3>
           </div>
-          <img class="slider-img" src="<?php echo esc_html_e($sliderImage5['url']); ?>" alt="<?php echo esc_html_e($sliderImage5['alt']); ?>" />
+          <img class="slider-img" src="<?php echo esc_url( $sliderImage5['url'] ); ?>" alt="<?php echo esc_attr($sliderImage5['alt'] ); ?>" />
         </a>
       </div>
     <?php endif; ?><!-- Slide 5 -->
@@ -83,9 +83,9 @@
       <a href="<?php the_field('recipes_slider_img_link_1') ?>">
         <div class="popular-recipes-slider-cell-mb">
           <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_1')); ?></h3>
+            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_1', 'tnn') ); ?></h3>
           </div>
-          <img class="slider-img" src="<?php echo esc_html_e($sliderImage1mb['url']); ?>" alt="<?php echo esc_html_e($sliderImage1mb['alt']); ?>" />
+          <img class="slider-img" src="<?php echo esc_url( $sliderImage1mb['url'] ); ?>" alt="<?php echo esc_attr($sliderImage1mb['alt'] ); ?>" />
         </div>
       </a>
     <?php endif; ?><!-- Slide 1 -->
@@ -95,9 +95,9 @@
       <a href="<?php the_field('recipes_slider_img_link_2') ?>">
         <div class="popular-recipes-slider-cell-mb">
           <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_2')); ?></h3>
+            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_2', 'tnn') ); ?></h3>
           </div>
-          <img class="slider-img" src="<?php echo esc_html_e($sliderImage2mb['url']); ?>" alt="<?php echo esc_html_e($sliderImage2mb['alt']); ?>" />
+          <img class="slider-img" src="<?php echo esc_url( $sliderImage2mb['url'] ); ?>" alt="<?php echo esc_attr($sliderImage2mb['alt'] ); ?>" />
         </div>
       </a>
     <?php endif; ?><!-- Slide 2 -->
@@ -107,9 +107,9 @@
       <a href="<?php the_field('recipes_slider_img_link_3') ?>">
         <div class="popular-recipes-slider-cell-mb">
           <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_3')); ?></h3>
+            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_3', 'tnn') ); ?></h3>
           </div>
-          <img class="slider-img" src="<?php echo esc_html_e($sliderImage3mb['url']); ?>" alt="<?php echo esc_html_e($sliderImage3mb['alt']); ?>" />
+          <img class="slider-img" src="<?php echo esc_url( $sliderImage3mb['url'] ); ?>" alt="<?php echo esc_attr($sliderImage3mb['alt'] ); ?>" />
         </div>
       </a>
     <?php endif; ?><!-- Slide 3 -->
@@ -119,9 +119,9 @@
       <a href="<?php the_field('recipes_slider_img_link_4') ?>">
         <div class="popular-recipes-slider-cell-mb">
           <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_4')); ?></h3>
+            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_4', 'tnn') ); ?></h3>
           </div>
-          <img class="slider-img" src="<?php echo esc_html_e($sliderImage4mb['url']); ?>" alt="<?php echo esc_html_e($sliderImage4mb['alt']); ?>" />
+          <img class="slider-img" src="<?php echo esc_url( $sliderImage4mb['url'] ); ?>" alt="<?php echo esc_attr($sliderImage4mb['alt'] ); ?>" />
         </div>
       </a>
     <?php endif; ?><!-- Slide 4 -->
@@ -131,9 +131,9 @@
       <a href="<?php the_field('recipes_slider_img_link_5') ?>">
         <div class="popular-recipes-slider-cell-mb">
           <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_5')); ?></h3>
+            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_5', 'tnn') ); ?></h3>
           </div>
-          <img class="slider-img" src="<?php echo esc_html_e($sliderImage5mb['url']); ?>" alt="<?php echo esc_html_e($sliderImage5mb['alt']); ?>" />
+          <img class="slider-img" src="<?php echo esc_url( $sliderImage5mb['url'] ); ?>" alt="<?php echo esc_attr( $sliderImage5mb['alt'] ); ?>" />
         </div>
       </a>
     <?php endif; ?><!-- Slide 5 -->

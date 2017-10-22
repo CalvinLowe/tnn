@@ -16,11 +16,11 @@
         <h2 class="section-title"><?php esc_html_e( 'For weekly recipes, articles, performance tips and giveaways', 'tnn' ); ?></h2>
         <div class="form-wrapper">
           <div class="mc-field-group form-element">
-            <label for="mce-FNAME"><?php esc_html_e('First Name '); ?></label>
+            <label for="mce-FNAME"><?php esc_html_e('First Name ', 'tnn'); ?></label>
             <input type="text" value="" name="FNAME" class="mailchimp-input mailchimp-opt-in-name-input" id="mce-FNAME" placeholder="First Name">
           </div>
           <div class="mc-field-group form-element">
-            <label for="mce-EMAIL"><?php esc_html_e('Email Address '); ?></label>
+            <label for="mce-EMAIL"><?php esc_html_e('Email Address ', 'tnn'); ?></label>
             <input type="email" value="" name="EMAIL" class="required email mailchimp-input mailchimp-opt-in-name-input" id="mce-EMAIL" placeholder="Your Email Address">
           </div>
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_62607cf7c4829eff92f2773b1_2f8f17bcdf" tabindex="-1" value=""></div>

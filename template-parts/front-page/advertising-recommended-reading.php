@@ -18,7 +18,7 @@
 
       if( !empty($image1) ): ?>
 
-        <img src="<?php echo esc_html_e($image1['url']); ?>" alt="<?php echo esc_html_e($image1['alt']); ?>" />
+        <img src="<?php echo esc_url($image1['url']); ?>" alt="<?php echo esc_attr($image1['alt']); ?>" />
 
       <?php endif; ?>
       </a>
@@ -31,7 +31,7 @@
 
       if( !empty($image2) ): ?>
 
-        <img src="<?php echo esc_html_e($image2['url']); ?>" alt="<?php echo esc_html_e($image2['alt']); ?>" />
+        <img src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>" />
 
       <?php endif; ?>
       </a>
@@ -44,7 +44,7 @@
 
       if( !empty($image3) ): ?>
 
-        <img src="<?php echo esc_html_e($image3['url']); ?>" alt="<?php echo esc_html_e($image3['alt']); ?>" />
+        <img src="<?php echo esc_url($image3['url']); ?>" alt="<?php echo esc_attr($image3['alt']); ?>" />
 
       <?php endif; ?>
       </a>

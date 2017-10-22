@@ -14,6 +14,6 @@
 	<?php
 		$image = get_field('as_seen_in');
 		if( !empty($image) ): ?>
-			<img src="<?php echo esc_html_e($image['url']); ?>" alt="<?php echo esc_html_e($image['alt']); ?>" />
+			<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 		<?php endif; ?>
 </div>

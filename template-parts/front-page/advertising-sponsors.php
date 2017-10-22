@@ -18,7 +18,7 @@
 
     if( !empty($image1) ): ?>
 
-      <img src="<?php echo esc_html_e($image1['url']); ?>" alt="<?php echo esc_html_e($image1['alt']); ?>" />
+      <img src="<?php echo esc_url($image1['url']); ?>" alt="<?php echo esc_attr($image1['alt']); ?>" />
 
     <?php endif; ?>
   </a><!-- Sponsor 1 -->
@@ -29,7 +29,7 @@
 
     if( !empty($image2) ): ?>
 
-      <img src="<?php echo esc_html_e($image2['url']); ?>" alt="<?php echo esc_html_e($image2['alt']); ?>" />
+      <img src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>" />
 
     <?php endif; ?>
     </a><!-- Sponsor 2 -->
@@ -40,7 +40,7 @@
 
     if( !empty($image3) ): ?>
 
-      <img src="<?php echo esc_html_e($image3['url']); ?>" alt="<?php echo esc_html_e($image3['alt']); ?>" />
+      <img src="<?php echo esc_url($image3['url']); ?>" alt="<?php echo esc_attr($image3['alt']); ?>" />
 
     <?php endif; ?>
     </a><!-- Sponsor 3 -->
@@ -51,7 +51,7 @@
 
     if( !empty($image4) ): ?>
 
-      <img src="<?php echo esc_html_e($image4['url']); ?>" alt="<?php echo esc_html_e($image4['alt']); ?>" />
+      <img src="<?php echo esc_url($image4['url']); ?>" alt="<?php echo esc_attr($image4['alt']); ?>" />
 
     <?php endif; ?>
     </a><!-- Sponsor 4 -->
@@ -62,7 +62,7 @@
 
     if( !empty($image5) ): ?>
 
-      <img src="<?php echo esc_html_e($image5['url']); ?>" alt="<?php echo esc_html_e($image5['alt']); ?>" />
+      <img src="<?php echo esc_url($image5['url']); ?>" alt="<?php echo esc_attr($image5['alt']); ?>" />
 
     <?php endif; ?>
     </a><!-- Sponsor 5 -->
@@ -73,7 +73,7 @@
 
     if( !empty($image6) ): ?>
 
-      <img src="<?php echo esc_html_e($image6['url']); ?>" alt="<?php echo esc_html_e($image6['alt']); ?>" />
+      <img src="<?php echo esc_url($image6['url']); ?>" alt="<?php echo esc_attr($image6['alt']); ?>" />
 
     <?php endif; ?>
     </a><!-- Sponsor 6 -->

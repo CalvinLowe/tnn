@@ -17,10 +17,10 @@
 
     if( !empty($image1) ): ?>
 
-      <img src="<?php echo esc_html_e($image1['url']); ?>" alt="<?php echo esc_html_e($image1['alt']); ?>" />
+      <img src="<?php echo esc_url($image1['url'], 'tnn'); ?>" alt="<?php echo esc_attr($image1['alt']); ?>" />
 
     <?php endif; ?>
-    <figcaption class="cta-caption"><h2 class="cta-caption-title"><?php esc_html_e(the_field('cta_heading_1')); ?></h2></figcaption>
+    <figcaption class="cta-caption"><h2 class="cta-caption-title"><?php esc_html_e(the_field('cta_heading_1'), 'tnn'); ?></h2></figcaption>
   </figure>
   </a>
 
@@ -32,10 +32,10 @@
 
     if( !empty($image2) ): ?>
 
-      <img src="<?php echo esc_html_e($image2['url']); ?>" alt="<?php echo esc_html_e($image2['alt']); ?>" />
+      <img src="<?php echo esc_url($image2['url']); ?>" alt="<?php echo esc_attr($image2['alt']); ?>" />
 
     <?php endif; ?>
-    <figcaption class="cta-caption"><h2 class="cta-caption-title"><?php esc_html_e(the_field('cta_heading_2')); ?></h2></figcaption>
+    <figcaption class="cta-caption"><h2 class="cta-caption-title"><?php esc_html_e(the_field('cta_heading_2'), 'tnn'); ?></h2></figcaption>
   </figure>
   </a>
 
@@ -47,10 +47,10 @@
 
     if( !empty($image3) ): ?>
 
-      <img src="<?php echo esc_html_e($image3['url']); ?>" alt="<?php echo esc_html_e($image3['alt']); ?>" />
+      <img src="<?php echo esc_url($image3['url']); ?>" alt="<?php echo esc_attr($image3['alt']); ?>" />
 
     <?php endif; ?>
-    <figcaption class="cta-caption"><h2 class="cta-caption-title"><?php esc_html_e(the_field('cta_heading_3')); ?> <span><?php esc_html_e(the_field('cta_subheading_3')); ?></span></h2></figcaption>
+    <figcaption class="cta-caption"><h2 class="cta-caption-title"><?php esc_html_e(the_field('cta_heading_3'), 'tnn'); ?> <span><?php esc_html_e(the_field('cta_subheading_3'), 'tnn'); ?></span></h2></figcaption>
   </figure>
   </a>
 </div>

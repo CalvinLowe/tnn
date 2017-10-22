@@ -34,7 +34,7 @@ get_header(); ?>
 					</figure>
 				<?php } else if( !empty($hero) ): { ?>
 					<figure class="post-hero-image">
-						<img src="<?php echo esc_html_e($hero['url']); ?>" alt="<?php echo esc_html_e($hero['alt']); ?>" />
+						<img src="<?php echo esc_url($hero['url']); ?>" alt="<?php echo esc_attr($hero['alt']); ?>" />
 						<figcaption><?php echo $caption ?></figcaption>
 					</figure>  
 			<?php } endif; ?>
