@@ -179,4 +179,4 @@ require get_template_directory() . '/inc/woocommerce-functions.php';
 /**
  * Load shortcodes
  */
- require get_template_directory() . '/inc/shortcodes.php';
+ //require get_template_directory() . '/inc/shortcodes.php';
