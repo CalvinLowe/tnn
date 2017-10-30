@@ -7,22 +7,17 @@
     border-radius: 50%;
   }
   .single .blog-sidebar {
+    display: none;
+    @media screen and (min-width: 37.5em) {
+      display: block;
+    }
+  }
+  .single .blog-footer {
+    display: block;
     @media screen and (min-width: 37.5em) {
       display: none;
     }
   }
-    .single .blog-sidebar {
-      display: none;
-      @media screen and (min-width: 37.5em) {
-        display: block;
-      }
-    }
-    .single .blog-footer {
-      display: block;
-      @media screen and (min-width: 37.5em) {
-        display: none;
-      }
-    }
   .single .post-title, .single .post-hero-image, .single .post-image-alternative, .single .post-excerpt {
     display: none;
     @media screen and (min-width: 37.5em) {
@@ -74,6 +69,8 @@
       display: grid;
       grid-template: repeat(8, auto) / 2fr 7fr 2fr;
       grid-gap: 1em 5vw;
+      max-width: 100%;
+      overflow-y: hidden;
     }
   }
   .single .post-categories {
@@ -160,6 +157,7 @@
     flex-flow: column wrap;
     align-items: center;
     justify-content: flex-end;
+    flex-basis: 100%;
     @media screen and (min-width: 37.5em) {
       display: none;
     }
@@ -195,20 +193,6 @@
 /*--------------------------------------------------------------
 # Fixes
 --------------------------------------------------------------*/
-// Large phones in landscape mode
-@media screen and (max-width: 1024px) and (orientation: landscape) {
-  .single .blog-sidebar {
-      display: none;
-  }
-  .single .blog-footer {
-      display: block;
-  }
-  .single .post-footer .blog-footer h3, .single .post-footer .blog-footer h3:first-child {
-    margin: 1em;
-    margin-top: 1em;
-  }
-}
-
 // Hide elements for browser that do not support grid
 .single .blog-sidebar {
   display: none;
@@ -229,9 +213,23 @@
     }
   }
 }
-
+// Large phones in landscape mode
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   .single .site-main {
     display: block;
+  }
+  .single .blog-sidebar {
+      display: none;
+  }
+  .single .blog-footer {
+    display: block;
+  }
+  .single .post-footer .author.blog-footer {
+      display: flex;
+  }
+
+  .single .post-footer .blog-footer h3, .single .post-footer .blog-footer h3:first-child {
+    margin: 1em;
+    margin-top: 1em;
   }
 }
