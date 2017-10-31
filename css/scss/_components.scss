@@ -92,11 +92,12 @@
   .tab label {
     position: relative;
     display: block;
-    padding: 0 0 0 1em;
+    padding: 0 2em 0 1em;
     background: #76BE43;
     font-weight: bold;
-    line-height: 3;
+    line-height: 2;
     cursor: pointer;
+    
   }
   .tab-content {
     max-height: 0;
@@ -109,7 +110,10 @@
   .tab-content p {
     color: #fff !important;
     margin: 1em;
-    padding: 0 2em;
+    padding: 0;
+    @media only screen and (min-width: 600px) { 
+        padding: 0 2em;
+    }
   }
   /* :checked */
   .tab input:checked ~ .tab-content {
@@ -121,9 +125,9 @@
     right: 0;
     top: 0;
     display: block;
-    width: 3em;
-    height: 3em;
-    line-height: 3;
+    width: 2em;
+    height: 2em;
+    line-height: 2;
     text-align: center;
     -webkit-transition: all .35s;
     -o-transition: all .35s;
@@ -141,24 +145,28 @@
   .tab input[type=radio]:checked + label::after {
     transform: rotateX(180deg);
   }
-  .tnn-program-link {
-      background-color: #6A813B;
-      color: #fff !important;
-      padding: 0.5em 1em;
-      border: 1px solid #ddd;
+  a.tnn-program-link {
+      color: #fff;
       border-radius: 5px;
-        transition: all 0.3s
+      transition: all 0.3s;
+      @media only screen and (min-width: 600px) {
+        background-color: #6A813B; 
+        border: 1px solid #ddd;
+        padding: 0.5em 1em;
+    }
   }
-  .tnn-program-link:hover {
-      color: #C0D231 !important;
+  a.tnn-program-link:hover {
+    @media only screen and (min-width: 600px) {
+      color: #C0D231;
       background-color: #87a54c;
+    }
   }
-  .tnn-testing-link, .alternate-link {
-      color: #6A813B !important;
+  a.tnn-testing-link, a.alternate-link {
+      color: #6A813B;
         transition: all 0.3s
   }
-  .tnn-testing-link:hover, .alternate-link:hover {
-      color: #C0D231 !important;
+  a.tnn-testing-link:hover, a.alternate-link:hover {
+      color: #C0D231;
   }
 
 /*--------------------------------------------------------------
@@ -169,4 +177,34 @@
     @media only screen and (min-width: 600px) {
     margin-bottom: 2em;
     }
+}
+
+/*--------------------------------------------------------------
+# AffiliateWP
+--------------------------------------------------------------*/
+#affwp-affiliate-dashboard {
+	flex-basis: 100%;
+}
+.affwp-errors {
+	order: 1;
+  	flex-basis: 100%;
+}
+.TNN-affiliate-login-wrapper {
+	order: 2;
+  	//flex-basis: 48%;
+}
+.TNN-affiliate-register-wrapper {
+    order: 3;
+  	//flex-basis: 48%;
+}
+.affwp-form {
+  border: 1px solid #d3ced2;
+  padding: 20px;
+  margin: 2em 0;
+  text-align: left;
+  border-radius: 5px;
+}
+.affwp-form label {
+  display: block;
+  line-height: 2;
 }
