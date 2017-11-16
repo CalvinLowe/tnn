@@ -198,5 +198,26 @@
 }
 .affwp-form label {
   display: block;
-  line-height: 2;
+}
+.affwp-form input[type="password"], .affwp-form input[type="text"],
+ .affwp-form input[type="email"], .affwp-form input[type="password"] {
+    width: 100%;
+}
+#affwp-login-form {
+    float: left;
+    width: 48%;
+    padding: 10px;
+    @media only screen and (max-width: 1000px) {
+        float: none;
+        width: 100%;
+    }
+}
+#affwp-register-form {
+    float: right;
+    width: 48%;
+    padding: 10px;
+    @media only screen and (max-width: 1000px) {
+        float: none;
+        width: 100%;
+    }
 }
