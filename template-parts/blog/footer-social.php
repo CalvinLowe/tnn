@@ -21,7 +21,7 @@
         <li><a href="<?php echo esc_url($fb); ?>"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
         <li><a href="<?php echo esc_url($tw); ?>"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
         <!--<li><a href="#"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a></li>-->
-        <li><a href="<?php esc_url($mail); ?>"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></li>
+        <li><a href="<?php echo esc_url($mail); ?>"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></li>
     </ul>
     </div><!-- #sidebar-social-icons -->
 </div>
