@@ -45,3 +45,19 @@ function RSSImages($content) {
 }
 add_filter('the_excerpt_rss', 'RSSImages');
 add_filter('the_content_feed', 'RSSImages');
+
+/**
+ * Change the logo link on the WordPress login page
+ */
+function my_login_logo_url() {
+  return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+/**
+ * Change the logo title on the WordPress login page
+ */
+function my_login_logo_url_title() {
+  return 'The Natural Nutritionist';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
