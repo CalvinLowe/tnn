@@ -200,7 +200,8 @@
   display: block;
 }
 .affwp-form input[type="password"], .affwp-form input[type="text"],
- .affwp-form input[type="email"], .affwp-form input[type="password"] {
+ .affwp-form input[type="email"], .affwp-form input[type="password"], .affwp-form textarea {
+    max-width: 75vw;
     width: 100%;
 }
 #affwp-login-form {
