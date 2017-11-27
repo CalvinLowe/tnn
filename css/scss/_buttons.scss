@@ -13,11 +13,24 @@ button, input[type="button"], input[type="reset"], input[type="submit"],
   border-radius: 0;
   box-shadow: $tnn-shadow;
   text-decoration: none;
+  @media screen and (max-width: 310px) {
+    font-size: 1em;
+  }
 }
 
 .cta-button {
   text-align: center;
   padding: 1em;
+}
+
+.sales-notice .button {
+  text-align: center;
+  margin: auto;
+}
+
+.sales-notice .button:hover {
+  color: $tnn-light;
+  background-color: $tnn-primary;
 }
 
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover,
