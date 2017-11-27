@@ -18,11 +18,8 @@
   box-shadow: $tnn-shadow;
 }
 
-.popular-recipes-title-wrapper-2 {
-  padding-right: 10vw;
-}
 .popular-recipes-slide-title {
-  text-align: right;
+  text-align: center;
 }
 
 /* position dots in carousel */
@@ -54,5 +51,11 @@
   }
   .popular-recipes-title-wrapper-2 {
     padding-right: 3em;
+  }
+  .popular-recipes-title-wrapper-2 {
+    padding-right: 10vw;
+  }
+  .popular-recipes-slide-title {
+    text-align: right;
   }
 }
