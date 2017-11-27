@@ -175,8 +175,3 @@ require get_template_directory() . '/inc/custom-functions.php';
  * Load WooCommerce functions
  */
 require get_template_directory() . '/inc/woocommerce-functions.php';
-
-/**
- * Load shortcodes
- */
- //require get_template_directory() . '/inc/shortcodes.php';
