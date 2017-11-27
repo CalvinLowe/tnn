@@ -27,6 +27,15 @@ elseif ( is_wc_endpoint_url( 'order-received' ) )
 else
 	get_template_part('template-parts/header/facebookpixel');
 ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52757321-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-52757321-1');
+</script>
 </head>
 
 <body <?php body_class(); ?>>
