@@ -37,7 +37,7 @@ function RSSImages($content) {
       $content = '<div><img src="' . $image['url'] . '" alt="' . $image['alt'] . '" width="' . $width . 
       '" height="' . $height . '"></div>' . $content;
     } else if ( has_post_thumbnail( $post->ID ) ){
-      $output = get_the_post_thumbnail( $post->ID, 'medium' );
+      $output = get_the_post_thumbnail( $post->ID, 'large' );
       $content = $output . $content;
     }
   }
