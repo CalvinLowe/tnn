@@ -74,6 +74,8 @@
       max-width: 100%;
       overflow-y: hidden;
     }
+    // Grid overflow fix
+    .single .site-main > * { min-width: 0; }
   }
   .single .post-categories {
     grid-area: 1 / 2 / 2 / 2;
