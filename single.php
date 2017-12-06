@@ -19,10 +19,6 @@ get_header(); ?>
 			</div>
 
 			<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
-
-			<div class="post-excerpt">
-				<?php the_excerpt(); ?>
-			</div>
 			
 			<?php
 				$hero = get_field('post_hero_image');
