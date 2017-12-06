@@ -161,11 +161,11 @@
       background-color: #87a54c;
     }
   }
-  a.tnn-testing-link, a.alternate-link {
+  a.tnn-testing-link, a.alternate-link { //TODO remove tnn-testing-link compare to alternative link
       color: #6A813B;
         transition: all 0.3s
   }
-  a.tnn-testing-link:hover, a.alternate-link:hover {
+  a.tnn-testing-link:hover, a.alternate-link:hover { //TODO remove tnn-testing-link compare to alternative link
       color: #C0D231;
   }
 
