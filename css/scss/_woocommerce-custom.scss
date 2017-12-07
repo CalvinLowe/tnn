@@ -27,3 +27,8 @@
                 }
 }
 
+// WooCommerce memberships
+.woocommerce-account .membership-product-image img, .woocommerce-account .membership-discount-image img {
+    max-height: unset;
+    max-width: 100px;
+}
