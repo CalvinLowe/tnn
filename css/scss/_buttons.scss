@@ -64,11 +64,17 @@ button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type=
 
 // WooCommerce button to match Add to cart button
 .added_to_cart:link {
-  font-size: 100%;
+  font-size: 16px;
   padding: .618em 1em;
   line-height: 16px;
   padding-top: .618em;
   @media only screen and (max-width: 495px) {
     margin-top: 1em;
   }
+}
+
+// Remove entry-content base font size for /resources-for-real-food-athletes/
+// Make WooCommerce buttons consistent
+.post-9302 .entry-content {
+  font-size: unset;
 }
