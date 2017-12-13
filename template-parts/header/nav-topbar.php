@@ -24,6 +24,7 @@
 </div><!-- #topbar-search -->
 
 <div id="topbar-cta-buttons" class="topbar front-cta cta">
-  <a href="<?php esc_html_e( 'https://bit.ly/tnnonline', 'tnn' ); ?>"><?php esc_html_e( 'Client Login/Appointment', 'tnn' ); ?></a>
+  <a href="<?php esc_html_e( 'https://bit.ly/tnnonline', 'tnn' ); ?>" onClick="gtag('event', 'generate_lead', {'event_label':'appointment_topBar'});"
+><?php esc_html_e( 'Client Login/Appointment', 'tnn' ); ?></a>
   <a href="<?php esc_html_e( '#subscribe', 'tnn' ); ?>"><?php esc_html_e( 'Join TNN&rsquo;s Team', 'tnn' ); ?></a>
 </div><!-- #topbar-cta-buttons -->

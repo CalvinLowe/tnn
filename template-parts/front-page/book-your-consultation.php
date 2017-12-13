@@ -9,6 +9,6 @@
 
 ?>
 <div class="consultation">
-    <h2 class="book-your-consultation-title"><span><?php esc_html_e( 'Book your consultation', 'tnn' ); ?></span><span><?php esc_html_e( ' with TNN ', 'tnn' ); ?> <a class="book-your-consultation-link" href="<?php echo esc_url('https://bit.ly/tnnonline'); ?>"><?php esc_html_e( 'here', 'tnn' ); ?></a></span></h2>
+    <h2 class="book-your-consultation-title"><span><?php esc_html_e( 'Book your consultation', 'tnn' ); ?></span><span><?php esc_html_e( ' with TNN ', 'tnn' ); ?> <a class="book-your-consultation-link" href="<?php echo esc_url('https://bit.ly/tnnonline'); ?>" onClick="gtag('event', 'generate_lead', {'event_label':'appointment_bookYourConsultation'});"><?php esc_html_e( 'here', 'tnn' ); ?></a></span></h2>
     <img alt="Steph Lowe" src="<?php esc_html_e('wp-content/themes/tnn/img/head_cutout_4.png', 'tnn'); ?>">
 </div>
