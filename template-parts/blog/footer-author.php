@@ -15,7 +15,7 @@
 	$authorName = get_the_author();
 	$authorFirstName = get_the_author_meta ( 'first_name' );
 	$desc = get_the_author_meta( 'description' );
-	$url = "https://thenaturalnutritionist.com.au/about#$authorFirstName";
+	$url = "https://thenaturalnutritionist.com.au/about/#$authorFirstName";
 	$time = get_the_time('F j, Y');
 ?>
 <div id="footer-author-info" class="blog-footer author">
