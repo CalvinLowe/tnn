@@ -404,9 +404,9 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/scss\/tnn-styles.css",
-		"oF": 0,
-		"oS": 0,
+		"oAP": "\/css\/tnn-styles-min.css",
+		"oF": 3,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/css\/scss\/underscores.scss": {
