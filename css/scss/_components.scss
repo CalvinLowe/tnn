@@ -14,7 +14,7 @@
 /*--------------------------------------------------------------
 # Recipes
 --------------------------------------------------------------*/
-.flex-recipes {
+/*.flex-recipes {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -22,6 +22,22 @@
     .flex-recipes figure h2 {
         margin: 0;
     }
+*/
+.recipes-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-column-gap: 0.25em;
+}
+.recipes-grid figure {
+    width: 100%;
+    margin: 0;
+}
+.recipes-grid h3 {
+    margin-bottom: 0.25em;
+}
+.recipes-grid img {
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
 
 /*--------------------------------------------------------------
 # Testimonials

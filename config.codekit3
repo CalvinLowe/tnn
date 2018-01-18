@@ -1327,6 +1327,13 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/page-recipes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-recipes.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1626,6 +1633,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/template-parts\/header\/nav-topbar.php",
+		"oF": 0
+		},
+	"\/template-parts\/recipes-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-parts\/recipes-page.php",
 		"oF": 0
 		}
 	},
