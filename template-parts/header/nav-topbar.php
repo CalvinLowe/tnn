@@ -14,8 +14,8 @@
     <li><a href="https://www.facebook.com/thenaturalnutritionist"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
     <li><a href="https://www.instagram.com/thenaturalnutritionist/"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
     <li><a href="https://twitter.com/natnutritionist"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-    <li><a href="contact"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
-    <li><a href="cart"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a></li>
+    <li><a href="/contact"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a></li>
+    <li><a href="/cart"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a></li>
   </ul>
 </div><!-- #topbar-social-icons -->
 
