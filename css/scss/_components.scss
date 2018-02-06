@@ -25,19 +25,55 @@
 */
 .recipes-grid {
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   grid-column-gap: 0.25em;
+   grid-template-columns: minmax(200px, 50%) minmax(200px, 50%);
+   grid-gap: 1em;
+   margin-bottom: 1em;
+
 }
-.recipes-grid figure {
-    width: 100%;
+
+.recipes-grid-link {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+.recipes-grid-title {
     margin: 0;
+    background-color: rgba(0,0,0, 0.3);
+    padding: 0.5em;
+    color: white;
+    grid-area: 1 / 1 / 2 / 2;
 }
-.recipes-grid h3 {
-    margin-bottom: 0.25em;
+.recipes-grid-image {
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    z-index: -1;
+    grid-area: 1 / 1 / 2 / 2;
 }
-.recipes-grid img {
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+
+.recipes-grid-area-1 {
+    grid-area: 1 / 1 / 2 / 2;
 }
+.recipes-grid-area-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.recipes-grid-area-3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+.recipes-grid-area-4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+.recipes-grid-area-5 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+.recipes-grid-area-6 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+.recipes-grid-area-7 {
+    grid-area: 4 / 1 / 5 / 2;
+}
+.recipes-grid-area-8 {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials
