@@ -123,3 +123,4 @@ function sv_members_area_content_table_columns( $columns ) {
 }
 add_filter('wc_memberships_members_area_my_membership_content_column_names',
  'sv_members_area_content_table_columns', 10, 1 );
+
