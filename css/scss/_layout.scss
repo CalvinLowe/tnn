@@ -71,8 +71,8 @@
 /*--------------------------------------------------------------
 # Page layout & Front Page Layout & Archive & Search & Store & 404
 --------------------------------------------------------------*/
-.page .content-area, .archive .content-area, .search .content-area, .woocommerce #container,
- .error404 .content-area {
+.page .content-area, .archive .content-area, .search .content-area,
+ .error404 .content-area, .single.woocommerce .site-main {
   padding: 3em; // for browsers that don't support vw uints
   padding: 5vw;
   margin-top: 0;
@@ -85,7 +85,7 @@
     }
   }
 }
-.page .site-main, .archive .site-main, .search .site-main, .woocommerce #content, .error404 .site-main {
+.page .site-main, .archive .site-main, .search .site-main, .error404 .site-main, .woocommerce .woocommerce-breadcrumb, .woocommerce .product {
   grid-column: 2 / 3;
 }
 .page .entry-header {
