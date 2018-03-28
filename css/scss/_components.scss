@@ -18,8 +18,18 @@
     margin-bottom: 1em;
 }
 .recipes-grid-image {
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
     z-index: -1;
+}
+.recipes-grid-link {
+    box-shadow: 1px 1px 1px 1px #aaa;
+}
+@media (hover: hover) { 
+    .recipes-grid-link:hover {
+        box-shadow: 1px 1px 2px 2px #ccc;
+    }
+}
+.recipes-grid-link:hover .recipes-grid-title {
+    background-color: rgba(0,0,0, 0.2);
 }
 
 @supports(display: grid) {
