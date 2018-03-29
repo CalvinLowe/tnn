@@ -10,7 +10,7 @@
   max-width: none;
   width: 100%;
 }
-.banner-slider-cell, .banner-slider-cell-mb, .popular-recipes-slider-cell, .popular-recipes-slider-cell-mb {
+.banner-slider-cell, .popular-recipes-slider-cell, .popular-recipes-slider-cell-mb {
   width: 100%;
 }
 .popular-recipes-title-wrapper-1, .popular-recipes-title-wrapper-2 {
@@ -39,14 +39,14 @@
   background: white;
 }
 
-.banner-slider, .popular-recipes-slider {
+.popular-recipes-slider {
   display: none;
 }
 @media screen and (min-width: 37.5em) {
   .banner-slider, .popular-recipes-slider {
     display: block;
   }
-  .banner-slider-mb, .popular-recipes-slider-mb {
+  .popular-recipes-slider-mb {
     display: none;
   }
   .popular-recipes-title-wrapper-2 {

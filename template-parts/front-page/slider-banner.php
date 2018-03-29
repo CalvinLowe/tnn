@@ -8,64 +8,34 @@
  */
 
 ?>
-<div class="slider">
-  <div class="banner-slider">
-    <div class="banner-slider-cell">
-      <a href="<?php the_field('banner_slide_link_1') ?>">
-        <?php
-        $sliderImage1 = get_field('banner_slider_img_1');
-        if( !empty($sliderImage1) ): ?>
-              <img class="slider-img" src="<?php echo esc_url($sliderImage1['url']); ?>" alt="<?php echo esc_attr($sliderImage1['alt'], 'tnn'); ?>" />
-        <?php endif; ?>
-      </a>
-    </div> <!-- Slide 1 -->
-    <div class="banner-slider-cell">
-      <a href="<?php the_field('banner_slide_link_2') ?>">
-      <?php
-      $sliderImage2 = get_field('banner_slider_img_2');
-      if( !empty($sliderImage2) ): ?>
-            <img class="slider-img" src="<?php echo esc_url($sliderImage2['url']); ?>" alt="<?php echo esc_attr($sliderImage2['alt'], 'tnn'); ?>" />
-      <?php endif; ?>
-      </a>
-    </div> <!-- Slide 2 -->
-    <div class="banner-slider-cell">
-      <a href="<?php the_field('banner_slide_link_3') ?>">
-        <?php
-          $sliderImage3 = get_field('banner_slider_img_3');
-          if( !empty($sliderImage3) ): ?>
-            <img class="slider-img" src="<?php echo esc_url($sliderImage3['url']); ?>" alt="<?php echo esc_attr($sliderImage3['alt'], 'tnn'); ?>" />
-          <?php endif; ?>
-      </a>
-    </div> <!-- Slide 3 -->
-  </div> <!-- .banner-slider -->
+<?php
+/* Variables */
+$image1 = get_field('banner_slider_img_1');
+$image1mb = get_field('banner_slide_1_mb');
+$image2 = get_field('banner_slider_img_2');
+$image2mb = get_field('banner_slide_2_mb');
+$image3 = get_field('banner_slider_img_3');
+$image3mb = get_field('banner_slide_3_mb');
+$link1 = get_field('banner_slide_link_1');
+$link2 = get_field('banner_slide_link_2');
+$link3 = get_field('banner_slide_link_3');
 
-  <div class="banner-slider-mb">
-    <?php
-    $sliderImage1mb = get_field('banner_slide_1_mb');
-    if( !empty($sliderImage1mb) ): ?>
-      <div class="banner-slider-cell-mb">
-        <a href="<?php the_field('banner_slide_link_1') ?>">
-          <img class="slider-img" src="<?php echo esc_url($sliderImage1mb['url']); ?>" alt="<?php echo esc_attr($sliderImage1mb['alt'], 'tnn'); ?>" />
-        </a>
-      </div>
-    <?php endif; ?><!-- Slide 1 -->
-    <?php
-    $sliderImage2mb = get_field('banner_slide_2_mb');
-    if( !empty($sliderImage2mb) ): ?>
-      <div class="banner-slider-cell-mb">
-        <a href="<?php the_field('banner_slide_link_2') ?>">
-          <img class="slider-img" src="<?php echo esc_url($sliderImage2mb['url']); ?>" alt="<?php echo esc_attr($sliderImage2mb['alt'], 'tnn'); ?>" />
-        </a>
-      </div>
-    <?php endif; ?><!-- Slide 2 -->
-    <?php
-    $sliderImage3mb = get_field('banner_slide_3_mb');
-    if( !empty($sliderImage3mb) ): ?>
-      <div class="banner-slider-cell-mb">
-        <a href="<?php the_field('banner_slide_link_3') ?>">
-          <img class="slider-img" src="<?php echo esc_url($sliderImage3mb['url']); ?>" alt="<?php echo esc_attr($sliderImage3mb['alt'], 'tnn'); ?>" />
-        </a>
-      </div>
-    <?php endif; ?><!-- Slide 3 -->
-  </div> <!-- .banner-slider-mb -->
+//if( !empty($image1) && !empty($image2) && !empty($image3) ): ?>
+<div class="banner-slider">
+
+  <?//php if( !empty($image1) ): ?>
+  <div class="banner-slider-cell">
+
+    <a href="<?php echo esc_url($link1); ?>">
+    <img
+    class="slider-img"
+    data-flickity-lazyload-srcset="<?php echo esc_url($image1['url']); ?> 1920w, <?php echo esc_url($image1mb['url']); ?> 600w"
+    sizes="(min-width: 600px) 720px, 360px"
+    alt="<?php echo esc_attr($image1['alt'], 'tnn'); ?>" />
+    </a>
+
+  </div>
+  <?//php endif; ?>
+
 </div>
+<?//php endif; ?>
