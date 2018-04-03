@@ -39,75 +39,56 @@ if( !empty($image1) && !empty($image2) && !empty($image3) && !empty($image4) && 
 
     <div class="popular-recipes-slider">
     <?php if( !empty($image1) ): ?>
-      <div class="popular-recipes-slider-cell">
-        <a href="<?php the_field('recipes_slider_img_link_4') ?>">
-          <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_4'), 'tnn' ); ?></h3>
-          </div>
-          <img class="slider-img" src="<?php echo esc_url( $sliderImage4['url'] ); ?>" alt="<?php echo esc_attr($sliderImage4['alt'] ); ?>" />
-        </a>
-      </div>
-    <?php endif; ?><!-- Slide 4 -->
-    <?php
-    $sliderImage5 = get_field('recipes_slider_img_5');
-    if( !empty($sliderImage5) ): ?>
-      <div class="popular-recipes-slider-cell">
-        <a href="<?php the_field('recipes_slider_img_link_5') ?>">
-          <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_5'), 'tnn' ); ?></h3>
-          </div>
-          <img class="slider-img" src="<?php echo esc_url( $sliderImage5['url'] ); ?>" alt="<?php echo esc_attr($sliderImage5['alt'] ); ?>" />
-        </a>
-      </div>
-    <?php endif; ?><!-- Slide 5 -->
-  </div> <!-- .banner-slider -->
 
-  <div class="popular-recipes-slider-mb">
-    <?php
-    $sliderImage1mb = get_field('recipes_slide_1_mb');
-    if( !empty($sliderImage1mb) ): ?>
-      <div class="popular-recipes-slider-cell-mb">
-        <a href="<?php the_field('recipes_slider_img_link_1') ?>">
-          <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_1'), 'tnn' ); ?></h3>
-          </div>
-          <img class="slider-img" src="<?php echo esc_url( $sliderImage1mb['url'] ); ?>" alt="<?php echo esc_attr($sliderImage1mb['alt'] ); ?>" />
+      <div class="popular-recipes-slider-cell">
+        <a href="<?php echo esc_url($link1); ?>">
+        <div class="popular-recipes-title-wrapper-2">
+              <h3 class="popular-recipes-slide-title"><?php esc_html_e(($title1), 'tnn'); ?></h3>
+        </div>
+        <img
+        class="slider-img"
+        data-flickity-lazyload-srcset="<?php echo esc_url($image1['url']); ?> 1920w, <?php echo esc_url($image1mb['url']); ?> 600w"
+        sizes="(min-width: 600px) 720px, 360px"
+        alt="<?php echo esc_attr($image1['alt'], 'tnn'); ?>" />
         </a>
       </div>
-    <?php endif; ?><!-- Slide 1 -->
-    <?php
-    $sliderImage2mb = get_field('recipes_slide_2_mb');
-    if( !empty($sliderImage2mb) ): ?>
-      <div class="popular-recipes-slider-cell-mb">
-        <a href="<?php the_field('recipes_slider_img_link_2') ?>">
-          <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_2'), 'tnn' ); ?></h3>
-          </div>
-          <img class="slider-img" src="<?php echo esc_url( $sliderImage2mb['url'] ); ?>" alt="<?php echo esc_attr($sliderImage2mb['alt'] ); ?>" />
+    <?php endif; ?>
+
+    <?php if( !empty($image2) ): ?>
+      <div class="popular-recipes-slider-cell">
+        <a href="<?php echo esc_url($link2); ?>">
+        <div class="popular-recipes-title-wrapper-2">
+              <h3 class="popular-recipes-slide-title"><?php esc_html_e(($title2), 'tnn'); ?></h3>
+        </div>
+        <img
+        class="slider-img"
+        data-flickity-lazyload-srcset="<?php echo esc_url($image2['url']); ?> 1920w, <?php echo esc_url($image2mb['url']); ?> 600w"
+        sizes="(min-width: 600px) 720px, 360px"
+        alt="<?php echo esc_attr($image2['alt'], 'tnn'); ?>" />
         </a>
       </div>
-    <?php endif; ?><!-- Slide 2 -->
-    <?php
-    $sliderImage3mb = get_field('recipes_slide_3_mb');
-    if( !empty($sliderImage3mb) ): ?>
-      <div class="popular-recipes-slider-cell-mb">
-        <a href="<?php the_field('recipes_slider_img_link_3') ?>">
-          <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_3'), 'tnn' ); ?></h3>
-          </div>
-          <img class="slider-img" src="<?php echo esc_url( $sliderImage3mb['url'] ); ?>" alt="<?php echo esc_attr($sliderImage3mb['alt'] ); ?>" />
-        </a>
+    <?php endif; ?>
+
+    <?php if( !empty($image3) ): ?>
+    <div class="popular-recipes-slider-cell">
+      <a href="<?php echo esc_url($link3); ?>">
+      <div class="popular-recipes-title-wrapper-2">
+            <h3 class="popular-recipes-slide-title"><?php esc_html_e(($title3), 'tnn'); ?></h3>
       </div>
-    <?php endif; ?><!-- Slide 3 -->
-    <?php
-    $sliderImage4mb = get_field('recipes_slide_4_mb');
-    if( !empty($sliderImage4mb) ): ?>
-      <div class="popular-recipes-slider-cell-mb">
-        <a href="<?php the_field('recipes_slider_img_link_4') ?>">
-          <div class="popular-recipes-title-wrapper-2">
-            <h3 class="popular-recipes-slide-title"><?php esc_html_e(the_field('recipes_slider_title_4'), 'tnn' ); ?></h3>
-          <img class="slider-img" src="<?php echo esc_url( $sliderImage4mb['url'] ); ?>" alt="<?php echo esc_attr($sliderImage4mb['alt'] ); ?>" />
-        </a>
+      <img
+      class="slider-img"
+      data-flickity-lazyload-srcset="<?php echo esc_url($image3['url']); ?> 1920w, <?php echo esc_url($image3mb['url']); ?> 600w"
+      sizes="(min-width: 600px) 720px, 360px"
+      alt="<?php echo esc_attr($image3['alt'], 'tnn'); ?>" />
+      </a>
+    </div>
+    <?php endif; ?>
+
+    <?php if( !empty($image4) ): ?>
+    <div class="popular-recipes-slider-cell">
+      <a href="<?php echo esc_url($link4); ?>">
+      <div class="popular-recipes-title-wrapper-2">
+            <h3 class="popular-recipes-slide-title"><?php esc_html_e(($title4), 'tnn'); ?></h3>
       </div>
       <img
       class="slider-img"
