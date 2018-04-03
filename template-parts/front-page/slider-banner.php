@@ -20,12 +20,11 @@ $link1 = get_field('banner_slide_link_1');
 $link2 = get_field('banner_slide_link_2');
 $link3 = get_field('banner_slide_link_3');
 
-//if( !empty($image1) && !empty($image2) && !empty($image3) ): ?>
-<div class="banner-slider">
+if( !empty($image1) && !empty($image2) && !empty($image3) ): ?>
+<div class="slider banner-slider">
 
-  <?//php if( !empty($image1) ): ?>
+  <?php if( !empty($image1) ): ?>
   <div class="banner-slider-cell">
-
     <a href="<?php echo esc_url($link1); ?>">
     <img
     class="slider-img"
@@ -33,9 +32,32 @@ $link3 = get_field('banner_slide_link_3');
     sizes="(min-width: 600px) 720px, 360px"
     alt="<?php echo esc_attr($image1['alt'], 'tnn'); ?>" />
     </a>
-
   </div>
-  <?//php endif; ?>
+  <?php endif; ?>
+
+  <?php if( !empty($image2) ): ?>
+  <div class="banner-slider-cell">
+    <a href="<?php echo esc_url($link2); ?>">
+    <img
+    class="slider-img"
+    data-flickity-lazyload-srcset="<?php echo esc_url($image2['url']); ?> 1920w, <?php echo esc_url($image2mb['url']); ?> 600w"
+    sizes="(min-width: 600px) 720px, 360px"
+    alt="<?php echo esc_attr($image2['alt'], 'tnn'); ?>" />
+    </a>
+  </div>
+  <?php endif; ?>
+
+  <?php if( !empty($image3) ): ?>
+  <div class="banner-slider-cell">
+    <a href="<?php echo esc_url($link3); ?>">
+    <img
+    class="slider-img"
+    data-flickity-lazyload-srcset="<?php echo esc_url($image3['url']); ?> 1920w, <?php echo esc_url($image3mb['url']); ?> 600w"
+    sizes="(min-width: 600px) 720px, 360px"
+    alt="<?php echo esc_attr($image3  ['alt'], 'tnn'); ?>" />
+    </a>
+  </div>
+  <?php endif; ?>
 
 </div>
-<?//php endif; ?>
+<?php endif; ?>

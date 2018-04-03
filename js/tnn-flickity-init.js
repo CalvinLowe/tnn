@@ -4,8 +4,6 @@
  * Initialisation for Flickity
  *
  */
-console.log("Flickity Loaded");
-
 var bannerSlider = new Flickity( '.banner-slider', {
     // options
     cellAlign: 'left',
@@ -14,16 +12,9 @@ var bannerSlider = new Flickity( '.banner-slider', {
     wrapAround: true,
     lazyLoad: true,
     imagesLoaded: true,
-    setGallerySize: true
+    setGallerySize: true,
+    percentPosition: false
   });
-
-
-
-
-
-
-
-//TODO 
 var recipesSlider = new Flickity( '.popular-recipes-slider', {
    // options
    cellAlign: 'left',
@@ -32,14 +23,7 @@ var recipesSlider = new Flickity( '.popular-recipes-slider', {
    wrapAround: true,
    lazyLoad: true,
    imagesLoaded: true,
-   setGallerySize: true
+   setGallerySize: true,
+   percentPosition: false
  });
 
-var recipesSliderMB = new Flickity( '.popular-recipes-slider-mb', {
-   // options
-   cellAlign: 'left',
-   contain: true,
-   cellSelector: '.popular-recipes-slider-cell-mb',
-   wrapAround: true,
-   lazyLoad: true
- });
