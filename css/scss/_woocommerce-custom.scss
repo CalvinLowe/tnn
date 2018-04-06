@@ -1,7 +1,6 @@
 // _woocommerce-custom.scss
 
 .store-information {
-    //border: 2px orange solid;
     border: 2px $tnn-primary solid;
     padding: 1em;
     display: inline-block;
@@ -31,4 +30,29 @@
 .woocommerce-account .membership-product-image img, .woocommerce-account .membership-discount-image img {
     max-height: unset;
     max-width: 100px;
+}
+
+// WooCommerce Store
+.woocommerce ul.products li.product {
+   box-shadow: 1px 1px 10px rgba(136, 136, 136, 0.57);
+}
+.woocommerce ul.products li.product:hover { //Careful of hover on touch devices? test this
+    box-shadow: 1px 1px 4px #888;
+}
+.woocommerce li.has-post-thumbnail img {
+    background: linear-gradient(#e3e3e3, white, #e3e3e3);
+}
+.woocommerce ul.products li.product h2.woocommerce-loop-product__title {
+    padding: 0 0.5em;
+}
+.woocommerce ul.products li.product .price {
+    padding: 0 0.5em;
+}
+.woocommerce ul.products li.product .button {
+    margin: 0 0.5em 0.5em;
+}
+
+// WooCommerce Products
+.woocommerce div.product div.images img {
+    background: linear-gradient(#e3e3e3, white, #e3e3e3);
 }
