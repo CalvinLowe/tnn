@@ -34,25 +34,30 @@
 
 // WooCommerce Store
 .woocommerce ul.products li.product {
-   box-shadow: 1px 1px 10px rgba(136, 136, 136, 0.57);
+   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, .2);
 }
 .woocommerce ul.products li.product:hover { //Careful of hover on touch devices? test this
-    box-shadow: 1px 1px 4px #888;
+    box-shadow: 0 1px 4px 0 hsla(0, 0%, 0%, .4);
 }
 .woocommerce li.has-post-thumbnail img {
-    background: linear-gradient(#e3e3e3, white, #e3e3e3);
+    background: linear-gradient(white, #e3e3e3);
 }
 .woocommerce ul.products li.product h2.woocommerce-loop-product__title {
     padding: 0 0.5em;
+    min-height: 2.5em;
 }
 .woocommerce ul.products li.product .price {
     padding: 0 0.5em;
+    display: flex;
+}
+.woocommerce ul.products li.product .price del, .woocommerce ul.products li.product .price ins {
+    margin: 0 0.2em;
 }
 .woocommerce ul.products li.product .button {
     margin: 0 0.5em 0.5em;
 }
-
 // WooCommerce Products
 .woocommerce div.product div.images img {
-    background: linear-gradient(#e3e3e3, white, #e3e3e3);
+    background: linear-gradient(white, #e3e3e3);
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, .2);
 }
