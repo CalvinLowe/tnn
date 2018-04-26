@@ -8,10 +8,9 @@
  */
 
 get_header(); ?>
-
-    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-    <!-- Insert Image -->
+    
+    <?php the_title( '<h1 class="podcast-title">', '</h1>' ); ?>
+    
     <?php
         $podcast_img = get_field('podcast_img');
         if( !empty($podcast_img) ): ?>
@@ -32,9 +31,17 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-    <h2><?php esc_html_e(get_field('latest_podcast')); ?></h2>
+    <h2 class="latest-podcast-title"><?php esc_html_e(get_field('latest_podcast')); ?></h2>
+    <img class="latest-podcast" src=" http://via.placeholder.com/600x600" >
     
-    <h2><?php esc_html_e(get_field('past_episodes')); ?></h2>
+    <h2 class="previous-episodes-title"><?php esc_html_e(get_field('past_episodes')); ?></h2>
+    <div class="previous-episodes-wrapper">
+        <img class="previous-episode" src=" http://via.placeholder.com/600x600" >
+        <img class="previous-episode" src=" http://via.placeholder.com/600x600" >
+        <img class="previous-episode" src=" http://via.placeholder.com/600x600" >
+        <img class="previous-episode" src=" http://via.placeholder.com/600x600" >
+    </div>
+
 
 
 <?php

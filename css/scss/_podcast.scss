@@ -1,0 +1,91 @@
+// _podcast.scss
+
+/*--------------------------------------------------------------
+# Podcast
+--------------------------------------------------------------*/
+.page-id-6037 .site-content .podcast-title, .page-id-6037 .site-content .podcast-img  {
+    display: none;
+}
+
+.page-id-6037 .site-content .latest-podcast-title, .page-id-6037 .site-content .latest-podcast, .page-id-6037 .site-content .previous-episodes-title, .page-id-6037 .site-content .previous-episodes-wrapper {
+    padding: 0 5vw;
+}
+.page-id-6037 .site-content .previous-episodes-wrapper {
+    margin-bottom: 2em;
+}
+
+
+@media screen and (min-width: 37.5em) {
+    .page-id-6037 .content-area {
+        display: unset;
+    }
+
+    .page-id-6037 .site-content .entry-header, .page-id-6037 .site-content .entry-content .tnn-post-img {
+        display: none;
+    }
+    
+    .page-id-6037 .site-content {
+        padding: 0;
+        margin-top: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-column-gap: 2em;
+    } 
+    
+    .page-id-6037 .site-content .podcast-title {
+        display: block;
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    .page-id-6037 .site-content .podcast-img {
+        display: block;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .page-id-6037 .site-content .content-area {
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+    }
+    
+    .page-id-6037 .site-content .latest-podcast-title {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    
+    .page-id-6037 .site-content .previous-episodes-title {
+        grid-column: 3 / 5;
+        grid-row: 3 / 4;
+    }
+    
+    .page-id-6037 .site-content .latest-podcast {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+    
+    .page-id-6037 .site-content .previous-episodes-wrapper {
+        grid-column: 3 / 5;
+        grid-row: 4 / 5;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 2em;
+    }
+
+    /* Remove margins above content */
+    .page-id-6037 .site-content .content-area, .page-id-6037 .site-content .content-area .entry-content, .page-id-6037 .site-content .content-area .entry-content p:first-of-type  {
+        margin-top: 0;
+    }
+    /* Remove first paragraph containing hidden image */
+    .page-id-6037 .site-content .content-area .entry-content p:first-of-type br {
+        display: none;
+    }
+
+    .page-id-6037 .site-content .latest-podcast-title, .page-id-6037 .site-content .latest-podcast, .page-id-6037 .site-content .previous-episodes-title, .page-id-6037 .site-content .previous-episodes-wrapper {
+        padding: 0;
+    }
+}
+
+
