@@ -85,7 +85,7 @@
     }
   }
 }
-.page .site-main, .archive .site-main, .search .site-main, .error404 .site-main, .woocommerce .woocommerce-breadcrumb, .woocommerce .product {
+.page .site-main, .archive .site-main, .search .site-main, .error404 .site-main, .woocommerce .woocommerce-breadcrumb, .woocommerce .woocommerce-message, .woocommerce .woocommerce-info, .woocommerce .woocommerce-error, .woocommerce .product  {
   grid-column: 2 / 3;
 }
 .page .entry-header {
