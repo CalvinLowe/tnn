@@ -17,7 +17,7 @@ function woocommerce_support() {
  * Remove WooCommerce stylesheets
  */
  // Or just remove them all in one line
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+//add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
 /**
  * WooCommerce - Change number or products per row to 4
