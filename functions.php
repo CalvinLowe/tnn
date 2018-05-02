@@ -179,4 +179,4 @@ require get_template_directory() . '/inc/woocommerce-functions.php';
 /**
  * Load HTML Audio player
  */
-require get_template_directory() . '/inc/podcast-audio.php';
+require get_template_directory() . '/inc/podcast-audio-player.php';
