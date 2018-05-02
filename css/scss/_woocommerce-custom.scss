@@ -53,9 +53,15 @@
 .woocommerce ul.products li.product .price del, .woocommerce ul.products li.product .price ins {
     margin: 0 0.2em;
 }
-.woocommerce ul.products li.product .button {
+.woocommerce ul.products li.product .button, .woocommerce ul.products li.product .added_to_cart {
     margin: 0 0.5em 0.5em;
 }
+@media screen and (min-width: 1440px) {
+    .woocommerce ul.products li.product .added_to_cart {
+        margin: 0;
+    }
+}
+
 // WooCommerce Products
 .woocommerce div.product div.images img {
     background: linear-gradient(white, #e3e3e3);
