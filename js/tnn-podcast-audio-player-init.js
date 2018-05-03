@@ -7,11 +7,11 @@ Amplitude.init({
     "songs": [
       {
         "podcast": "The Real Food Reel",
-        "episode": "Episode 169",
-        "guest": "Sahara Rose",
-        "name": "Modern Day Ayurvedic Nutrition with Sahara Rose",
-        "url": "http://thewellnesscouch.com/wp-content/uploads/podcasts/rfr/rfr-169-modern-day-ayurvedic-nutrition-with-sahara-rose.mp3",
-        "cover_art_url": "http://thewellnesscouch.com/wp-content/uploads/2018/04/RFR-169-Sahara-photo-.jpg"
+        "episode": "Episode 170",
+        "guest": "Dr. Phil Maffetone",
+        "name": "Big Sugar & the Overfat Epidemic with Dr Phil Maffetone",
+        "url": "http://thewellnesscouch.com/wp-content/uploads/podcasts/rfr/rfr-170-big-sugar-the-overfat-epidemic-with-dr-phil-maffetone.mp3",
+        "cover_art_url": "http://thewellnesscouch.com/wp-content/uploads/formidable/13/RFR-170-Social-Tile-2-800x675.png"
       }
     ]
   });

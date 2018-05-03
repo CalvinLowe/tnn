@@ -39,10 +39,10 @@ get_header(); ?>
 
         <div class="time-container">
           <span class="current-time">
-            <span class="amplitude-current-minutes" amplitude-main-current-minutes="true"></span>:<span class="amplitude-current-seconds" amplitude-main-current-seconds="true"></span>
+            <span class="amplitude-current-hours" amplitude-main-current-hours="true"></span>:<span class="amplitude-current-minutes" amplitude-main-current-minutes="true"></span>:<span class="amplitude-current-seconds" amplitude-main-current-seconds="true"></span>
           </span>
           <span class="duration">
-            <span class="amplitude-duration-minutes" amplitude-main-duration-minutes="true"></span>:<span class="amplitude-duration-seconds" amplitude-main-duration-seconds="true"></span>
+           <span class="amplitude-duration-hours" amplitude-main-duration-hours="true"></span>:<span class="amplitude-duration-minutes" amplitude-main-duration-minutes="true"></span>:<span class="amplitude-duration-seconds" amplitude-main-duration-seconds="true"></span>
           </span>
         </div>
 
@@ -58,14 +58,6 @@ get_header(); ?>
         </div>
       </div>
     </div>
-  </div>
-    
-  <div class="previous-episodes-wrapper">
-    <h2 class="previous-episodes-title"><?php esc_html_e(get_field('past_episodes')); ?></h2>
-        <img class="previous-episode" src=" http://via.placeholder.com/600x600" >
-        <img class="previous-episode" src=" http://via.placeholder.com/600x600" >
-        <img class="previous-episode" src=" http://via.placeholder.com/600x600" >
-        <img class="previous-episode" src=" http://via.placeholder.com/600x600" >
   </div>
 <?php
 get_sidebar();
