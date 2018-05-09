@@ -7,11 +7,11 @@ Amplitude.init({
     "songs": [
       {
         "podcast": "The Real Food Reel",
-        "episode": "Episode 170",
-        "guest": "Dr. Phil Maffetone",
-        "name": "Big Sugar & the Overfat Epidemic with Dr Phil Maffetone",
-        "url": "http://thewellnesscouch.com/wp-content/uploads/podcasts/rfr/rfr-170-big-sugar-the-overfat-epidemic-with-dr-phil-maffetone.mp3",
-        "cover_art_url": "http://thewellnesscouch.com/wp-content/uploads/formidable/13/RFR-170-Social-Tile-2-800x675.png"
+        "episode": "Episode 171",
+        "guest": "",
+        "name": "Pre-natal, Vitamin D & Iron Supplementation Exposed",
+        "url": "http://thewellnesscouch.com/wp-content/uploads/podcasts/rfr/rfr-171-pre-natal-vitamin-d-iron-supplementation-exposed.mp3",
+        "cover_art_url": "http://thewellnesscouch.com/wp-content/uploads/2018/05/RFR-171-Promo-Tile-800x675.png"
       }
     ]
   });
