@@ -180,3 +180,8 @@ require get_template_directory() . '/inc/woocommerce-functions.php';
  * Load HTML Audio player
  */
 require get_template_directory() . '/inc/podcast-audio-player.php';
+
+/**
+ * Load Facebook tracking
+ */
+require get_template_directory(). '/inc/facebook-tracking.php';
