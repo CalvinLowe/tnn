@@ -20,7 +20,7 @@ $link1 = get_field('banner_slide_link_1');
 $link2 = get_field('banner_slide_link_2');
 $link3 = get_field('banner_slide_link_3');
 
-if( !empty($image1) && !empty($image2) && !empty($image3) ): ?>
+if( !empty($image1) || !empty($image2) || !empty($image3) ): ?>
 <div class="slider banner-slider">
 
   <?php if( !empty($image1) ): ?>
