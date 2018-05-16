@@ -20,10 +20,12 @@ $link1 = get_field('banner_slide_link_1');
 $link2 = get_field('banner_slide_link_2');
 $link3 = get_field('banner_slide_link_3');
 
+$enable_slide_1 = get_field('enable_slide_1');
+
 if( !empty($image1) || !empty($image2) || !empty($image3) ): ?>
 <div class="slider banner-slider">
 
-  <?php if( !empty($image1) ): ?>
+  <?php if( !empty($image1) && $enable_slide_1 ): ?>
   <div class="banner-slider-cell">
     <a href="<?php echo esc_url($link1); ?>">
     <img
