@@ -7,11 +7,11 @@ Amplitude.init({
     "songs": [
       {
         "podcast": "The Real Food Reel",
-        "episode": "Episode 171",
-        "guest": "",
-        "name": "Pre-natal, Vitamin D & Iron Supplementation Exposed",
-        "url": "http://thewellnesscouch.com/wp-content/uploads/podcasts/rfr/rfr-171-pre-natal-vitamin-d-iron-supplementation-exposed.mp3",
-        "cover_art_url": "http://thewellnesscouch.com/wp-content/uploads/2018/05/RFR-171-Promo-Tile-800x675.png"
+        "episode": "Episode 172",
+        "guest": "Kirsty Wirth",
+        "name": "Gutalicious Guts with Kirsty Wirth",
+        "url": "http://thewellnesscouch.com/wp-content/uploads/podcasts/rfr/rfr-172-gutalicious-guts-with-kirsty-wirth.mp3",
+        "cover_art_url": "http://thewellnesscouch.com/wp-content/uploads/2018/05/RFR-172-Gutalicious-Guts-with-Kirsty-Wirth-700x675.jpg"
       }
     ]
   });
