@@ -8,12 +8,16 @@
  */
 
 ?>
+<?php
+/* Variables */
+$optIn = get_field('mailchimp_opt_in_message');
+?>
 <div id="subscribe" class="mailchimp-opt-in">
   <!-- Begin MailChimp Signup Form -->
   <div id="mc_embed_signup">
     <form action="//thenaturalnutritionist.us7.list-manage.com/subscribe/post?u=62607cf7c4829eff92f2773b1&amp;id=2f8f17bcdf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-opt-in-form" target="_blank" novalidate>
       <div id="mc_embed_signup_scroll">
-        <h2 class="section-title"><?php esc_html_e( 'For weekly recipes, articles, performance tips and giveaways', 'tnn' ); ?></h2>
+        <h2 class="section-title"><?php esc_html_e($optIn); ?></h2>
         <div class="form-wrapper">
           <div class="mc-field-group form-element">
             <label for="mce-FNAME"><?php esc_html_e('First Name ', 'tnn'); ?></label>
