@@ -14,10 +14,3 @@
 	}
 }
 add_action('wp_head', 'podcast_audio_player_head');
-
-function podcast_audio_player_init_foot() {
-	if(is_page( 'podcast' )){
-		wp_enqueue_script( 'audio-player-init', get_template_directory_uri() . '/js/tnn-podcast-audio-player-init.js', array(), null, true );
-	}
-}
-add_action('wp_footer', 'podcast_audio_player_init_foot');

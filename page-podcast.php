@@ -8,6 +8,15 @@
  */
 
 get_header(); ?>
+<?php
+/* Variables */
+$episode = get_field('episode_number');
+$guest = get_field('episode_guest');
+$name = get_field('episode_name');
+$url = get_field('episode_url');
+$img = get_field('episode_img');
+
+?>
     
     <?php the_title( '<h1 class="podcast-title">', '</h1>' ); ?>
     
@@ -59,6 +68,36 @@ get_header(); ?>
       </div>
     </div>
   </div>
+<script>
+Amplitude.init({
+    "bindings": {
+      37: 'prev',
+      39: 'next',
+      32: 'play_pause'
+    },
+    "songs": [
+      {
+        "podcast": "The Real Food Reel",
+        "episode": "Episode <?php esc_html_e($episode); ?>",
+        "guest": "<?php esc_html_e($guest); ?>",
+        "name": "<?php esc_html_e($name); ?>",
+        "url": "<?php esc_html_e($url); ?>",
+        "cover_art_url": "<?php esc_html_e($img); ?>"
+      }
+    ]
+  });
+  window.onkeydown = function(e) {
+      return !(e.keyCode == 32);
+  };
+  /*
+    Handles a click on the song played progress bar.
+  */
+  document.getElementById('song-played-progress').addEventListener('click', function( e ){
+    var offset = this.getBoundingClientRect();
+    var x = e.pageX - offset.left;
+    Amplitude.setSongPlayedPercentage( ( parseFloat( x ) / parseFloat( this.offsetWidth) ) * 100 );
+  });
+</script>
 <?php
 get_sidebar();
 get_footer();
