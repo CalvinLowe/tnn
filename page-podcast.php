@@ -79,9 +79,50 @@ $shownotes = get_field('episode_shownotes');
     </div>
   </div>
 
-  <h2 class="previous-podcast-title">Previous Episodes</h2>
   <div class="previous-episode-wrapper">
-    <?php esc_html_e(get_field('previous_episodes')); ?>
+    <h2 class="previous-podcast-title">Previous Episodes</h2>
+
+    <?php if( have_rows('previous_episodes') ): ?>
+
+      <ul class="previous-episodes-list">
+
+        <?php while( have_rows('previous_episodes') ): the_row(); 
+
+          // vars
+          $ep_img = get_sub_field('episode_image');
+          $ep_link = get_sub_field('epsiode_link');
+          $ep_no = get_sub_field('episode_number');
+          $ep_title = get_sub_field('episode_title');
+          $ep_guest = get_sub_field('episode_guest');
+          $ep_shownotes = get_sub_field('episode_shownotes');
+          // I think I need and episode Itunes link
+
+        ?>
+
+        <li class="previous-episode">
+          
+          <?php if( $ep_title ): ?>
+            <h3 class="previous-episode-title">RFR <?php echo $ep_no; ?> - <?php echo $ep_title; ?> with <?php echo $ep_guest; ?></h3>
+          <?php endif; ?>
+
+          <?php if( $ep_img ): ?>
+            <img src="<?php echo $ep_img; ?>" alt="<?php echo $ep_title; ?>" />
+          <?php endif; ?>
+
+          <?php if( $ep_shownotes ): ?>
+            <p><?php echo $ep_shownotes; ?></p>
+          <?php endif; ?>
+          
+          <?php if( $ep_link ): ?>
+				    <a href="<?php echo $ep_link; ?>"><?php echo $ep_link; ?></a>
+			    <?php endif; ?>
+        </li>
+
+        <?php endwhile; ?>
+
+      </ul>
+
+    <?php endif; ?>
   </div>
 
 <script>
