@@ -74,7 +74,7 @@ $shownotes = get_field('episode_shownotes');
     <div>
       <h2 class="latest-podcast-title">RFR <?php esc_html_e($episode); ?> - Show notes</h2>
       <div class="latest-podcast-shownotes">
-              <?php esc_html_e($shownotes) ?>
+              <p><?php echo $shownotes; ?></p>
       </div>
     </div>
   </div>
@@ -90,7 +90,6 @@ $shownotes = get_field('episode_shownotes');
 
           // vars
           $ep_img = get_sub_field('episode_image');
-          $ep_link = get_sub_field('epsiode_link');
           $ep_no = get_sub_field('episode_number');
           $ep_title = get_sub_field('episode_title');
           $ep_guest = get_sub_field('episode_guest');
@@ -106,16 +105,13 @@ $shownotes = get_field('episode_shownotes');
           <?php endif; ?>
 
           <?php if( $ep_img ): ?>
-            <img src="<?php echo $ep_img; ?>" alt="<?php echo $ep_title; ?>" />
+            <img class="previous-episode-img" src="<?php echo $ep_img; ?>" alt="<?php echo $ep_title; ?>" />
           <?php endif; ?>
 
           <?php if( $ep_shownotes ): ?>
-            <p><?php echo $ep_shownotes; ?></p>
+            <div class="previous-epsiode-shownotes"><?php echo $ep_shownotes; ?></div>
           <?php endif; ?>
           
-          <?php if( $ep_link ): ?>
-				    <a href="<?php echo $ep_link; ?>"><?php echo $ep_link; ?></a>
-			    <?php endif; ?>
         </li>
 
         <?php endwhile; ?>

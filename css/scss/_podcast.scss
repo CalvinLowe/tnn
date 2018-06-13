@@ -13,7 +13,14 @@
 .page-id-6037 .site-content .previous-episodes-wrapper {
     margin-bottom: 2em;
 }
-
+.page-id-6037 .site-content .previous-episode-wrapper .previous-episodes-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.latest-episode-wrapper, .previous-episode-wrapper {
+  padding: 5vw;
+}
 
 @media screen and (min-width: 1000px) {
     .page-id-6037 .content-area {
@@ -54,7 +61,7 @@
         grid-column: 2 / 5;
         grid-row: 3 / 4;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
         grid-column-gap: 2em;
     }
 
@@ -62,21 +69,40 @@
         grid-column: 2 / 5;
         grid-row: 5 / 6;
     }
-    .page-id-6037 .site-content .previous-episode-wrapper .previous-episodes-list {
-      margin: 0;
+    .page-id-6037 .latest-episode-wrapper p, .page-id-6037 .previous-episode-wrapper p {
+      font-size: 1.25em;
+      line-height: 1.375;
+      font-size-adjust: 0.5;
+    }
+
+    .latest-episode-wrapper, .previous-episode-wrapper {
       padding: 0;
-      list-style-type: none;
+    }
+
+    .page-id-6037 .site-content .previous-episode-wrapper .previous-episode {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: repeat(3, auto);
+      grid-column-gap: 2em;
+      margin-bottom: 2em;
     }
     .page-id-6037 .site-content .previous-episode-wrapper .previous-episode-title {
       grid-column: 1 / 3;
       margin-top: 0;
     }
-    .page-id-6037 .site-content .previous-episode-wrapper .previous-episode {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      grid-column-gap: 2em;
-      margin-bottom: 2em;
+    .page-id-6037 .site-content .previous-episode-wrapper .previous-episode-img {
+      grid-column: 1 / 2;
+      grid-row: 2 / 4;
     }
+    .page-id-6037 .site-content .previous-episode-wrapper .previous-epsiode-shownotes {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+    .page-id-6037 .site-content .previous-episode-wrapper .previous-episode-link {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
+
 
     /* Remove margins above content */
     .page-id-6037 .site-content .content-area, .page-id-6037 .site-content .content-area .entry-content, .page-id-6037 .site-content .content-area .entry-content p:first-of-type  {
