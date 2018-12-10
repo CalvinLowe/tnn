@@ -17,6 +17,10 @@
   display: inline-block;
   max-width: none;
 }
+.front-page-product-advertising h2 {
+  flex-basis: 100%;
+}
+
 @supports (display: flex) {
   .front-page-product-advertising {
     display: flex;

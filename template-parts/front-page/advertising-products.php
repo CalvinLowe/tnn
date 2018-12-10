@@ -19,6 +19,7 @@ $link3 = get_field('product_link_3');
 
 if( !empty($image1) && !empty($image2) && !empty($image3) ): ?>
 <div class="front-page-product-advertising">
+<h2 class="section-title section-title-large"><?php the_field('eb_title'); ?></h2>
 <?php
   if( !empty($image1) && !empty($link1) ): ?>
   <figure class="product-advert">
