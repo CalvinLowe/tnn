@@ -19,7 +19,7 @@ function facebook_pixel_default() {
 </script>";
 		echo '
 <noscript>
-	<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1224260727689111&ev=PageView&noscript=1"/>
+	<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=&ev=PageView&noscript=1"/>
 </noscript>';
 		echo "
 <!-- DO NOT MODIFY -->";
@@ -50,7 +50,7 @@ function facebook_pixel_order_received() {
 </script>";
 	  echo '
 <noscript>
-	<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1224260727689111&ev=PageView&noscript=1"/>
+	<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=&ev=PageView&noscript=1"/>
 </noscript>';
 	  echo "
 <!-- DO NOT MODIFY -->";
@@ -81,7 +81,7 @@ function facebook_pixel_mailchimp() {
 </script>";
 	  echo '
 <noscript>
-	<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1224260727689111&ev=PageView&noscript=1"/>
+	<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=&ev=PageView&noscript=1"/>
 </noscript>';
 	  echo "
 <!-- DO NOT MODIFY -->";
